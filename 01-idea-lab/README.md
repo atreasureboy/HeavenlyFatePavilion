@@ -13,3 +13,7 @@
 
 思路只有经过迭代评审、影响分析和明确采纳，才能进入当前架构。
 
+## 当前重点假设
+
+- [自顶向下的完整架构骨架](./hypotheses/top-down-complete-architecture-skeleton.md)
+
