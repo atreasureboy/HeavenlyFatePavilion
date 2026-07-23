@@ -1,0 +1,16 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Local workspace metadata
+.idea/
+.vscode/
+
+# Generated and temporary files
+*.tmp
+*.bak
+*.log
+
