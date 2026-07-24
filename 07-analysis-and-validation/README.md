@@ -15,3 +15,6 @@
 
 所有数字都应注明假设、计算过程和适用范围。
 
+## 当前分析
+
+- [整体架构骨架完整性审计](./skeleton-completeness-assessment.md)
