@@ -29,5 +29,6 @@
 - [三省六部与公共官署映射](./organization-mapping/README.md)
 - [核心状态机与异常路由](../08-reference-models/state-machines/README.md)
 - [七维横切治理骨架](./cross-cutting/README.md)
+- [端到端场景与验证](../05-scenarios-and-flows/README.md)
 - [总体一级逻辑骨架](./overall-logical-skeleton.md)
 - [整体架构骨架：五域、十面、二级能力与核心闭环](./overall-architecture-skeleton.md)

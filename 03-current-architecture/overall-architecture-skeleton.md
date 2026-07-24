@@ -468,3 +468,5 @@
 任务、知识、研判、风险、产品与能力版本的生命周期，以及统一异常分类和路由，见[核心状态机与异常路由](../08-reference-models/state-machines/README.md)；面向阅读的总图见[状态机与异常路径总图](./text-diagrams/TXT-0010-state-machines-and-exceptions.md)。
 
 多租户、身份权限、证据血缘、预算资源、风险质量、审计追踪和数据生命周期的统一传播、强制点、不变量及十面责任，见[七维横切治理骨架](./cross-cutting/README.md)；面向阅读的总图见[七维横切治理图](./text-diagrams/TXT-0011-cross-cutting-governance.md)。
+
+整体骨架的正常、退回、冲突、降级、撤销、更正和回滚路径，已经由[端到端场景集](../05-scenarios-and-flows/README.md)和[场景覆盖矩阵](../05-scenarios-and-flows/scenario-coverage-matrix.md)完成第一版验证；面向阅读的总图见[端到端正常与失败场景图](./text-diagrams/TXT-0012-end-to-end-scenarios.md)。
