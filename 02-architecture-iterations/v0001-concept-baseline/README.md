@@ -38,6 +38,7 @@
 
 ## 本轮工作文档
 
+- [架构设计对话路线图](../../ARCHITECTURE-DESIGN-ROADMAP.md)
 - [候选终局架构地图](./proposed-architecture-map.md)
 - [Agent / Tool 职责分配基础骨架](./agent-tool-allocation-baseline.md)
 - [四视角架构骨架修复评审](./four-perspective-skeleton-review.md)
