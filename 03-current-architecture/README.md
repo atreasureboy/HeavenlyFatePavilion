@@ -23,6 +23,7 @@
 
 - [文字架构图集：建议从这里开始看](./text-diagrams/README.md)
 - [系统上下文与边界](./system-context.md)
+- [主体生态与分域主权骨架](./ecosystem-and-sovereignty.md)
 - [核心对象主干](../04-domain-design/core-object-spine.md)
 - [十面输入输出契约](./plane-contracts.md)
 - [十面二级能力树](./capability-trees/README.md)

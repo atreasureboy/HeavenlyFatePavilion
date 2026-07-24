@@ -470,3 +470,5 @@
 多租户、身份权限、证据血缘、预算资源、风险质量、审计追踪和数据生命周期的统一传播、强制点、不变量及十面责任，见[七维横切治理骨架](./cross-cutting/README.md)；面向阅读的总图见[七维横切治理图](./text-diagrams/TXT-0011-cross-cutting-governance.md)。
 
 整体骨架的正常、退回、冲突、降级、撤销、更正和回滚路径，已经由[端到端场景集](../05-scenarios-and-flows/README.md)和[场景覆盖矩阵](../05-scenarios-and-flows/scenario-coverage-matrix.md)完成第一版验证；面向阅读的总图见[端到端正常与失败场景图](./text-diagrams/TXT-0012-end-to-end-scenarios.md)。
+
+天机阁与需求主体、权利人、被研究主体、公共制度、能力供应链、外部系统、同行和对抗生态之间的关系，以及各主权域的权威边界，见[主体生态与分域主权骨架](./ecosystem-and-sovereignty.md)；面向阅读的总图见[主体生态与主权边界图](./text-diagrams/TXT-0013-ecosystem-and-sovereignty.md)。

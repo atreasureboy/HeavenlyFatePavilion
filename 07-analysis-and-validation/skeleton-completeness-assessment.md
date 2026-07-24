@@ -4,6 +4,8 @@
 
 审计日期：2026-07-24
 
+当前扩展轮次：`Skeleton v0.2`
+
 ## 一、结论
 
 `Skeleton v0.1` 已经通过七道完整性门的第一版检查，可以称为“当前已知逻辑骨架完成第一轮内部闭合”，但不能称为“整体骨架阶段已经完成”。
@@ -46,8 +48,12 @@
 - 天机阁系统边界内外的责任；
 - 共享平台、租户逻辑朝廷、皇帝稳定身份与按需运行实例的关系；
 - 第一版全链路 Context Envelope。
+- 需求/消费/行动责任主体的区分；
+- 权利人、被研究主体和受影响第三方；
+- 监管、司法、标准、供应链、同行和对抗生态；
+- 人类目标、平台、租户、数据、事实、产品和外部行动的分域主权。
 
-仍待后续专题深化角色授权、跨租户会盟、外部行动和 Court Profile Schema，但这些不再阻塞系统上下文骨架。
+仍待后续骨架扫描确认联邦同行、外部行动、跨辖区和无明确权威场景；角色授权和 Court Profile Schema 属于后续细化。
 
 ### 3.2 核心对象主干已经建立
 
@@ -184,6 +190,18 @@ Intent
 
 仍待后续专题覆盖安全攻击、基础设施灾难、区域故障、极端容量和更细粒度的人类协作场景。
 
+### 3.11 Skeleton v0.2 扩展进度
+
+`S2：主体、生态与主权边界` 已完成第一版扫描。
+
+本轮新增结构均能通过系统上下文、横切治理和现有十面表达，暂未形成新增一级逻辑面的证据。下一项宏观扫描是：
+
+```text
+S3：全局流与多种运行形态
+```
+
+它将检查交互、事件、监测、批处理、协作、演进、外部行动及灾难恢复是否都拥有顶层位置，不深入协议和部署。
+
 ## 四、建议完成顺序
 
 ```text
@@ -242,3 +260,5 @@ Intent
 - [文字架构图集](../03-current-architecture/text-diagrams/README.md)
 - [阶段 1：整体架构骨架访谈](../02-architecture-iterations/v0001-concept-baseline/phase-01-overall-skeleton-interview.md)
 - [阶段 1：整体骨架扩展与完善计划](../02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)
+- [主体生态与分域主权骨架](../03-current-architecture/ecosystem-and-sovereignty.md)
+- [主体生态与主权边界图](../03-current-architecture/text-diagrams/TXT-0013-ecosystem-and-sovereignty.md)

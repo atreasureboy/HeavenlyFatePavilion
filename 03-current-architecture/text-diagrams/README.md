@@ -31,6 +31,7 @@
 10. [TXT-0010：核心状态机与异常路由图](./TXT-0010-state-machines-and-exceptions.md)
 11. [TXT-0011：七维横切治理图](./TXT-0011-cross-cutting-governance.md)
 12. [TXT-0012：端到端正常与失败场景图](./TXT-0012-end-to-end-scenarios.md)
+13. [TXT-0013：主体生态与主权边界图](./TXT-0013-ecosystem-and-sovereignty.md)
 
 ## 三、图示规范
 

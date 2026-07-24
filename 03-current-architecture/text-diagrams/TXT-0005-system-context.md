@@ -133,8 +133,22 @@
 - 皇帝记忆的精确分层；
 - 物理部署和区域拓扑。
 
-## 五、对应正文
+## 五、生态扩展
+
+本图的一屏总览把外部世界压缩为数据、模型、业务系统和渠道。完整生态还包括：
+
+```text
+权利人 / 数据主体 / 被研究主体 / 受影响第三方
+监管 / 司法 / 标准 / 独立监督
+Tool 与 Skill 开发者 / 能力市场 / 同行情报系统
+恶意内容发布者 / 投毒者 / 内部滥用者 / 被攻陷供应商
+```
+
+这些主体及分域主权关系见 [TXT-0013](./TXT-0013-ecosystem-and-sovereignty.md)。
+
+## 六、对应正文
 
 - [系统上下文与边界](../system-context.md)
+- [主体生态与分域主权骨架](../ecosystem-and-sovereignty.md)
 - [整体架构骨架](../overall-architecture-skeleton.md)
 - [ADR-0007：共享平台承载租户级逻辑朝廷](../../06-architecture-decisions/adrs/ADR-0007-shared-platform-tenant-logical-courts.md)
