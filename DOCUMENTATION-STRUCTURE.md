@@ -40,6 +40,8 @@ Current Architecture
 | `09-presentation` | 面试摘要、图集和讲解路径 | 展示材料 |
 | `99-archive` | 不再参与当前设计的历史材料 | 否 |
 
+`03-current-architecture/text-diagrams` 是当前架构的文字图集。它面向人类建立架构心智模型，属于第一等架构视图，但不替代正文和 ADR。
+
 ## 三、迭代规则
 
 每轮重要迭代建立独立目录：
@@ -84,6 +86,7 @@ Current Architecture
 - 故障案例：`FLR-0001`；
 - 架构不变量：`INV-0001`；
 - 开放问题：`Q-0001`。
+- 文字架构图：`TXT-0001`。
 
 编号只表示稳定身份，不表示重要程度。
 

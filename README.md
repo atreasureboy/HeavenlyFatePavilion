@@ -119,6 +119,7 @@ Agent Memory ≠ Intelligence Database
 - [文档与迭代骨架](./DOCUMENTATION-STRUCTURE.md)
 - [架构总纲](./00-project-foundation/architecture-charter.md)
 - [当前架构](./03-current-architecture/README.md)
+- [⭐ 文字架构图集](./03-current-architecture/text-diagrams/README.md)
 - [当前一级逻辑骨架](./03-current-architecture/overall-logical-skeleton.md)
 - [整体架构骨架](./03-current-architecture/overall-architecture-skeleton.md)
 - [架构迭代](./02-architecture-iterations/README.md)
