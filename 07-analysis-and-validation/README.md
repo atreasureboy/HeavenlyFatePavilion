@@ -19,4 +19,5 @@
 
 - [整体架构骨架完整性审计](./skeleton-completeness-assessment.md)
 - [Skeleton v0.2 集中闭合复核](./skeleton-v0.2-closure-review.md)
+- [Skeleton v0.3 第一轮宏观压力测试](./skeleton-v0.3-macro-stress-test.md)
 - [第一批端到端场景覆盖矩阵](../05-scenarios-and-flows/scenario-coverage-matrix.md)

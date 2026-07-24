@@ -278,6 +278,19 @@ S7 没有发现新增一级逻辑面的必要。S2～S7 第一版广度扫描至
 
 `Skeleton v0.2` 因此完成第二轮宏观闭合。下一步进入 `Skeleton v0.3`，继续用宏观压力场景和全局视图检查一级骨架稳定性，不进入局部专题细节。
 
+### Skeleton v0.3 第一轮宏观压力测试
+
+八类压力场景已经完成第一轮联合测试：
+
+- 3 个场景由现有骨架直接闭合；
+- 5 个场景要求加强现有关系；
+- 没有发现新增一级面、全局流、尺度轴或横切维度；
+- 十面稳定性保持。
+
+本轮加强三项宏观关系：相关失效域不能被默认独立；来源限制、纠正义务和影响责任随对象传播；跨年知识需要绑定当时的能力代际以支持回放。
+
+`Skeleton v0.3` 尚未闭合。下一步继续检查循环权威和单点认知，再建立能力演进作用全域图与一屏全景。
+
 ## 七、关联
 
 - [整体架构骨架完整性审计](../../07-analysis-and-validation/skeleton-completeness-assessment.md)
@@ -291,3 +304,4 @@ S7 没有发现新增一级逻辑面的必要。S2～S7 第一版广度扫描至
 - [非功能与生存性骨架](../../03-current-architecture/nonfunctional-and-survivability-skeleton.md)
 - [负空间、反架构与未来替换骨架](../../03-current-architecture/negative-space-and-future-replacement.md)
 - [Skeleton v0.2 集中闭合复核](../../07-analysis-and-validation/skeleton-v0.2-closure-review.md)
+- [Skeleton v0.3 第一轮宏观压力测试](../../07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)

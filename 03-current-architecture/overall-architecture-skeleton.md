@@ -484,3 +484,5 @@
 十面的非职责、禁止权力组合、默认不可信边界，以及未来超级模型下可替换外壳与不可替换稳定中心，见[负空间、反架构与未来替换骨架](./negative-space-and-future-replacement.md)；面向阅读的总图见[负空间与未来替换图](./text-diagrams/TXT-0018-negative-space-and-future-replacement.md)。
 
 S2～S7 扩展后对十面和七道完整性门的集中裁定，见[Skeleton v0.2 集中闭合复核](../07-analysis-and-validation/skeleton-v0.2-closure-review.md)；面向阅读的多坐标总图见[Skeleton v0.2 闭合总图](./text-diagrams/TXT-0019-skeleton-v0.2-closure.md)。
+
+跨辖域、联邦污染、全域拥塞、区域中断、供应链联合污染、超级模型、外部效果和历史重释八类极端压力的第一轮结果，见[Skeleton v0.3 第一轮宏观压力测试](../07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)；面向阅读的总图见[Skeleton v0.3 宏观压力测试图](./text-diagrams/TXT-0020-skeleton-v0.3-macro-stress.md)。
