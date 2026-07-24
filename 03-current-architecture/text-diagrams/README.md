@@ -24,6 +24,7 @@
 3. [TXT-0003：十面关系与依赖图](./TXT-0003-ten-plane-relationships.md)
 4. [TXT-0004：仙人—皇帝—三省六部图](./TXT-0004-emperor-and-court.md)
 5. [TXT-0005：系统上下文图](./TXT-0005-system-context.md)
+6. [TXT-0006：核心对象流转图](./TXT-0006-core-object-spine.md)
 
 ## 三、图示规范
 

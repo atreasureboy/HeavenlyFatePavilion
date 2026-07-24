@@ -268,11 +268,12 @@ Context Envelope
 - 皇帝身份、人格、记忆和运行实例的精确关系模型；
 - 外部行动的批准、补偿和责任机制；
 - 外部来源与模型的信任分级；
-- 核心对象主干及其跨边界流转。
+- 核心对象的完整 Schema 及跨边界协议细节；第一版对象主干已经建立。
 
 ## 十一、关联文档
 
 - [TXT-0005：系统上下文图](./text-diagrams/TXT-0005-system-context.md)
 - [整体架构骨架](./overall-architecture-skeleton.md)
+- [核心对象主干](../04-domain-design/core-object-spine.md)
 - [ADR-0003：多租户双重表达](../06-architecture-decisions/adrs/ADR-0003-multitenancy-dual-representation.md)
 - [ADR-0007：共享平台承载租户级逻辑朝廷](../06-architecture-decisions/adrs/ADR-0007-shared-platform-tenant-logical-courts.md)

@@ -17,3 +17,4 @@ ADR 一经接受不直接改写；需要改变决定时，创建新的 ADR 并�
 - [ADR-0005：拆分交互、产品、治理与领域并划定控制运行边界](./adrs/ADR-0005-separate-interaction-products-governance-domains-and-runtime.md)
 - [ADR-0006：采用五域分组、认知存储分离与共享情报主干](./adrs/ADR-0006-group-planes-separate-cognition-storage-and-share-intelligence-spine.md)
 - [ADR-0007：共享平台承载租户级逻辑朝廷](./adrs/ADR-0007-shared-platform-tenant-logical-courts.md)
+- [ADR-0008：采用有类型、可追溯的核心对象主干](./adrs/ADR-0008-typed-traceable-core-object-spine.md)
