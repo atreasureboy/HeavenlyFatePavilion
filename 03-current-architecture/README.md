@@ -4,43 +4,72 @@
 
 这里是“天机阁现在被定义成什么”的唯一主入口，不保存未经采纳的想法，也不承担解释全部历史。
 
-计划维护以下当前视图：
+当前架构只描述生效结果；形成原因进入 ADR，历史过程进入迭代记录，压力与闭合结论进入分析验证。
 
-1. 系统上下文；
-2. 总体逻辑架构；
-3. 仙人、皇帝与多租户模型；
-4. 三省六部治理架构；
-5. Agent 与确定性组件分层；
-6. 情报数据与证据架构；
-7. 运行时与任务执行架构；
-8. 身份、授权与安全架构；
-9. 部署、基础设施与多区域架构；
-10. 可观测性、审计和治理架构。
+## 一、推荐入口
 
-当前架构只描述生效结果；形成这些结果的原因应链接到相关 ADR 和迭代记录。
+1. [权威架构骨架索引：九层阅读树](./architecture-skeleton-index.md)
+2. [Skeleton v0.3 一屏全景图](./text-diagrams/TXT-0023-skeleton-v0.3-one-screen-panorama.md)
+3. [总体一级逻辑骨架](./overall-logical-skeleton.md)
+4. [整体架构骨架](./overall-architecture-skeleton.md)
+5. [文字架构图集](./text-diagrams/README.md)
 
-## 当前视图
+## 二、按架构层阅读
 
-- [文字架构图集：建议从这里开始看](./text-diagrams/README.md)
-- [Skeleton v0.3 一屏全景图](./text-diagrams/TXT-0023-skeleton-v0.3-one-screen-panorama.md)
+### L1：上下文与主权
+
 - [系统上下文与边界](./system-context.md)
-- [主体生态与分域主权骨架](./ecosystem-and-sovereignty.md)
-- [全局运行形态骨架](./operating-modes.md)
-- [七条全局流骨架](./global-flows.md)
-- [空间、时间与规模骨架](./spatiotemporal-and-scale-skeleton.md)
-- [非功能与生存性骨架](./nonfunctional-and-survivability-skeleton.md)
-- [负空间、反架构与未来替换骨架](./negative-space-and-future-replacement.md)
-- [Skeleton v0.2 集中闭合复核](../07-analysis-and-validation/skeleton-v0.2-closure-review.md)
-- [Skeleton v0.3 第一轮宏观压力测试](../07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)
-- [循环权威与单点认知复核](../07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)
-- [能力演进作用全域骨架](./evolution-across-entire-architecture.md)
-- [Skeleton v0.3 闭合与一级稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
-- [核心对象主干](../04-domain-design/core-object-spine.md)
-- [十面输入输出契约](./plane-contracts.md)
+- [主体生态与分域主权](./ecosystem-and-sovereignty.md)
+
+### L2：职责与能力
+
+- [五域十面一级骨架](./overall-logical-skeleton.md)
 - [十面二级能力树](./capability-trees/README.md)
-- [三省六部与公共官署映射](./organization-mapping/README.md)
+- [整体架构骨架](./overall-architecture-skeleton.md)
+
+### L3：组织治理映射
+
+- [皇帝、三省、六部与公共官署映射](./organization-mapping/README.md)
+
+### L4：对象与语义
+
+- [核心对象主干](../04-domain-design/core-object-spine.md)
+
+### L5：运行、流与契约
+
+- [全局运行形态](./operating-modes.md)
+- [七条全局流](./global-flows.md)
+- [十面输入输出契约](./plane-contracts.md)
 - [核心状态机与异常路由](../08-reference-models/state-machines/README.md)
-- [七维横切治理骨架](./cross-cutting/README.md)
+
+### L6：坐标与横切治理
+
+- [空间、时间与规模骨架](./spatiotemporal-and-scale-skeleton.md)
+- [七维横切治理](./cross-cutting/README.md)
+
+### L7：生存与负空间
+
+- [非功能与生存性骨架](./nonfunctional-and-survivability-skeleton.md)
+- [负空间、反架构与未来替换](./negative-space-and-future-replacement.md)
+
+### L8：全域演进
+
+- [能力演进作用全域骨架](./evolution-across-entire-architecture.md)
+
+### L9：场景与验证
+
 - [端到端场景与验证](../05-scenarios-and-flows/README.md)
-- [总体一级逻辑骨架](./overall-logical-skeleton.md)
-- [整体架构骨架：五域、十面、二级能力与核心闭环](./overall-architecture-skeleton.md)
+- [骨架完整性审计](../07-analysis-and-validation/skeleton-completeness-assessment.md)
+- [Skeleton v0.3 闭合与一级稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
+
+## 三、当前成熟度
+
+```text
+Skeleton v0.1：第一轮内部闭合
+Skeleton v0.2：第二轮宏观闭合
+Skeleton v0.3：第三轮宏观闭合
+
+当前下一步：Skeleton v1.0 正式就绪评审
+```
+
+在 v1.0 正式评审前，仍不进入数据库、协议、部署、算法或官署内部详细设计。

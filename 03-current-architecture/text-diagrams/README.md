@@ -17,33 +17,62 @@
 
 ## 二、图集索引
 
-建议按顺序阅读：
+图号表示稳定身份，不再作为推荐阅读顺序。图集按架构问题分为六组。
 
-若只想先建立完整心智模型，可以直接阅读 [TXT-0023：Skeleton v0.3 一屏全景图](./TXT-0023-skeleton-v0.3-one-screen-panorama.md)，再按需要回到下列专题图。
+### A：总览与一级职责
 
-1. [TXT-0001：整体全景图](./TXT-0001-overall-landscape.md)
-2. [TXT-0002：三条核心闭环图](./TXT-0002-three-core-loops.md)
-3. [TXT-0003：十面关系与依赖图](./TXT-0003-ten-plane-relationships.md)
-4. [TXT-0004：仙人—皇帝—三省六部图](./TXT-0004-emperor-and-court.md)
-5. [TXT-0005：系统上下文图](./TXT-0005-system-context.md)
-6. [TXT-0006：核心对象流转图](./TXT-0006-core-object-spine.md)
-7. [TXT-0007：十面输入输出契约图](./TXT-0007-plane-contracts.md)
-8. [TXT-0008：十面二级能力总树](./TXT-0008-capability-trees.md)
-9. [TXT-0009：组织—技术映射图](./TXT-0009-organization-technology-mapping.md)
-10. [TXT-0010：核心状态机与异常路由图](./TXT-0010-state-machines-and-exceptions.md)
-11. [TXT-0011：七维横切治理图](./TXT-0011-cross-cutting-governance.md)
-12. [TXT-0012：端到端正常与失败场景图](./TXT-0012-end-to-end-scenarios.md)
-13. [TXT-0013：主体生态与主权边界图](./TXT-0013-ecosystem-and-sovereignty.md)
-14. [TXT-0014：全局运行形态与转换图](./TXT-0014-operating-modes.md)
-15. [TXT-0015：七条全局流分离图](./TXT-0015-global-flow-separation.md)
-16. [TXT-0016：空间、时间与规模坐标图](./TXT-0016-spatiotemporal-and-scale.md)
-17. [TXT-0017：非功能与生存性总图](./TXT-0017-nonfunctional-and-survivability.md)
-18. [TXT-0018：负空间与未来替换图](./TXT-0018-negative-space-and-future-replacement.md)
-19. [TXT-0019：Skeleton v0.2 闭合总图](./TXT-0019-skeleton-v0.2-closure.md)
-20. [TXT-0020：Skeleton v0.3 宏观压力测试图](./TXT-0020-skeleton-v0.3-macro-stress.md)
-21. [TXT-0021：循环权威与单点认知图](./TXT-0021-authority-cycles-and-cognitive-concentration.md)
-22. [TXT-0022：能力演进作用全域图](./TXT-0022-evolution-across-entire-architecture.md)
-23. [TXT-0023：Skeleton v0.3 一屏全景图](./TXT-0023-skeleton-v0.3-one-screen-panorama.md)
+建议从这里建立心智模型：
+
+- [TXT-0023：Skeleton v0.3 一屏全景图](./TXT-0023-skeleton-v0.3-one-screen-panorama.md)
+- [TXT-0001：整体全景图](./TXT-0001-overall-landscape.md)
+- [TXT-0002：三条核心闭环图](./TXT-0002-three-core-loops.md)
+- [TXT-0003：十面关系与依赖图](./TXT-0003-ten-plane-relationships.md)
+- [TXT-0008：十面二级能力总树](./TXT-0008-capability-trees.md)
+
+### B：主体、组织与主权
+
+回答谁参与、权力来自哪里、古代官制怎样映射：
+
+- [TXT-0004：仙人—皇帝—三省六部图](./TXT-0004-emperor-and-court.md)
+- [TXT-0005：系统上下文图](./TXT-0005-system-context.md)
+- [TXT-0009：组织—技术映射图](./TXT-0009-organization-technology-mapping.md)
+- [TXT-0013：主体生态与主权边界图](./TXT-0013-ecosystem-and-sovereignty.md)
+
+### C：对象、运行与协作
+
+回答信息怎样成为情报、任务怎样运行、各面怎样交互：
+
+- [TXT-0006：核心对象流转图](./TXT-0006-core-object-spine.md)
+- [TXT-0007：十面输入输出契约图](./TXT-0007-plane-contracts.md)
+- [TXT-0010：核心状态机与异常路由图](./TXT-0010-state-machines-and-exceptions.md)
+- [TXT-0012：端到端正常与失败场景图](./TXT-0012-end-to-end-scenarios.md)
+- [TXT-0014：全局运行形态与转换图](./TXT-0014-operating-modes.md)
+- [TXT-0015：七条全局流分离图](./TXT-0015-global-flow-separation.md)
+
+### D：横切、尺度与生存
+
+回答系统在什么范围运行、始终受什么约束、失控时保住什么：
+
+- [TXT-0011：七维横切治理图](./TXT-0011-cross-cutting-governance.md)
+- [TXT-0016：空间、时间与规模坐标图](./TXT-0016-spatiotemporal-and-scale.md)
+- [TXT-0017：非功能与生存性总图](./TXT-0017-nonfunctional-and-survivability.md)
+- [TXT-0018：负空间与未来替换图](./TXT-0018-negative-space-and-future-replacement.md)
+
+### E：演进、风险与未来
+
+回答怎样避免自证、怎样面对超级模型、整个架构怎样安全改变：
+
+- [TXT-0021：循环权威与单点认知图](./TXT-0021-authority-cycles-and-cognitive-concentration.md)
+- [TXT-0022：能力演进作用全域图](./TXT-0022-evolution-across-entire-architecture.md)
+
+### F：闭合与压力验证
+
+回答为什么当前骨架可以称为阶段闭合：
+
+- [TXT-0019：Skeleton v0.2 闭合总图](./TXT-0019-skeleton-v0.2-closure.md)
+- [TXT-0020：Skeleton v0.3 宏观压力测试图](./TXT-0020-skeleton-v0.3-macro-stress.md)
+
+完整分层阅读树见[权威架构骨架索引](../architecture-skeleton-index.md)。
 
 ## 三、图示规范
 

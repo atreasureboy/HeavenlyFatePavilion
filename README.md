@@ -115,36 +115,27 @@ Agent Memory ≠ Intelligence Database
 
 ## 文档入口
 
-- [架构设计对话路线图](./ARCHITECTURE-DESIGN-ROADMAP.md)
-- [当前阶段：整体骨架扩展与完善计划](./02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)
-- [文档与迭代骨架](./DOCUMENTATION-STRUCTURE.md)
-- [架构总纲](./00-project-foundation/architecture-charter.md)
-- [当前架构](./03-current-architecture/README.md)
-- [⭐ 文字架构图集](./03-current-architecture/text-diagrams/README.md)
+### 先看骨架
+
+- [⭐ 权威架构骨架索引：九层阅读树](./03-current-architecture/architecture-skeleton-index.md)
 - [⭐ Skeleton v0.3 一屏全景图](./03-current-architecture/text-diagrams/TXT-0023-skeleton-v0.3-one-screen-panorama.md)
-- [系统上下文与边界](./03-current-architecture/system-context.md)
-- [主体生态与分域主权骨架](./03-current-architecture/ecosystem-and-sovereignty.md)
-- [全局运行形态骨架](./03-current-architecture/operating-modes.md)
-- [七条全局流骨架](./03-current-architecture/global-flows.md)
-- [空间、时间与规模骨架](./03-current-architecture/spatiotemporal-and-scale-skeleton.md)
-- [非功能与生存性骨架](./03-current-architecture/nonfunctional-and-survivability-skeleton.md)
-- [负空间、反架构与未来替换骨架](./03-current-architecture/negative-space-and-future-replacement.md)
-- [核心对象主干](./04-domain-design/core-object-spine.md)
-- [十面输入输出契约](./03-current-architecture/plane-contracts.md)
-- [十面二级能力树](./03-current-architecture/capability-trees/README.md)
-- [三省六部与公共官署映射](./03-current-architecture/organization-mapping/README.md)
-- [核心状态机与异常路由](./08-reference-models/state-machines/README.md)
-- [七维横切治理骨架](./03-current-architecture/cross-cutting/README.md)
-- [端到端场景与验证](./05-scenarios-and-flows/README.md)
-- [当前一级逻辑骨架](./03-current-architecture/overall-logical-skeleton.md)
-- [整体架构骨架](./03-current-architecture/overall-architecture-skeleton.md)
-- [骨架完整性审计](./07-analysis-and-validation/skeleton-completeness-assessment.md)
-- [Skeleton v0.2 集中闭合复核](./07-analysis-and-validation/skeleton-v0.2-closure-review.md)
-- [Skeleton v0.3 第一轮宏观压力测试](./07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)
-- [循环权威与单点认知复核](./07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)
-- [能力演进作用全域骨架](./03-current-architecture/evolution-across-entire-architecture.md)
-- [Skeleton v0.3 闭合与一级稳定性复核](./07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
+- [当前生效架构入口](./03-current-architecture/README.md)
+- [文字架构图集](./03-current-architecture/text-diagrams/README.md)
+
+### 再看依据
+
+- [架构总纲](./00-project-foundation/architecture-charter.md)
+- [架构决策记录](./06-architecture-decisions/README.md)
+- [场景与流程](./05-scenarios-and-flows/README.md)
+- [分析与验证](./07-analysis-and-validation/README.md)
+- [参考模型](./08-reference-models/README.md)
+
+### 最后看演进过程
+
+- [当前阶段计划](./02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)
 - [架构迭代](./02-architecture-iterations/README.md)
 - [思路实验室](./01-idea-lab/README.md)
+- [文档与迭代骨架](./DOCUMENTATION-STRUCTURE.md)
+- [架构设计对话路线图](./ARCHITECTURE-DESIGN-ROADMAP.md)
 
 后续设计将按领域架构、数据架构、Agent 治理、分布式运行、安全合规、可信质量、性能成本和架构演进等专题逐步展开。

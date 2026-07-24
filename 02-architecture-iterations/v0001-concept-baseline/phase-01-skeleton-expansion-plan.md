@@ -315,6 +315,25 @@ S7 没有发现新增一级逻辑面的必要。S2～S7 第一版广度扫描至
 
 v1.0 八项完成门槛预检查均已有证据，但本轮不直接晋级。下一步单独执行 `Skeleton v1.0` 正式就绪评审，裁定允许带入基线的保留项、基线冻结方式和后续专题入口。
 
+### v1.0 评审前骨架重新整理
+
+在不移动或删除既有文件的前提下，当前骨架重新组织为九层稳定阅读树：
+
+```text
+定位与前提
+→ 外部上下文与主权
+→ 一级逻辑职责
+→ 组织治理映射
+→ 情报语义与对象
+→ 全局运行与协作
+→ 架构坐标与横切治理
+→ 生存、负空间与信任边界
+→ 全域能力演进
+→ 骨架验证与版本闭合
+```
+
+本轮只整理信息架构，不改变十面、七流、四轴、七维或任何权威决定。根入口、当前架构入口和文字图集改为分层导航，已有编号与链接保持稳定。
+
 ## 七、关联
 
 - [整体架构骨架完整性审计](../../07-analysis-and-validation/skeleton-completeness-assessment.md)
@@ -332,3 +351,4 @@ v1.0 八项完成门槛预检查均已有证据，但本轮不直接晋级。下
 - [循环权威与单点认知复核](../../07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)
 - [能力演进作用全域骨架](../../03-current-architecture/evolution-across-entire-architecture.md)
 - [Skeleton v0.3 闭合与一级稳定性复核](../../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
+- [权威架构骨架索引](../../03-current-architecture/architecture-skeleton-index.md)

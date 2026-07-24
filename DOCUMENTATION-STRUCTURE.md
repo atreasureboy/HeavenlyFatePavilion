@@ -42,6 +42,8 @@ Current Architecture
 
 `03-current-architecture/text-diagrams` 是当前架构的文字图集。它面向人类建立架构心智模型，属于第一等架构视图，但不替代正文和 ADR。
 
+`03-current-architecture/architecture-skeleton-index.md` 是当前骨架的稳定分层导航。它按定位、上下文、职责、组织、语义、运行、横切、生存、演进和验证组织阅读入口，但不复制各正文，也不改变文件的历史位置。
+
 ## 三、迭代规则
 
 每轮重要迭代建立独立目录：

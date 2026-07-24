@@ -131,6 +131,7 @@ Infrastructure Bearing ≠ Logical Authority
 
 ## 七、权威来源
 
+- [权威架构骨架索引](../architecture-skeleton-index.md)
 - [总体一级逻辑骨架](../overall-logical-skeleton.md)
 - [整体架构骨架](../overall-architecture-skeleton.md)
 - [Skeleton v0.3 闭合与一级稳定性复核](../../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
