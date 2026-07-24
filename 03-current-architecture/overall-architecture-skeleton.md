@@ -478,3 +478,5 @@
 控制、数据、知识、授权、预算、审计和反馈七种全局流的独立语义及交叉关系，见[七条全局流骨架](./global-flows.md)；面向阅读的总图见[七条全局流分离图](./text-diagrams/TXT-0015-global-flow-separation.md)。
 
 单用户到多租户与联合空间、本地到全球、瞬时交互到跨年演化、小查询到全域持续感知，以及模型能力代际变化的四轴坐标，见[空间、时间与规模骨架](./spatiotemporal-and-scale-skeleton.md)；面向阅读的总图见[空间、时间与规模坐标图](./text-diagrams/TXT-0016-spatiotemporal-and-scale.md)。
+
+可靠性、安全、隐私、合规、一致性、恢复、解释、停止和人类主权如何共同形成最低生存能力，见[非功能与生存性骨架](./nonfunctional-and-survivability-skeleton.md)；面向阅读的总图见[非功能与生存性总图](./text-diagrams/TXT-0017-nonfunctional-and-survivability.md)。

@@ -126,6 +126,7 @@ Agent Memory ≠ Intelligence Database
 - [全局运行形态骨架](./03-current-architecture/operating-modes.md)
 - [七条全局流骨架](./03-current-architecture/global-flows.md)
 - [空间、时间与规模骨架](./03-current-architecture/spatiotemporal-and-scale-skeleton.md)
+- [非功能与生存性骨架](./03-current-architecture/nonfunctional-and-survivability-skeleton.md)
 - [核心对象主干](./04-domain-design/core-object-spine.md)
 - [十面输入输出契约](./03-current-architecture/plane-contracts.md)
 - [十面二级能力树](./03-current-architecture/capability-trees/README.md)
