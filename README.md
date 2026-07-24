@@ -116,6 +116,7 @@ Agent Memory ≠ Intelligence Database
 ## 文档入口
 
 - [架构设计对话路线图](./ARCHITECTURE-DESIGN-ROADMAP.md)
+- [当前阶段：整体骨架扩展与完善计划](./02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)
 - [文档与迭代骨架](./DOCUMENTATION-STRUCTURE.md)
 - [架构总纲](./00-project-foundation/architecture-charter.md)
 - [当前架构](./03-current-architecture/README.md)
