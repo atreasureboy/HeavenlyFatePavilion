@@ -10,7 +10,7 @@
 - 人类主权与 Agent 权限边界；
 - 高级 Agent 与确定性工具的分工；
 - 单租户朝廷如何扩展成多租户平台；
-- AgentOS 与天机阁业务系统的边界；
+- 天机阁自身智能运行系统与 AgentOS 等外部参考项目的边界；
 - 原始资料、证据、主张、事实和研判的基本关系。
 
 ## 当前输入
@@ -26,6 +26,7 @@
 - 从实际业务、Agent 经济性、宏观分解和多租户用户需求四个视角修复骨架，避免架构只从官制类比出发。
 - 阶段 1 访谈确认现实交付物是架构本身而非实现；虚构系统暂不预设封闭功能领域，并提出“能力开放、权力受限”的最高原则候选。
 - 当前第一阶段优先目标调整为整体架构骨架：先确定根节点、一级架构面、二级能力域和横切维度，再进入安全、权限及其他局部专题。
+- 业务主干增加数据关联、Diff 与变化关联、推势、卜算和风险告警；三省六部采用混合结构；新增一级自我迭代面；AgentOS 降为外部参考项目。
 
 ## 待产出
 
@@ -42,6 +43,7 @@
 
 - [架构设计对话路线图](../../ARCHITECTURE-DESIGN-ROADMAP.md)
 - [阶段 1：整体架构骨架访谈](./phase-01-overall-skeleton-interview.md)
+- [骨架修订：关联、察变、推势与自我迭代](./skeleton-revision-intelligence-and-evolution.md)
 - [阶段 1：北极星、边界与非目标访谈](./phase-01-north-star-boundary-interview.md)
 - [候选终局架构地图](./proposed-architecture-map.md)
 - [Agent / Tool 职责分配基础骨架](./agent-tool-allocation-baseline.md)

@@ -45,17 +45,17 @@
 三省六部 / 实体 / 事件 / 事实 / 证据 / 情报产品
                             │
                             ▼
-AgentOS 运行基座
-Run / Task / Worker / Tool / Memory / Scheduler / Event Log
+天机阁智能执行与运行系统
+Agent / Run / Task / Worker / Tool / Skill / Scheduler / Event Log
                             │
                             ▼
 企业基础设施
 数据库 / 搜索 / 图谱 / 对象存储 / 队列 / 模型 / 计算节点
 ```
 
-AgentOS 解决 Agent 如何安全、并发、可控且可审计地运行。
+天机阁智能执行与运行系统解决 Agent 和确定性组件如何并发、可控且可审计地工作。它可以借鉴外部 AgentOS 项目，但不依赖其实现。
 
-天机阁解决合法信息如何被收集、关联、验证并转化为情报产品。
+天机阁解决合法信息如何被收集、清洗、整理、关联、验证，并进一步转化为变化、态势、趋势、风险和情报产品。
 
 ## 四、核心业务主链
 
@@ -68,8 +68,11 @@ Source
   → Verification
   → Fact / Disputed Claim
   → Entity / Event / Relationship
-  → Signal
-  → Assessment
+  → Diff / Change
+  → Correlation
+  → Signal / Assessment
+  → Trend / Forecast
+  → Risk
   → Intelligence Product
 ```
 
