@@ -231,14 +231,18 @@ Court Profile 属于平台控制面的长期期望状态；它不是某次 Run �
 ```text
 Context Envelope
 ├── tenant_id
+├── data_scope / collaboration_space_id
 ├── subject_id / actor_type
+├── delegation_chain
 ├── emperor_identity_id
 ├── court_profile_version
 ├── mission_id / run_id / task_id
-├── authorization_context
+├── authorization_context / policy_set_version
 ├── budget_context
 ├── risk_context
 ├── evidence_requirement
+├── quality_profile
+├── lifecycle_context
 ├── trace_id / causation_id
 └── time_context
 ```
@@ -277,3 +281,4 @@ Context Envelope
 - [核心对象主干](../04-domain-design/core-object-spine.md)
 - [ADR-0003：多租户双重表达](../06-architecture-decisions/adrs/ADR-0003-multitenancy-dual-representation.md)
 - [ADR-0007：共享平台承载租户级逻辑朝廷](../06-architecture-decisions/adrs/ADR-0007-shared-platform-tenant-logical-courts.md)
+- [七维横切治理骨架](./cross-cutting/README.md)

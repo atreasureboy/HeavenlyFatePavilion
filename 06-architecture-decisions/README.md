@@ -22,3 +22,4 @@ ADR 一经接受不直接改写；需要改变决定时，创建新的 ADR 并�
 - [ADR-0010：能力树只按稳定业务能力分类](./adrs/ADR-0010-capability-only-taxonomy.md)
 - [ADR-0011：官制组织与技术所有权分离](./adrs/ADR-0011-separate-narrative-organization-from-technical-ownership.md)
 - [ADR-0012：所有关键状态通过显式事件转换](./adrs/ADR-0012-explicit-event-driven-state-transitions.md)
+- [ADR-0013：横切治理采用强制上下文传播与确定性执行点](./adrs/ADR-0013-mandatory-cross-cutting-context-and-enforcement.md)

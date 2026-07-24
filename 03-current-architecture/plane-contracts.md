@@ -65,6 +65,8 @@ Plane Contract Envelope
 ├── authorization_context
 ├── budget_context
 ├── risk_context
+├── quality_context
+├── lifecycle_context
 ├── deadline / priority
 ├── idempotency_key
 ├── trace_id / causation_id

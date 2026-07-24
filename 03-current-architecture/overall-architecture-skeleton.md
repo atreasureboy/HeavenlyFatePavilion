@@ -466,3 +466,5 @@
 皇帝、三省、六部和公共官署到十面能力及技术形态的正式映射见[组织—技术映射](./organization-mapping/README.md)。
 
 任务、知识、研判、风险、产品与能力版本的生命周期，以及统一异常分类和路由，见[核心状态机与异常路由](../08-reference-models/state-machines/README.md)；面向阅读的总图见[状态机与异常路径总图](./text-diagrams/TXT-0010-state-machines-and-exceptions.md)。
+
+多租户、身份权限、证据血缘、预算资源、风险质量、审计追踪和数据生命周期的统一传播、强制点、不变量及十面责任，见[七维横切治理骨架](./cross-cutting/README.md)；面向阅读的总图见[七维横切治理图](./text-diagrams/TXT-0011-cross-cutting-governance.md)。
