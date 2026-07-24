@@ -26,5 +26,6 @@
 - [核心对象主干](../04-domain-design/core-object-spine.md)
 - [十面输入输出契约](./plane-contracts.md)
 - [十面二级能力树](./capability-trees/README.md)
+- [三省六部与公共官署映射](./organization-mapping/README.md)
 - [总体一级逻辑骨架](./overall-logical-skeleton.md)
 - [整体架构骨架：五域、十面、二级能力与核心闭环](./overall-architecture-skeleton.md)

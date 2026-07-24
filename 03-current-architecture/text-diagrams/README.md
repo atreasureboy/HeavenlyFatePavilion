@@ -27,6 +27,7 @@
 6. [TXT-0006：核心对象流转图](./TXT-0006-core-object-spine.md)
 7. [TXT-0007：十面输入输出契约图](./TXT-0007-plane-contracts.md)
 8. [TXT-0008：十面二级能力总树](./TXT-0008-capability-trees.md)
+9. [TXT-0009：组织—技术映射图](./TXT-0009-organization-technology-mapping.md)
 
 ## 三、图示规范
 
