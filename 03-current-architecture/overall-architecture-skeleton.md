@@ -22,6 +22,8 @@
 
 当前成熟度是“一级骨架已建立，整体骨架正在闭合”，不能解释为所有接口、对象、状态和横切关系已经完善。完整性缺口见[整体架构骨架完整性审计](../07-analysis-and-validation/skeleton-completeness-assessment.md)。
 
+本文中的二级树用于总体阅读；当前权威、类型一致的完整能力分类见[十面二级能力树](./capability-trees/README.md)。
+
 ## 二、五域、十面、一底座、七横切
 
 ```text
