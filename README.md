@@ -92,6 +92,8 @@ AgentOS 是独立的参考项目，不是天机阁当前架构的组成部分或
 
 数据底座是独立一级架构面；基础设施是所有逻辑架构面的共同承载底座，不与业务和智能能力并列为一级逻辑面。
 
+当前一级逻辑骨架由十个职责面构成：人机交互、情报产品、数据认知、情报研判、智能治理、领域能力、智能执行与运行、数据底座、平台控制和能力演进。平台控制面维护长期期望状态，智能执行与运行面承载具体任务的即时执行状态。
+
 ## 核心设计原则
 
 ```text
@@ -117,6 +119,7 @@ Agent Memory ≠ Intelligence Database
 - [文档与迭代骨架](./DOCUMENTATION-STRUCTURE.md)
 - [架构总纲](./00-project-foundation/architecture-charter.md)
 - [当前架构](./03-current-architecture/README.md)
+- [当前一级逻辑骨架](./03-current-architecture/overall-logical-skeleton.md)
 - [架构迭代](./02-architecture-iterations/README.md)
 - [思路实验室](./01-idea-lab/README.md)
 
