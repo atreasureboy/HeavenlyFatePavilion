@@ -299,6 +299,14 @@ S7 没有发现新增一级逻辑面的必要。S2～S7 第一版广度扫描至
 
 本轮没有新增一级面、全局流或横切维度，十面稳定性保持。下一步建立能力演进作用全域图。
 
+### Skeleton v0.3 能力演进作用全域
+
+本轮把演进对象整理为体验、产品、认识研判、领域、治理组织、运行、知识数据、平台横切、承载架构九类，并建立 R1 局部替换至 R5 架构骨架五级变更半径。
+
+能力演进面拥有观察、缺口、候选、实验、评测、影响分析和采用建议；对象所有面保留领域验收，治理与有权人类保留高影响采用，平台控制负责发布期望状态，运行面负责实际生效，数据底座保存证据和历史。
+
+本轮确认全域覆盖不等于全域所有权；自主程度也不等于变更半径。没有新增或拆分一级面的必要，十面稳定性保持。`Skeleton v0.3` 只剩一屏全景汇总与一级稳定性复核。
+
 ## 七、关联
 
 - [整体架构骨架完整性审计](../../07-analysis-and-validation/skeleton-completeness-assessment.md)
@@ -314,3 +322,4 @@ S7 没有发现新增一级逻辑面的必要。S2～S7 第一版广度扫描至
 - [Skeleton v0.2 集中闭合复核](../../07-analysis-and-validation/skeleton-v0.2-closure-review.md)
 - [Skeleton v0.3 第一轮宏观压力测试](../../07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)
 - [循环权威与单点认知复核](../../07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)
+- [能力演进作用全域骨架](../../03-current-architecture/evolution-across-entire-architecture.md)

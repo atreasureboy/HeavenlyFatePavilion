@@ -32,6 +32,7 @@
 - [Skeleton v0.2 集中闭合复核](../07-analysis-and-validation/skeleton-v0.2-closure-review.md)
 - [Skeleton v0.3 第一轮宏观压力测试](../07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)
 - [循环权威与单点认知复核](../07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)
+- [能力演进作用全域骨架](./evolution-across-entire-architecture.md)
 - [核心对象主干](../04-domain-design/core-object-spine.md)
 - [十面输入输出契约](./plane-contracts.md)
 - [十面二级能力树](./capability-trees/README.md)

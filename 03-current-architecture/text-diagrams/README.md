@@ -40,6 +40,7 @@
 19. [TXT-0019：Skeleton v0.2 闭合总图](./TXT-0019-skeleton-v0.2-closure.md)
 20. [TXT-0020：Skeleton v0.3 宏观压力测试图](./TXT-0020-skeleton-v0.3-macro-stress.md)
 21. [TXT-0021：循环权威与单点认知图](./TXT-0021-authority-cycles-and-cognitive-concentration.md)
+22. [TXT-0022：能力演进作用全域图](./TXT-0022-evolution-across-entire-architecture.md)
 
 ## 三、图示规范
 

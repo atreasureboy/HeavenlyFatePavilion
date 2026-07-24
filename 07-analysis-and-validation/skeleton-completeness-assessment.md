@@ -165,11 +165,9 @@ Intent
 
 ### 3.9 文字图集仍缺关键视图
 
-当前已有总览、闭环、十面关系、朝廷、系统上下文、核心对象、十面契约、能力总树、组织映射、状态异常、横切治理、端到端场景、主体生态、运行形态、七流分离、时空规模坐标、生存性和负空间总图。后续专题仍可补充：
+当前已有总览、闭环、十面关系、朝廷、系统上下文、核心对象、十面契约、能力总树、组织映射、状态异常、横切治理、端到端场景、主体生态、运行形态、七流分离、时空规模坐标、生存性、负空间、压力测试、循环权威和能力演进全域图。
 
-- 能力演进作用全域图。
-
-这些视图不是局部细节，而是下一轮扩大和完善整体骨架时需要补齐的全局视角。
+能力演进作用全域图已经补齐。当前剩余的是把这些视图压缩为一张可一屏阅读的 v0.3 全景图，并执行一级稳定性复核。
 
 ### 3.10 端到端场景已经完成第一版闭合验证
 
@@ -247,7 +245,9 @@ S3 建立十种运行形态；S4 将七条全局流分开；S5 建立四条正�
 
 `Skeleton v0.3` 第一轮八类宏观压力测试已经通过：十面、七流、四轴和七个横切维度保持稳定，发现的相关失效、派生义务传播和跨能力代际可回放均可回写现有结构。
 
-循环权威与单点认知复核也已完成：识别 8 类危险回路和 10 类认知集中点，通过权威来源、独立挑战、分歧保留、现实锚点、确定性强制及按风险启用反证断环。未发现新一级面。v0.3 仍待能力演进全域图和一屏全景复核，因此尚未闭合。
+循环权威与单点认知复核也已完成：识别 8 类危险回路和 10 类认知集中点，通过权威来源、独立挑战、分歧保留、现实锚点、确定性强制及按风险启用反证断环。未发现新一级面。
+
+能力演进全域图现已完成：九类演进对象、五级变更半径、三层嵌套循环和采用权分离均能由现有十面承载。能力演进面继续保持独立，但不取得他面采用权。v0.3 只剩一屏全景汇总与一级稳定性复核，尚未闭合。
 
 ## 六、关联文档
 
@@ -276,6 +276,8 @@ S3 建立十种运行形态；S4 将七条全局流分开；S5 建立四条正�
 - [Skeleton v0.3 宏观压力测试图](../03-current-architecture/text-diagrams/TXT-0020-skeleton-v0.3-macro-stress.md)
 - [循环权威与单点认知复核](./authority-cycles-and-cognitive-concentration-review.md)
 - [循环权威与单点认知图](../03-current-architecture/text-diagrams/TXT-0021-authority-cycles-and-cognitive-concentration.md)
+- [能力演进作用全域骨架](../03-current-architecture/evolution-across-entire-architecture.md)
+- [能力演进作用全域图](../03-current-architecture/text-diagrams/TXT-0022-evolution-across-entire-architecture.md)
 - [文字架构图集](../03-current-architecture/text-diagrams/README.md)
 - [阶段 1：整体架构骨架访谈](../02-architecture-iterations/v0001-concept-baseline/phase-01-overall-skeleton-interview.md)
 - [阶段 1：整体骨架扩展与完善计划](../02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)

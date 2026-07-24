@@ -141,6 +141,7 @@ Agent Memory ≠ Intelligence Database
 - [Skeleton v0.2 集中闭合复核](./07-analysis-and-validation/skeleton-v0.2-closure-review.md)
 - [Skeleton v0.3 第一轮宏观压力测试](./07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)
 - [循环权威与单点认知复核](./07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)
+- [能力演进作用全域骨架](./03-current-architecture/evolution-across-entire-architecture.md)
 - [架构迭代](./02-architecture-iterations/README.md)
 - [思路实验室](./01-idea-lab/README.md)
 
