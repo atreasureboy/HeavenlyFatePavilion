@@ -13,3 +13,4 @@ ADR 一经接受不直接改写；需要改变决定时，创建新的 ADR 并�
 - [ADR-0001：拆分数据认知面与情报研判面](./adrs/ADR-0001-split-cognition-and-assessment-planes.md)
 - [ADR-0002：建立覆盖全系统的能力演进面](./adrs/ADR-0002-system-wide-evolution-plane.md)
 - [ADR-0003：多租户采用控制子域与横切上下文双重表达](./adrs/ADR-0003-multitenancy-dual-representation.md)
+- [ADR-0004：固定皇帝、数据底座与基础设施的顶层位置](./adrs/ADR-0004-emperor-data-foundation-infrastructure-placement.md)

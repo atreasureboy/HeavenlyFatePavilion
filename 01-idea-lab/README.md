@@ -17,3 +17,6 @@
 
 - [自顶向下的完整架构骨架](./hypotheses/top-down-complete-architecture-skeleton.md)
 
+## 当前重点类比
+
+- [皇帝作为红后、EVA、贾维斯式智能中枢](./analogies/emperor-as-ambient-intelligence-core.md)
