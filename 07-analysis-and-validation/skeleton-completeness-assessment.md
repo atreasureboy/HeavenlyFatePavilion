@@ -245,7 +245,9 @@ S3 建立十种运行形态；S4 将七条全局流分开；S5 建立四条正�
 
 因此，当前可以宣布“天机阁 `Skeleton v0.2` 完成第二轮宏观闭合”，但仍需通过宏观压力场景、全局视图闭合和至少另一轮一级稳定性扫描，才能继续逼近 `Skeleton v1.0`。
 
-`Skeleton v0.3` 第一轮八类宏观压力测试已经通过：十面、七流、四轴和七个横切维度保持稳定，发现的相关失效、派生义务传播和跨能力代际可回放均可回写现有结构。v0.3 尚未完成循环权威、单点认知、能力演进全域图和一屏全景复核，因此尚未闭合。
+`Skeleton v0.3` 第一轮八类宏观压力测试已经通过：十面、七流、四轴和七个横切维度保持稳定，发现的相关失效、派生义务传播和跨能力代际可回放均可回写现有结构。
+
+循环权威与单点认知复核也已完成：识别 8 类危险回路和 10 类认知集中点，通过权威来源、独立挑战、分歧保留、现实锚点、确定性强制及按风险启用反证断环。未发现新一级面。v0.3 仍待能力演进全域图和一屏全景复核，因此尚未闭合。
 
 ## 六、关联文档
 
@@ -272,6 +274,8 @@ S3 建立十种运行形态；S4 将七条全局流分开；S5 建立四条正�
 - [Skeleton v0.2 闭合总图](../03-current-architecture/text-diagrams/TXT-0019-skeleton-v0.2-closure.md)
 - [Skeleton v0.3 第一轮宏观压力测试](./skeleton-v0.3-macro-stress-test.md)
 - [Skeleton v0.3 宏观压力测试图](../03-current-architecture/text-diagrams/TXT-0020-skeleton-v0.3-macro-stress.md)
+- [循环权威与单点认知复核](./authority-cycles-and-cognitive-concentration-review.md)
+- [循环权威与单点认知图](../03-current-architecture/text-diagrams/TXT-0021-authority-cycles-and-cognitive-concentration.md)
 - [文字架构图集](../03-current-architecture/text-diagrams/README.md)
 - [阶段 1：整体架构骨架访谈](../02-architecture-iterations/v0001-concept-baseline/phase-01-overall-skeleton-interview.md)
 - [阶段 1：整体骨架扩展与完善计划](../02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)

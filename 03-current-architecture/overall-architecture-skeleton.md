@@ -486,3 +486,5 @@
 S2～S7 扩展后对十面和七道完整性门的集中裁定，见[Skeleton v0.2 集中闭合复核](../07-analysis-and-validation/skeleton-v0.2-closure-review.md)；面向阅读的多坐标总图见[Skeleton v0.2 闭合总图](./text-diagrams/TXT-0019-skeleton-v0.2-closure.md)。
 
 跨辖域、联邦污染、全域拥塞、区域中断、供应链联合污染、超级模型、外部效果和历史重释八类极端压力的第一轮结果，见[Skeleton v0.3 第一轮宏观压力测试](../07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)；面向阅读的总图见[Skeleton v0.3 宏观压力测试图](./text-diagrams/TXT-0020-skeleton-v0.3-macro-stress.md)。
+
+皇帝自授、治理提权、确认偏差、产品干预、热度放大、重复引用、模型自评和联邦互证等循环权威，以及多 Agent 共享同一认知根的风险，见[循环权威与单点认知复核](../07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)；面向阅读的总图见[循环权威与单点认知图](./text-diagrams/TXT-0021-authority-cycles-and-cognitive-concentration.md)。

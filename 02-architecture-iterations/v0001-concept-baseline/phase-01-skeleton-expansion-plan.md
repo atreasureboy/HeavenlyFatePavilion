@@ -289,7 +289,15 @@ S7 没有发现新增一级逻辑面的必要。S2～S7 第一版广度扫描至
 
 本轮加强三项宏观关系：相关失效域不能被默认独立；来源限制、纠正义务和影响责任随对象传播；跨年知识需要绑定当时的能力代际以支持回放。
 
-`Skeleton v0.3` 尚未闭合。下一步继续检查循环权威和单点认知，再建立能力演进作用全域图与一屏全景。
+该轮压力测试结束时，`Skeleton v0.3` 尚未闭合；随后进入循环权威和单点认知复核，再建立能力演进作用全域图与一屏全景。
+
+### Skeleton v0.3 循环权威与单点认知复核
+
+本轮识别 8 类危险循环和 10 类单点认知，确认多个 Agent、模型、来源、区域或审核者不自动构成独立判断。
+
+宏观断环依靠：权威来源可追溯、挑战路径独立、分歧可持久、现实锚点独立、确定性边界位于 Agent 之外，以及按风险购买认知独立性。低风险任务保持单路径与 Tool 校验，高风险任务才引入不共享失败根的反证、独立审核和必要人类裁定。
+
+本轮没有新增一级面、全局流或横切维度，十面稳定性保持。下一步建立能力演进作用全域图。
 
 ## 七、关联
 
@@ -305,3 +313,4 @@ S7 没有发现新增一级逻辑面的必要。S2～S7 第一版广度扫描至
 - [负空间、反架构与未来替换骨架](../../03-current-architecture/negative-space-and-future-replacement.md)
 - [Skeleton v0.2 集中闭合复核](../../07-analysis-and-validation/skeleton-v0.2-closure-review.md)
 - [Skeleton v0.3 第一轮宏观压力测试](../../07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)
+- [循环权威与单点认知复核](../../07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)
