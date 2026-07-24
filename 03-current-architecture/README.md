@@ -26,6 +26,7 @@
 - [主体生态与分域主权骨架](./ecosystem-and-sovereignty.md)
 - [全局运行形态骨架](./operating-modes.md)
 - [七条全局流骨架](./global-flows.md)
+- [空间、时间与规模骨架](./spatiotemporal-and-scale-skeleton.md)
 - [核心对象主干](../04-domain-design/core-object-spine.md)
 - [十面输入输出契约](./plane-contracts.md)
 - [十面二级能力树](./capability-trees/README.md)

@@ -34,6 +34,7 @@
 13. [TXT-0013：主体生态与主权边界图](./TXT-0013-ecosystem-and-sovereignty.md)
 14. [TXT-0014：全局运行形态与转换图](./TXT-0014-operating-modes.md)
 15. [TXT-0015：七条全局流分离图](./TXT-0015-global-flow-separation.md)
+16. [TXT-0016：空间、时间与规模坐标图](./TXT-0016-spatiotemporal-and-scale.md)
 
 ## 三、图示规范
 
