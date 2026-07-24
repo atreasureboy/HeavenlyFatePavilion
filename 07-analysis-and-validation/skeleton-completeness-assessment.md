@@ -165,7 +165,7 @@ Intent
 
 ### 3.9 文字图集仍缺关键视图
 
-当前已有总览、闭环、十面关系、朝廷、系统上下文、核心对象、十面契约、能力总树、组织映射、状态异常、横切治理、端到端场景、主体生态、运行形态、七流分离、时空规模坐标和生存性总图。后续专题仍可补充：
+当前已有总览、闭环、十面关系、朝廷、系统上下文、核心对象、十面契约、能力总树、组织映射、状态异常、横切治理、端到端场景、主体生态、运行形态、七流分离、时空规模坐标、生存性和负空间总图。后续专题仍可补充：
 
 - 能力演进作用全域图。
 
@@ -191,17 +191,19 @@ Intent
 
 ### 3.11 Skeleton v0.2 扩展进度
 
-`S2：主体、生态与主权边界`、`S3：全局流与多种运行形态`、`S4：控制、数据、知识与反馈分流`、`S5：空间、时间与规模骨架` 和 `S6：非功能与生存性骨架` 已完成第一版扫描。
+`S2：主体、生态与主权边界` 至 `S7：负空间、反架构与未来替换` 已完成第一版扫描。
 
-S3 建立十种运行形态；S4 将控制、数据、知识、授权、预算、审计和反馈拆成七条可独立阅读的全局流；S5 建立作用域、辖域、时间和规模四条正交扩展轴；S6 建立四类完整性、最低生存内核、六阶段防线和八类失效域。详细对象、状态、协议和实现均未在这些扫描中展开。
+S3 建立十种运行形态；S4 将七条全局流分开；S5 建立四条正交扩展轴；S6 建立四类完整性、最低生存内核、六阶段防线和八类失效域；S7 补齐负职责、禁止权力组合、默认不可信边界与未来替换判断。详细对象、状态、协议和实现均未在这些扫描中展开。
 
-本轮新增结构均能通过系统上下文、对象主干、状态机、横切治理和现有十面表达，暂未形成新增一级逻辑面的证据。下一项宏观扫描是：
+各扫描单独看均未形成新增一级逻辑面的证据。下一步进行集中回看：
 
 ```text
-S7：负空间、反架构与未来替换
+重新评估十面
+→ 用七道完整性门检查新增骨架
+→ 判断 Skeleton v0.2 是否形成第二轮闭合
 ```
 
-它将检查哪些职责和权力组合必须禁止，哪些结构只是当前模型时代的临时形态，未来超级模型出现后哪些节点可以替换或合并、哪些制衡仍不得取消，并明确系统不能默认信任的外部能力。
+在这次回看完成前，不宣布 `Skeleton v0.2` 已经闭合，也不进入局部专题深化。
 
 ## 四、建议完成顺序
 
@@ -262,6 +264,8 @@ S7：负空间、反架构与未来替换
 - [空间、时间与规模坐标图](../03-current-architecture/text-diagrams/TXT-0016-spatiotemporal-and-scale.md)
 - [非功能与生存性骨架](../03-current-architecture/nonfunctional-and-survivability-skeleton.md)
 - [非功能与生存性总图](../03-current-architecture/text-diagrams/TXT-0017-nonfunctional-and-survivability.md)
+- [负空间、反架构与未来替换骨架](../03-current-architecture/negative-space-and-future-replacement.md)
+- [负空间与未来替换图](../03-current-architecture/text-diagrams/TXT-0018-negative-space-and-future-replacement.md)
 - [文字架构图集](../03-current-architecture/text-diagrams/README.md)
 - [阶段 1：整体架构骨架访谈](../02-architecture-iterations/v0001-concept-baseline/phase-01-overall-skeleton-interview.md)
 - [阶段 1：整体骨架扩展与完善计划](../02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)

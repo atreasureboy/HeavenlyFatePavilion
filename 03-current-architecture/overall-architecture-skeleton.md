@@ -480,3 +480,5 @@
 单用户到多租户与联合空间、本地到全球、瞬时交互到跨年演化、小查询到全域持续感知，以及模型能力代际变化的四轴坐标，见[空间、时间与规模骨架](./spatiotemporal-and-scale-skeleton.md)；面向阅读的总图见[空间、时间与规模坐标图](./text-diagrams/TXT-0016-spatiotemporal-and-scale.md)。
 
 可靠性、安全、隐私、合规、一致性、恢复、解释、停止和人类主权如何共同形成最低生存能力，见[非功能与生存性骨架](./nonfunctional-and-survivability-skeleton.md)；面向阅读的总图见[非功能与生存性总图](./text-diagrams/TXT-0017-nonfunctional-and-survivability.md)。
+
+十面的非职责、禁止权力组合、默认不可信边界，以及未来超级模型下可替换外壳与不可替换稳定中心，见[负空间、反架构与未来替换骨架](./negative-space-and-future-replacement.md)；面向阅读的总图见[负空间与未来替换图](./text-diagrams/TXT-0018-negative-space-and-future-replacement.md)。
