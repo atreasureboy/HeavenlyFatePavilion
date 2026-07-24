@@ -117,8 +117,9 @@ Agent Memory ≠ Intelligence Database
 
 ### 先看骨架
 
+- [⭐ Skeleton v1.0 基线声明](./03-current-architecture/skeleton-v1.0-baseline.md)
+- [⭐ Skeleton v1.0 基线封版图](./03-current-architecture/text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
 - [⭐ 权威架构骨架索引：九层阅读树](./03-current-architecture/architecture-skeleton-index.md)
-- [⭐ Skeleton v0.3 一屏全景图](./03-current-architecture/text-diagrams/TXT-0023-skeleton-v0.3-one-screen-panorama.md)
 - [当前生效架构入口](./03-current-architecture/README.md)
 - [文字架构图集](./03-current-architecture/text-diagrams/README.md)
 
@@ -128,6 +129,7 @@ Agent Memory ≠ Intelligence Database
 - [架构决策记录](./06-architecture-decisions/README.md)
 - [场景与流程](./05-scenarios-and-flows/README.md)
 - [分析与验证](./07-analysis-and-validation/README.md)
+- [Skeleton v1.0 正式就绪评审](./07-analysis-and-validation/skeleton-v1.0-readiness-review.md)
 - [参考模型](./08-reference-models/README.md)
 
 ### 最后看演进过程

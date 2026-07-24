@@ -1,6 +1,6 @@
 # 当前生效架构
 
-状态：Draft
+状态：Accepted
 
 这里是“天机阁现在被定义成什么”的唯一主入口，不保存未经采纳的想法，也不承担解释全部历史。
 
@@ -8,11 +8,12 @@
 
 ## 一、推荐入口
 
-1. [权威架构骨架索引：九层阅读树](./architecture-skeleton-index.md)
-2. [Skeleton v0.3 一屏全景图](./text-diagrams/TXT-0023-skeleton-v0.3-one-screen-panorama.md)
-3. [总体一级逻辑骨架](./overall-logical-skeleton.md)
-4. [整体架构骨架](./overall-architecture-skeleton.md)
-5. [文字架构图集](./text-diagrams/README.md)
+1. [Skeleton v1.0 基线声明](./skeleton-v1.0-baseline.md)
+2. [权威架构骨架索引：九层阅读树](./architecture-skeleton-index.md)
+3. [Skeleton v1.0 基线封版图](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
+4. [总体一级逻辑骨架](./overall-logical-skeleton.md)
+5. [整体架构骨架](./overall-architecture-skeleton.md)
+6. [文字架构图集](./text-diagrams/README.md)
 
 ## 二、按架构层阅读
 
@@ -61,6 +62,7 @@
 - [端到端场景与验证](../05-scenarios-and-flows/README.md)
 - [骨架完整性审计](../07-analysis-and-validation/skeleton-completeness-assessment.md)
 - [Skeleton v0.3 闭合与一级稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
+- [Skeleton v1.0 正式就绪评审](../07-analysis-and-validation/skeleton-v1.0-readiness-review.md)
 
 ## 三、当前成熟度
 
@@ -68,8 +70,9 @@
 Skeleton v0.1：第一轮内部闭合
 Skeleton v0.2：第二轮宏观闭合
 Skeleton v0.3：第三轮宏观闭合
+Skeleton v1.0：正式整体骨架基线
 
-当前下一步：Skeleton v1.0 正式就绪评审
+当前下一步：按骨架分区逐步提高专题设计分辨率
 ```
 
-在 v1.0 正式评审前，仍不进入数据库、协议、部署、算法或官署内部详细设计。
+骨架扩展阶段已经结束。后续专题可以进入对象、协议、运行、安全、容量和组织内部设计，但不得静默改变 v1.0 的一级职责与权威语义。

@@ -34,6 +34,7 @@
 - `Skeleton v0.2` 主体与外部生态扫描补入权利人、被研究主体、受影响第三方、公共制度主体、供应链/同行生态和对抗主体，并确定内部 Agent 只拥有派生且分域的权力；本轮未发现必须新增一级逻辑面的证据。
 - `Skeleton v0.2` 运行形态扫描建立即时查询、复杂调查、持续监测、事件响应、批处理、协作、主动交付、能力演进、外部行动和灾难恢复十种宏观模式，并提出 Mandate—Mission—Run—执行实例候选分层；详细对象和状态推迟到骨架稳定之后，本轮仍未发现新增一级面的必要。
 - `Skeleton v0.2` 全局流扫描将控制、数据、知识、授权、预算、审计和反馈拆成七条独立语义主干，确认一项任务同时叠加多条流，但任何一条都不能代替另一条；本轮未新增一级面或实现组件。
+- `Skeleton v1.0` 正式就绪评审已经完成：十面必要性 10/10、八项门槛 8/8 通过，整体骨架正式形成基线。基线冻结职责与权威语义，不冻结模型、Agent、Tool、Schema、协议、数据库和部署实现；后续进入专题设计分辨率提升。
 
 ## 待产出
 
@@ -58,3 +59,5 @@
 - [开放问题](./open-questions.md)
 - [第一批端到端验证场景](../../05-scenarios-and-flows/README.md)
 - [阶段 1：整体骨架扩展与完善计划](./phase-01-skeleton-expansion-plan.md)
+- [Skeleton v1.0 基线声明](../../03-current-architecture/skeleton-v1.0-baseline.md)
+- [Skeleton v1.0 正式就绪评审](../../07-analysis-and-validation/skeleton-v1.0-readiness-review.md)

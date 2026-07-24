@@ -23,6 +23,7 @@
 
 建议从这里建立心智模型：
 
+- [TXT-0024：Skeleton v1.0 基线封版图](./TXT-0024-skeleton-v1.0-baseline.md)
 - [TXT-0023：Skeleton v0.3 一屏全景图](./TXT-0023-skeleton-v0.3-one-screen-panorama.md)
 - [TXT-0001：整体全景图](./TXT-0001-overall-landscape.md)
 - [TXT-0002：三条核心闭环图](./TXT-0002-three-core-loops.md)
@@ -71,6 +72,7 @@
 
 - [TXT-0019：Skeleton v0.2 闭合总图](./TXT-0019-skeleton-v0.2-closure.md)
 - [TXT-0020：Skeleton v0.3 宏观压力测试图](./TXT-0020-skeleton-v0.3-macro-stress.md)
+- [TXT-0024：Skeleton v1.0 基线封版图](./TXT-0024-skeleton-v1.0-baseline.md)
 
 完整分层阅读树见[权威架构骨架索引](../architecture-skeleton-index.md)。
 

@@ -4,7 +4,7 @@
 
 整理日期：2026-07-24
 
-当前骨架成熟度：`Skeleton v0.3` 已闭合，等待 `Skeleton v1.0` 正式就绪评审
+当前骨架成熟度：`Skeleton v1.0` 正式基线
 
 ## 一、索引定位
 
@@ -86,7 +86,8 @@
     ├── 标准场景与覆盖矩阵
     ├── v0.2 集中闭合
     ├── v0.3 压力、循环权威与单点认知
-    └── v0.3 一屏全景和一级稳定性复核
+    ├── v0.3 一屏全景和一级稳定性复核
+    └── v1.0 正式就绪评审与基线冻结
 ```
 
 ## 三、九层权威来源
@@ -102,7 +103,7 @@
 | L6 坐标治理 | 在什么范围和约束下运行 | [时空规模](./spatiotemporal-and-scale-skeleton.md)、[横切治理](./cross-cutting/README.md) | [TXT-0016](./text-diagrams/TXT-0016-spatiotemporal-and-scale.md)、[TXT-0011](./text-diagrams/TXT-0011-cross-cutting-governance.md) |
 | L7 生存边界 | 失控时保什么、什么组合必须禁止 | [生存性](./nonfunctional-and-survivability-skeleton.md)、[负空间](./negative-space-and-future-replacement.md) | [TXT-0017](./text-diagrams/TXT-0017-nonfunctional-and-survivability.md)、[TXT-0018](./text-diagrams/TXT-0018-negative-space-and-future-replacement.md) |
 | L8 演进 | 整个架构怎样改变而不自我授权 | [全域演进](./evolution-across-entire-architecture.md) | [TXT-0022](./text-diagrams/TXT-0022-evolution-across-entire-architecture.md) |
-| L9 验证 | 为什么相信骨架已经阶段闭合 | [完整性审计](../07-analysis-and-validation/skeleton-completeness-assessment.md)、[v0.3 稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md) | [TXT-0019](./text-diagrams/TXT-0019-skeleton-v0.2-closure.md)、[TXT-0020](./text-diagrams/TXT-0020-skeleton-v0.3-macro-stress.md)、[TXT-0021](./text-diagrams/TXT-0021-authority-cycles-and-cognitive-concentration.md) |
+| L9 验证 | 为什么相信骨架已经正式闭合 | [完整性审计](../07-analysis-and-validation/skeleton-completeness-assessment.md)、[v0.3 稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)、[v1.0 正式评审](../07-analysis-and-validation/skeleton-v1.0-readiness-review.md) | [TXT-0019](./text-diagrams/TXT-0019-skeleton-v0.2-closure.md)、[TXT-0020](./text-diagrams/TXT-0020-skeleton-v0.3-macro-stress.md)、[TXT-0024](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md) |
 
 ## 四、不要混淆的三种结构
 
@@ -128,7 +129,7 @@
 
 > 一个已经确定的位置内部要设计到多细？
 
-当前仍处于骨架阶段，不能因为文档多就误以为已经进入实现级细节。
+当前骨架已经形成 v1.0 基线。后续可以提高设计分辨率，但不能因为局部实现便利而静默改写一级职责。
 
 ## 五、骨架的六条主线
 
@@ -214,7 +215,7 @@ Mandate / Mission → Plan → Run → Task / Agent / Tool
 
 ### 7.1 五分钟总览
 
-1. [TXT-0023 一屏全景图](./text-diagrams/TXT-0023-skeleton-v0.3-one-screen-panorama.md)
+1. [TXT-0024 Skeleton v1.0 基线封版图](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
 2. [总体一级逻辑骨架](./overall-logical-skeleton.md)
 3. [核心对象主干](../04-domain-design/core-object-spine.md)
 
@@ -261,12 +262,13 @@ Mandate / Mission → Plan → Run → Task / Agent / Tool
 Skeleton v0.1 第一轮内部闭合
 Skeleton v0.2 第二轮宏观闭合
 Skeleton v0.3 第三轮宏观闭合
+Skeleton v1.0 正式就绪评审与基线冻结
 
 当前下一步：
-Skeleton v1.0 正式就绪评审
+按骨架分区逐步提高专题设计分辨率
 
-仍然禁止：
-在 v1.0 评审前直接进入数据库、协议、部署、算法或官署内部细节
+继续禁止：
+专题设计静默改变一级职责、主权、不变量或全局关系
 ```
 
 ## 十、维护规则
@@ -286,3 +288,5 @@ Skeleton v1.0 正式就绪评审
 - [文字架构图集](./text-diagrams/README.md)
 - [文档与迭代骨架](../DOCUMENTATION-STRUCTURE.md)
 - [Skeleton v0.3 闭合与一级稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
+- [Skeleton v1.0 基线声明](./skeleton-v1.0-baseline.md)
+- [Skeleton v1.0 正式就绪评审](../07-analysis-and-validation/skeleton-v1.0-readiness-review.md)

@@ -334,6 +334,24 @@ v1.0 八项完成门槛预检查均已有证据，但本轮不直接晋级。下
 
 本轮只整理信息架构，不改变十面、七流、四轴、七维或任何权威决定。根入口、当前架构入口和文字图集改为分层导航，已有编号与链接保持稳定。
 
+### Skeleton v1.0 正式就绪评审
+
+本轮以必要性、充分性、互斥性、连接性和演进性五类证明重新审判整体骨架。
+
+评审结果：
+
+```text
+十面必要性：10 / 10 通过
+十二类宏观问题族反投影：无空白
+关键重叠边界：均可由核心权威区分
+六条主线、七类全局流、十种运行形态：闭合
+v1.0 八项门槛：8 / 8 通过
+```
+
+允许 Schema、协议、授权矩阵、部署、容量、六部与官署内部流程等未决项带入基线，因为它们已有稳定所有权，不构成一级架构阻塞。
+
+`Skeleton v1.0` 冻结职责和权威语义，不冻结模型、Agent 数量、Tool、数据库、协议或部署实现。至此整体骨架扩展与完善阶段结束，后续进入专题分辨率提升。
+
 ## 七、关联
 
 - [整体架构骨架完整性审计](../../07-analysis-and-validation/skeleton-completeness-assessment.md)
@@ -352,3 +370,5 @@ v1.0 八项完成门槛预检查均已有证据，但本轮不直接晋级。下
 - [能力演进作用全域骨架](../../03-current-architecture/evolution-across-entire-architecture.md)
 - [Skeleton v0.3 闭合与一级稳定性复核](../../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
 - [权威架构骨架索引](../../03-current-architecture/architecture-skeleton-index.md)
+- [Skeleton v1.0 基线声明](../../03-current-architecture/skeleton-v1.0-baseline.md)
+- [Skeleton v1.0 正式就绪评审](../../07-analysis-and-validation/skeleton-v1.0-readiness-review.md)
