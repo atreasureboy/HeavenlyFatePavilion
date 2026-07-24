@@ -33,6 +33,7 @@
 12. [TXT-0012：端到端正常与失败场景图](./TXT-0012-end-to-end-scenarios.md)
 13. [TXT-0013：主体生态与主权边界图](./TXT-0013-ecosystem-and-sovereignty.md)
 14. [TXT-0014：全局运行形态与转换图](./TXT-0014-operating-modes.md)
+15. [TXT-0015：七条全局流分离图](./TXT-0015-global-flow-separation.md)
 
 ## 三、图示规范
 

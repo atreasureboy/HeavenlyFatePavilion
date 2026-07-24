@@ -25,6 +25,7 @@
 - [系统上下文与边界](./system-context.md)
 - [主体生态与分域主权骨架](./ecosystem-and-sovereignty.md)
 - [全局运行形态骨架](./operating-modes.md)
+- [七条全局流骨架](./global-flows.md)
 - [核心对象主干](../04-domain-design/core-object-spine.md)
 - [十面输入输出契约](./plane-contracts.md)
 - [十面二级能力树](./capability-trees/README.md)

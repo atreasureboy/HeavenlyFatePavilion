@@ -124,6 +124,7 @@ Agent Memory ≠ Intelligence Database
 - [系统上下文与边界](./03-current-architecture/system-context.md)
 - [主体生态与分域主权骨架](./03-current-architecture/ecosystem-and-sovereignty.md)
 - [全局运行形态骨架](./03-current-architecture/operating-modes.md)
+- [七条全局流骨架](./03-current-architecture/global-flows.md)
 - [核心对象主干](./04-domain-design/core-object-spine.md)
 - [十面输入输出契约](./03-current-architecture/plane-contracts.md)
 - [十面二级能力树](./03-current-architecture/capability-trees/README.md)

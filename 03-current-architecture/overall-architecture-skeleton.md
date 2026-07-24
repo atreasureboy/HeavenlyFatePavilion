@@ -474,3 +474,5 @@
 天机阁与需求主体、权利人、被研究主体、公共制度、能力供应链、外部系统、同行和对抗生态之间的关系，以及各主权域的权威边界，见[主体生态与分域主权骨架](./ecosystem-and-sovereignty.md)；面向阅读的总图见[主体生态与主权边界图](./text-diagrams/TXT-0013-ecosystem-and-sovereignty.md)。
 
 即时查询、复杂调查、持续监测、事件响应、批处理、协作、主动交付、能力演进、外部行动和灾难恢复十种运行形态，以及 Mandate—Mission—Run—Task 分层，见[全局运行形态骨架](./operating-modes.md)；面向阅读的总图见[全局运行形态与转换图](./text-diagrams/TXT-0014-operating-modes.md)。
+
+控制、数据、知识、授权、预算、审计和反馈七种全局流的独立语义及交叉关系，见[七条全局流骨架](./global-flows.md)；面向阅读的总图见[七条全局流分离图](./text-diagrams/TXT-0015-global-flow-separation.md)。
