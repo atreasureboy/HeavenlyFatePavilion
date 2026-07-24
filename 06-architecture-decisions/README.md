@@ -16,3 +16,4 @@ ADR 一经接受不直接改写；需要改变决定时，创建新的 ADR 并�
 - [ADR-0004：固定皇帝、数据底座与基础设施的顶层位置](./adrs/ADR-0004-emperor-data-foundation-infrastructure-placement.md)
 - [ADR-0005：拆分交互、产品、治理与领域并划定控制运行边界](./adrs/ADR-0005-separate-interaction-products-governance-domains-and-runtime.md)
 - [ADR-0006：采用五域分组、认知存储分离与共享情报主干](./adrs/ADR-0006-group-planes-separate-cognition-storage-and-share-intelligence-spine.md)
+- [ADR-0007：共享平台承载租户级逻辑朝廷](./adrs/ADR-0007-shared-platform-tenant-logical-courts.md)
