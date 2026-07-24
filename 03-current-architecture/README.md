@@ -29,6 +29,7 @@
 - [空间、时间与规模骨架](./spatiotemporal-and-scale-skeleton.md)
 - [非功能与生存性骨架](./nonfunctional-and-survivability-skeleton.md)
 - [负空间、反架构与未来替换骨架](./negative-space-and-future-replacement.md)
+- [Skeleton v0.2 集中闭合复核](../07-analysis-and-validation/skeleton-v0.2-closure-review.md)
 - [核心对象主干](../04-domain-design/core-object-spine.md)
 - [十面输入输出契约](./plane-contracts.md)
 - [十面二级能力树](./capability-trees/README.md)

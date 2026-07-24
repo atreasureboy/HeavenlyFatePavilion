@@ -482,3 +482,5 @@
 可靠性、安全、隐私、合规、一致性、恢复、解释、停止和人类主权如何共同形成最低生存能力，见[非功能与生存性骨架](./nonfunctional-and-survivability-skeleton.md)；面向阅读的总图见[非功能与生存性总图](./text-diagrams/TXT-0017-nonfunctional-and-survivability.md)。
 
 十面的非职责、禁止权力组合、默认不可信边界，以及未来超级模型下可替换外壳与不可替换稳定中心，见[负空间、反架构与未来替换骨架](./negative-space-and-future-replacement.md)；面向阅读的总图见[负空间与未来替换图](./text-diagrams/TXT-0018-negative-space-and-future-replacement.md)。
+
+S2～S7 扩展后对十面和七道完整性门的集中裁定，见[Skeleton v0.2 集中闭合复核](../07-analysis-and-validation/skeleton-v0.2-closure-review.md)；面向阅读的多坐标总图见[Skeleton v0.2 闭合总图](./text-diagrams/TXT-0019-skeleton-v0.2-closure.md)。
