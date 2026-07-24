@@ -134,7 +134,9 @@ Agent Memory ≠ Intelligence Database
 
 ### 最后看演进过程
 
-- [当前阶段计划](./02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)
+- [当前专题：情报语义与核心对象体系](./02-architecture-iterations/v0002-intelligence-semantics/README.md)
+- [当前专题深化计划](./04-domain-design/intelligence-semantics-deepening-plan.md)
+- [历史阶段：整体骨架扩展与完善](./02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)
 - [架构迭代](./02-architecture-iterations/README.md)
 - [思路实验室](./01-idea-lab/README.md)
 - [文档与迭代骨架](./DOCUMENTATION-STRUCTURE.md)
