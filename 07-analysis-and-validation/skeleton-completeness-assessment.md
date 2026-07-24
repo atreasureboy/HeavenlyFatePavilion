@@ -31,7 +31,7 @@
 | G2 二级覆盖 | 每个一级面是否拥有完整且类型一致的二级能力树 | 基本通过 |
 | G3 接口闭合 | 每个面是否明确输入、输出、调用方、被调用方和契约 | 基本通过 |
 | G4 对象闭合 | 核心对象是否拥有唯一语义、所有者和状态层级 | 基本通过 |
-| G5 状态闭合 | 任务、事实、研判、产品、告警和版本是否有生命周期 | 部分通过 |
+| G5 状态闭合 | 任务、事实、研判、产品、告警和版本是否有生命周期 | 基本通过 |
 | G6 横切闭合 | 多租户、权限、证据、预算、质量、审计如何落到每个面 | 未通过 |
 | G7 场景闭合 | 正常、退回、冲突、失败和演进场景能否贯穿全骨架 | 未通过 |
 
@@ -128,16 +128,20 @@ Intent
 
 吏、户、礼、兵、刑、工已经分别映射领域使命、部级 Agent、Tool 倾向、共享主干扩展和非职责。吏部 Agent 任免职责标记为 `Reserved`，避免为了历史对称而强行启用。
 
-### 3.7 缺少状态机和异常骨架
+### 3.7 状态机和异常骨架已经建立
 
-至少需要建立：
+已经建立：
 
-- Mission / Run / Task 生命周期；
-- Claim / Fact / Disputed Claim 生命周期；
-- Assessment / Forecast 校准生命周期；
-- Risk / Alert 生命周期；
-- Capability Version 生命周期；
-- 退回、封驳、冲突、超预算、无证据和模型退化路径。
+- Mission / Plan / Run / Task / Agent Instance 的治理与执行生命周期；
+- Claim / Fact / Entity / Relationship / Event / Change 的知识生命周期；
+- Assessment / Forecast 的复核、校准和失效生命周期；
+- Risk / Alert / Intelligence Product 的状态机；
+- Capability Gap / Change Candidate / Capability Version 的演进状态机；
+- 统一 Transition Event / Decision 规则、状态变更审计字段和终态保留原则；
+- 治理、上下文、策略、预算、数据、认知、质量、运行、产品和演进十大异常类别；
+- 封驳、冲突、超预算、无证据、模型退化、回滚和人工升级路由。
+
+后续仍需为关键对象补齐机器可校验的转移 Schema、并发一致性规则、超时参数和逐场景补偿细节，但 G5 的骨架连接已经闭合。
 
 ### 3.8 横切维度仍只是标签
 
@@ -152,11 +156,10 @@ Intent
 
 ### 3.9 文字图集仍缺关键视图
 
-当前已有总览、闭环、十面关系、朝廷、系统上下文、核心对象、十面契约和能力总树，仍需：
+当前已有总览、闭环、十面关系、朝廷、系统上下文、核心对象、十面契约、能力总树、组织映射和状态异常总图，仍需：
 
 - 控制流与数据流分离图；
 - 多租户横切图；
-- 公共官署归属图；
 - 正常与失败场景时序图；
 - 能力演进作用全域图。
 
@@ -173,7 +176,7 @@ Intent
     ↓
 第五步：三省、六部、公共官署映射【完成第一版】
     ↓
-第六步：核心状态机与异常路径
+第六步：核心状态机与异常路径【完成第一版】
     ↓
 第七步：横切维度落位
     ↓
@@ -188,7 +191,7 @@ Intent
 
 ```text
 已经完成：一级骨架定型
-正在进行：整体骨架闭合（下一步：核心状态机与异常路径）
+正在进行：整体骨架闭合（下一步：横切维度落位）
 尚未开始：局部专题深度设计
 ```
 
@@ -202,5 +205,7 @@ Intent
 - [十面输入输出契约](../03-current-architecture/plane-contracts.md)
 - [十面二级能力树](../03-current-architecture/capability-trees/README.md)
 - [三省六部与公共官署映射](../03-current-architecture/organization-mapping/README.md)
+- [核心状态机与异常路由](../08-reference-models/state-machines/README.md)
+- [状态机与异常路径总图](../03-current-architecture/text-diagrams/TXT-0010-state-machines-and-exceptions.md)
 - [文字架构图集](../03-current-architecture/text-diagrams/README.md)
 - [阶段 1：整体架构骨架访谈](../02-architecture-iterations/v0001-concept-baseline/phase-01-overall-skeleton-interview.md)

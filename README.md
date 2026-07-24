@@ -125,6 +125,7 @@ Agent Memory ≠ Intelligence Database
 - [十面输入输出契约](./03-current-architecture/plane-contracts.md)
 - [十面二级能力树](./03-current-architecture/capability-trees/README.md)
 - [三省六部与公共官署映射](./03-current-architecture/organization-mapping/README.md)
+- [核心状态机与异常路由](./08-reference-models/state-machines/README.md)
 - [当前一级逻辑骨架](./03-current-architecture/overall-logical-skeleton.md)
 - [整体架构骨架](./03-current-architecture/overall-architecture-skeleton.md)
 - [骨架完整性审计](./07-analysis-and-validation/skeleton-completeness-assessment.md)

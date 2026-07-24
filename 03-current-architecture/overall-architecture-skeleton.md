@@ -464,3 +464,5 @@
 十个一级面的第一版输入、输出、权威状态、拒绝条件和失败路由见[十面输入输出契约](./plane-contracts.md)。
 
 皇帝、三省、六部和公共官署到十面能力及技术形态的正式映射见[组织—技术映射](./organization-mapping/README.md)。
+
+任务、知识、研判、风险、产品与能力版本的生命周期，以及统一异常分类和路由，见[核心状态机与异常路由](../08-reference-models/state-machines/README.md)；面向阅读的总图见[状态机与异常路径总图](./text-diagrams/TXT-0010-state-machines-and-exceptions.md)。

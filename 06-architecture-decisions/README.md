@@ -21,3 +21,4 @@ ADR 一经接受不直接改写；需要改变决定时，创建新的 ADR 并�
 - [ADR-0009：一级面通过版本化契约协作](./adrs/ADR-0009-versioned-cross-plane-contracts.md)
 - [ADR-0010：能力树只按稳定业务能力分类](./adrs/ADR-0010-capability-only-taxonomy.md)
 - [ADR-0011：官制组织与技术所有权分离](./adrs/ADR-0011-separate-narrative-organization-from-technical-ownership.md)
+- [ADR-0012：所有关键状态通过显式事件转换](./adrs/ADR-0012-explicit-event-driven-state-transitions.md)
