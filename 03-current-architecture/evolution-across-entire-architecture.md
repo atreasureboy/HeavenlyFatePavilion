@@ -301,7 +301,7 @@ Context 是否能够表达新语义
 
 本轮没有发现拆分或取消能力演进面的理由，也没有新增一级面。十面稳定性保持。
 
-`Skeleton v0.3` 仍待最后的一屏全景汇总与一级稳定性复核，尚未闭合。
+后续一屏全景与一级稳定性复核已经完成，`Skeleton v0.3` 已闭合；见 [Skeleton v0.3 闭合与一级稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)。
 
 ## 十五、有意不展开
 

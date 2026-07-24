@@ -490,3 +490,5 @@ S2～S7 扩展后对十面和七道完整性门的集中裁定，见[Skeleton v0
 皇帝自授、治理提权、确认偏差、产品干预、热度放大、重复引用、模型自评和联邦互证等循环权威，以及多 Agent 共享同一认知根的风险，见[循环权威与单点认知复核](../07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)；面向阅读的总图见[循环权威与单点认知图](./text-diagrams/TXT-0021-authority-cycles-and-cognitive-concentration.md)。
 
 模型、Agent、Tool、知识、治理、组织、平台、基础设施和整体架构如何进入同一受治理演进体系，以及五级变更半径和采用权分离，见[能力演进作用全域骨架](./evolution-across-entire-architecture.md)；面向阅读的总图见[能力演进作用全域图](./text-diagrams/TXT-0022-evolution-across-entire-architecture.md)。
+
+全部宏观结构压缩后的一屏阅读入口，见[Skeleton v0.3 一屏全景图](./text-diagrams/TXT-0023-skeleton-v0.3-one-screen-panorama.md)；第三轮闭合、十面连续稳定和 v1.0 门槛预检查见[Skeleton v0.3 闭合与一级稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)。

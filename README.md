@@ -121,6 +121,7 @@ Agent Memory ≠ Intelligence Database
 - [架构总纲](./00-project-foundation/architecture-charter.md)
 - [当前架构](./03-current-architecture/README.md)
 - [⭐ 文字架构图集](./03-current-architecture/text-diagrams/README.md)
+- [⭐ Skeleton v0.3 一屏全景图](./03-current-architecture/text-diagrams/TXT-0023-skeleton-v0.3-one-screen-panorama.md)
 - [系统上下文与边界](./03-current-architecture/system-context.md)
 - [主体生态与分域主权骨架](./03-current-architecture/ecosystem-and-sovereignty.md)
 - [全局运行形态骨架](./03-current-architecture/operating-modes.md)
@@ -142,6 +143,7 @@ Agent Memory ≠ Intelligence Database
 - [Skeleton v0.3 第一轮宏观压力测试](./07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)
 - [循环权威与单点认知复核](./07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)
 - [能力演进作用全域骨架](./03-current-architecture/evolution-across-entire-architecture.md)
+- [Skeleton v0.3 闭合与一级稳定性复核](./07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
 - [架构迭代](./02-architecture-iterations/README.md)
 - [思路实验室](./01-idea-lab/README.md)
 

@@ -236,18 +236,20 @@ S3 建立十种运行形态；S4 将七条全局流分开；S5 建立四条正�
 ## 五、当前阶段命名
 
 ```text
-已经完成：Skeleton v0.2 第二轮宏观闭合
-正在进行：Skeleton v0.3 宏观压力测试与全局视图闭合
+已经完成：Skeleton v0.3 第三轮宏观闭合
+正在进行：准备 Skeleton v1.0 正式就绪评审
 暂不进行：局部专题深度设计、详细 Schema 和实现级参数
 ```
 
-因此，当前可以宣布“天机阁 `Skeleton v0.2` 完成第二轮宏观闭合”，但仍需通过宏观压力场景、全局视图闭合和至少另一轮一级稳定性扫描，才能继续逼近 `Skeleton v1.0`。
+因此，当前可以宣布“天机阁 `Skeleton v0.3` 完成第三轮宏观闭合”。v0.2 与 v0.3 连续两轮没有改变十个一级面，下一步进入独立的 `Skeleton v1.0` 正式就绪评审。
 
 `Skeleton v0.3` 第一轮八类宏观压力测试已经通过：十面、七流、四轴和七个横切维度保持稳定，发现的相关失效、派生义务传播和跨能力代际可回放均可回写现有结构。
 
 循环权威与单点认知复核也已完成：识别 8 类危险回路和 10 类认知集中点，通过权威来源、独立挑战、分歧保留、现实锚点、确定性强制及按风险启用反证断环。未发现新一级面。
 
-能力演进全域图现已完成：九类演进对象、五级变更半径、三层嵌套循环和采用权分离均能由现有十面承载。能力演进面继续保持独立，但不取得他面采用权。v0.3 只剩一屏全景汇总与一级稳定性复核，尚未闭合。
+能力演进全域图现已完成：九类演进对象、五级变更半径、三层嵌套循环和采用权分离均能由现有十面承载。能力演进面继续保持独立，但不取得他面采用权。
+
+一屏全景与一级稳定性复核已经完成：v0.3 七道门在宏观/骨架级通过，十面稳定性保持，v1.0 八项进入门槛预检查均有证据。正式晋级仍留给下一轮独立评审。
 
 ## 六、关联文档
 
@@ -278,6 +280,8 @@ S3 建立十种运行形态；S4 将七条全局流分开；S5 建立四条正�
 - [循环权威与单点认知图](../03-current-architecture/text-diagrams/TXT-0021-authority-cycles-and-cognitive-concentration.md)
 - [能力演进作用全域骨架](../03-current-architecture/evolution-across-entire-architecture.md)
 - [能力演进作用全域图](../03-current-architecture/text-diagrams/TXT-0022-evolution-across-entire-architecture.md)
+- [Skeleton v0.3 一屏全景图](../03-current-architecture/text-diagrams/TXT-0023-skeleton-v0.3-one-screen-panorama.md)
+- [Skeleton v0.3 闭合与一级稳定性复核](./skeleton-v0.3-closure-and-stability-review.md)
 - [文字架构图集](../03-current-architecture/text-diagrams/README.md)
 - [阶段 1：整体架构骨架访谈](../02-architecture-iterations/v0001-concept-baseline/phase-01-overall-skeleton-interview.md)
 - [阶段 1：整体骨架扩展与完善计划](../02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)

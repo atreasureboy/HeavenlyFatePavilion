@@ -307,6 +307,14 @@ S7 没有发现新增一级逻辑面的必要。S2～S7 第一版广度扫描至
 
 本轮确认全域覆盖不等于全域所有权；自主程度也不等于变更半径。没有新增或拆分一级面的必要，十面稳定性保持。`Skeleton v0.3` 只剩一屏全景汇总与一级稳定性复核。
 
+### Skeleton v0.3 闭合与一级稳定性复核
+
+一屏全景图已经完成，保留外部主权、皇帝入口、五域十面、三省六部映射、情报主干、运行与横切坐标、生存负空间、基础设施和全域演进九类最小阅读锚点。
+
+一级复核确认 v0.2 与 v0.3 连续两轮未新增、删除或重划十面；v0.3 七道完整性门在宏观/骨架级通过，第三轮宏观骨架正式闭合。
+
+v1.0 八项完成门槛预检查均已有证据，但本轮不直接晋级。下一步单独执行 `Skeleton v1.0` 正式就绪评审，裁定允许带入基线的保留项、基线冻结方式和后续专题入口。
+
 ## 七、关联
 
 - [整体架构骨架完整性审计](../../07-analysis-and-validation/skeleton-completeness-assessment.md)
@@ -323,3 +331,4 @@ S7 没有发现新增一级逻辑面的必要。S2～S7 第一版广度扫描至
 - [Skeleton v0.3 第一轮宏观压力测试](../../07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)
 - [循环权威与单点认知复核](../../07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)
 - [能力演进作用全域骨架](../../03-current-architecture/evolution-across-entire-architecture.md)
+- [Skeleton v0.3 闭合与一级稳定性复核](../../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)

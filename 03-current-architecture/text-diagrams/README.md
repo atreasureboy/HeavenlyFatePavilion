@@ -19,6 +19,8 @@
 
 建议按顺序阅读：
 
+若只想先建立完整心智模型，可以直接阅读 [TXT-0023：Skeleton v0.3 一屏全景图](./TXT-0023-skeleton-v0.3-one-screen-panorama.md)，再按需要回到下列专题图。
+
 1. [TXT-0001：整体全景图](./TXT-0001-overall-landscape.md)
 2. [TXT-0002：三条核心闭环图](./TXT-0002-three-core-loops.md)
 3. [TXT-0003：十面关系与依赖图](./TXT-0003-ten-plane-relationships.md)
@@ -41,6 +43,7 @@
 20. [TXT-0020：Skeleton v0.3 宏观压力测试图](./TXT-0020-skeleton-v0.3-macro-stress.md)
 21. [TXT-0021：循环权威与单点认知图](./TXT-0021-authority-cycles-and-cognitive-concentration.md)
 22. [TXT-0022：能力演进作用全域图](./TXT-0022-evolution-across-entire-architecture.md)
+23. [TXT-0023：Skeleton v0.3 一屏全景图](./TXT-0023-skeleton-v0.3-one-screen-panorama.md)
 
 ## 三、图示规范
 

@@ -22,6 +22,7 @@
 ## 当前视图
 
 - [文字架构图集：建议从这里开始看](./text-diagrams/README.md)
+- [Skeleton v0.3 一屏全景图](./text-diagrams/TXT-0023-skeleton-v0.3-one-screen-panorama.md)
 - [系统上下文与边界](./system-context.md)
 - [主体生态与分域主权骨架](./ecosystem-and-sovereignty.md)
 - [全局运行形态骨架](./operating-modes.md)
@@ -33,6 +34,7 @@
 - [Skeleton v0.3 第一轮宏观压力测试](../07-analysis-and-validation/skeleton-v0.3-macro-stress-test.md)
 - [循环权威与单点认知复核](../07-analysis-and-validation/authority-cycles-and-cognitive-concentration-review.md)
 - [能力演进作用全域骨架](./evolution-across-entire-architecture.md)
+- [Skeleton v0.3 闭合与一级稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
 - [核心对象主干](../04-domain-design/core-object-spine.md)
 - [十面输入输出契约](./plane-contracts.md)
 - [十面二级能力树](./capability-trees/README.md)
