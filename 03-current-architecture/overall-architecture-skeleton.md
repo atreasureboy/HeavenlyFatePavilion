@@ -472,3 +472,5 @@
 整体骨架的正常、退回、冲突、降级、撤销、更正和回滚路径，已经由[端到端场景集](../05-scenarios-and-flows/README.md)和[场景覆盖矩阵](../05-scenarios-and-flows/scenario-coverage-matrix.md)完成第一版验证；面向阅读的总图见[端到端正常与失败场景图](./text-diagrams/TXT-0012-end-to-end-scenarios.md)。
 
 天机阁与需求主体、权利人、被研究主体、公共制度、能力供应链、外部系统、同行和对抗生态之间的关系，以及各主权域的权威边界，见[主体生态与分域主权骨架](./ecosystem-and-sovereignty.md)；面向阅读的总图见[主体生态与主权边界图](./text-diagrams/TXT-0013-ecosystem-and-sovereignty.md)。
+
+即时查询、复杂调查、持续监测、事件响应、批处理、协作、主动交付、能力演进、外部行动和灾难恢复十种运行形态，以及 Mandate—Mission—Run—Task 分层，见[全局运行形态骨架](./operating-modes.md)；面向阅读的总图见[全局运行形态与转换图](./text-diagrams/TXT-0014-operating-modes.md)。

@@ -24,3 +24,4 @@ ADR 一经接受不直接改写；需要改变决定时，创建新的 ADR 并�
 - [ADR-0012：所有关键状态通过显式事件转换](./adrs/ADR-0012-explicit-event-driven-state-transitions.md)
 - [ADR-0013：横切治理采用强制上下文传播与确定性执行点](./adrs/ADR-0013-mandatory-cross-cutting-context-and-enforcement.md)
 - [ADR-0014：内部智能主体只拥有派生且分域的权力](./adrs/ADR-0014-derived-domain-scoped-authority.md)
+- [ADR-0015：持久授权与使命同临时执行实例分离](./adrs/ADR-0015-separate-durable-mandates-from-execution.md)

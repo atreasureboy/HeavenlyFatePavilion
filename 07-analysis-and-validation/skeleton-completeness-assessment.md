@@ -192,15 +192,17 @@ Intent
 
 ### 3.11 Skeleton v0.2 扩展进度
 
-`S2：主体、生态与主权边界` 已完成第一版扫描。
+`S2：主体、生态与主权边界` 和 `S3：全局流与多种运行形态` 已完成第一版扫描。
 
-本轮新增结构均能通过系统上下文、横切治理和现有十面表达，暂未形成新增一级逻辑面的证据。下一项宏观扫描是：
+S3 建立即时查询、复杂调查、持续监测、事件响应、批处理、协作、主动交付、能力演进、外部行动和灾难恢复十种形态，并提出 Mandate—Mission—Run—执行实例的宏观分层。详细对象、状态和协议未在本轮展开。
+
+本轮新增结构均能通过系统上下文、对象主干、状态机、横切治理和现有十面表达，暂未形成新增一级逻辑面的证据。下一项宏观扫描是：
 
 ```text
-S3：全局流与多种运行形态
+S4：控制、数据、知识与反馈分流
 ```
 
-它将检查交互、事件、监测、批处理、协作、演进、外部行动及灾难恢复是否都拥有顶层位置，不深入协议和部署。
+它将把控制、数据、知识、授权、预算、审计和反馈分别画成全局流，检查当前总图是否混写语义，不深入协议和部署。
 
 ## 四、建议完成顺序
 
@@ -262,3 +264,5 @@ S3：全局流与多种运行形态
 - [阶段 1：整体骨架扩展与完善计划](../02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)
 - [主体生态与分域主权骨架](../03-current-architecture/ecosystem-and-sovereignty.md)
 - [主体生态与主权边界图](../03-current-architecture/text-diagrams/TXT-0013-ecosystem-and-sovereignty.md)
+- [全局运行形态骨架](../03-current-architecture/operating-modes.md)
+- [全局运行形态与转换图](../03-current-architecture/text-diagrams/TXT-0014-operating-modes.md)
