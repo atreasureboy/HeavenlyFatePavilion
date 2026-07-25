@@ -16,4 +16,5 @@
 
 ## 当前参考模型
 
+- [统一语言与对象分类法（Proposed）](./unified-language-and-object-taxonomy.md)
 - [核心状态机与异常路由](./state-machines/README.md)

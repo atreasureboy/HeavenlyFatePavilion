@@ -18,4 +18,5 @@
 ## 当前领域模型
 
 - [情报语义与核心对象深化计划](./intelligence-semantics-deepening-plan.md)
+- [统一语言与对象分类法（Proposed）](../08-reference-models/unified-language-and-object-taxonomy.md)
 - [核心对象主干](./core-object-spine.md)

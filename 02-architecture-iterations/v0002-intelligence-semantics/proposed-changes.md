@@ -43,3 +43,15 @@
 现实对象的身份、关于对象的陈述、支持陈述的证据和系统对陈述的接受状态分别建模。
 
 目的：同一个人或企业可以存在多个冲突主张，而不需要复制或污染实体身份。
+
+## S1 补充候选：区分对象、状态、视图、记录和关系
+
+正式对象分类不再把所有名词放在同一个平面：
+
+- `Disputed Claim` 默认是 Claim 的状态或查询视图；
+- `Verification Record` 是过程记录，不是世界事实；
+- `Current Fact` 是查询视图，不是新的 Fact 类型；
+- `Diff` 是检测或比较结果，只有经过语义接受的差异才成为 Change；
+- `Execution Event` 与现实世界 Event 必须使用不同类型。
+
+完整候选见[统一语言与对象分类法](../../08-reference-models/unified-language-and-object-taxonomy.md)。
