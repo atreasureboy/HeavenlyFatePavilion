@@ -424,14 +424,33 @@ S3 对 F4“证据、陈述与接受对象”执行第一轮验证，结果支�
 
 S3 未发现分类法元规则冲突。分类法继续保持 `Proposed`，等待 S4～S10 完整验证。
 
-## 十三、关联
+## 十三、S4 验证回写
+
+S4 对 F5 世界模型对象中的 Entity 执行第一轮验证，结果支持：
+
+- Entity 是世界模型对象；
+- Mention 是独立的认识对象候选，不应作为 Entity 的别名字段吞并；
+- Name 和 Identifier 当前作为值对象；
+- Alias 是带时间、Evidence 和作用域的身份关系；
+- Identity Claim 是 Claim 的领域子类型；
+- Resolution Decision 是治理 Decision；
+- Entity Resolution Case 是治理案件对象；
+- Canonical Entity 是查询/聚合视图，不是新的现实对象；
+- Provisional、Disputed、Split Required 是解析或生命周期状态；
+- `same_as`、`different_from` 是有类型身份关系，不是数据库合并操作。
+
+S4 未发现分类法元规则冲突。Mention 是否正式加入核心对象主干等待 S5 验证。
+
+## 十四、关联
 
 - [v0002 迭代入口](../02-architecture-iterations/v0002-intelligence-semantics/README.md)
 - [情报语义深化计划](../04-domain-design/intelligence-semantics-deepening-plan.md)
 - [核心对象主干](../04-domain-design/core-object-spine.md)
 - [Source、Document、Snapshot 与 Evidence 模型](../04-domain-design/source-document-snapshot-evidence-model.md)
 - [Claim、争议、Fact 与裁定模型](../04-domain-design/claim-fact-and-adjudication-model.md)
+- [Entity、身份、别名与消歧模型](../04-domain-design/entity-identity-and-resolution-model.md)
 - [SCN-0010：来源变化与证据保全](../05-scenarios-and-flows/SCN-0010-source-mutation-and-evidence-preservation.md)
 - [SCN-0011：多权威域事实并存](../05-scenarios-and-flows/SCN-0011-multiple-authority-domain-facts.md)
+- [SCN-0012：同名实体误合并与拆分纠正](../05-scenarios-and-flows/SCN-0012-entity-merge-split-correction.md)
 - [核心对象流转图](../03-current-architecture/text-diagrams/TXT-0006-core-object-spine.md)
 - [ADR-0008：有类型、可追溯的核心对象主干](../06-architecture-decisions/adrs/ADR-0008-typed-traceable-core-object-spine.md)

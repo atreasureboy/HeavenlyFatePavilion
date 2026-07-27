@@ -84,3 +84,20 @@
 - Fact 撤回不等于物理删除，且必须触发依赖影响分析。
 
 完整候选见[Claim、争议、Fact 与裁定语义模型](../../04-domain-design/claim-fact-and-adjudication-model.md)。
+
+## S4 补充候选：可逆实体身份解析
+
+- Entity Record 不是现实对象、名字、来源记录或 IAM Principal；
+- Mention 作为材料到 Entity 的一等认识对象候选；
+- Name、Alias、Identifier 和 Identity Claim 使用不同语义；
+- Identifier 必须绑定 issuer、namespace 和有效时间；
+- 候选相似度只决定验证顺序，不产生身份接受权；
+- 负身份约束是一等输入，可阻止自动合并；
+- Identity Claim 继续遵循 Evidence、Verification、Acceptance Context；
+- Entity 合并采用可逆 Identity Link 和 Canonical View，不删除组成历史；
+- `same_as`、展示聚合、数据整合与现实并购不得共用一个 merge；
+- Split 沿血缘重新解析 Mention，并重评 Claim、Fact、Relationship、Event、Assessment 和 Product；
+- Public Entity 与 Tenant Overlay 隔离；
+- 技术上能够识别不意味着有权建立或展示身份关联。
+
+完整候选见[Entity、身份、别名与消歧语义模型](../../04-domain-design/entity-identity-and-resolution-model.md)。

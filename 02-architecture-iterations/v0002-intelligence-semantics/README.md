@@ -49,7 +49,7 @@
 S1 统一语言与对象分类【候选层完成】
 → S2 来源、资料、快照与证据【候选层完成】
 → S3 主张、争议、事实与裁定【候选层完成】
-→ S4 实体、身份、别名与消歧
+→ S4 实体、身份、别名与消歧【候选层完成】
 → S5 关系、事件、状态、Diff 与 Change
 → S6 Signal、Assessment、Forecast、Risk、Recommendation
 → S7 产品、告警、反馈与影响纠正
@@ -84,6 +84,8 @@ S1 统一语言与对象分类【候选层完成】
 - [SCN-0010：来源变化与证据保全](../../05-scenarios-and-flows/SCN-0010-source-mutation-and-evidence-preservation.md)
 - [Claim、争议、Fact 与裁定语义模型](../../04-domain-design/claim-fact-and-adjudication-model.md)
 - [SCN-0011：多权威域事实并存](../../05-scenarios-and-flows/SCN-0011-multiple-authority-domain-facts.md)
+- [Entity、身份、别名与消歧语义模型](../../04-domain-design/entity-identity-and-resolution-model.md)
+- [SCN-0012：同名实体误合并与拆分纠正](../../05-scenarios-and-flows/SCN-0012-entity-merge-split-correction.md)
 
 ## 七、当前进度
 
@@ -123,6 +125,19 @@ S3 已完成候选语义模型：
 - 门下、大理寺、领域能力、平台强制、数据底座和人类裁定权得到区分。
 
 S3 未改变 Skeleton v1.0。候选模型已通过公共登记、官网展示和租户内部决议并存场景的第一轮验证。
+
+S4 已完成候选语义模型：
+
+- 现实指称对象、Entity Record、Source-local Record 和 Mention 分层；
+- Mention 被提出为材料到 Entity 的一等认识对象；
+- Name、Alias、Identifier、Identity Claim 不再混写；
+- Identifier 必须绑定 issuer、namespace 和有效时间；
+- 身份解析被拆为候选生成、硬约束、验证、决定和可逆链接；
+- `same_as`、规范视图、数据整合和现实并购严格分离；
+- 误合并采用非破坏性 Split，沿血缘重评 Claim、Fact、关系、事件、研判和产品；
+- 公共 Entity 与 Tenant Overlay 分离，技术可识别不产生关联权限。
+
+S4 未改变 Skeleton v1.0。候选模型已通过同名同集团人物误合并、租户私有反证、拆分和产品纠正场景的第一轮验证。
 
 ## 八、与 Skeleton v1.0 的关系
 
