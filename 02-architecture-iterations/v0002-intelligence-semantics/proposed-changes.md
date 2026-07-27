@@ -69,3 +69,18 @@
 - Rights / Usage Envelope 必须随资料与证据传播，并在租户访问时重新判定。
 
 完整候选见[Source、Document、Snapshot 与 Evidence 语义模型](../../04-domain-design/source-document-snapshot-evidence-model.md)。
+
+## S3 补充候选：作用域事实与争议案件
+
+- Claimant、Extractor、Verifier、Acceptor 必须是可区分主体；
+- Claim 保留原始表达，规范化 Proposition 用于去重与冲突；
+- Verification Record 是不可变过程记录，Verification Package 是审核视图；
+- Fact 是某个 Acceptance Context 内的接受记录，不是全局永恒真理；
+- Public、Tenant、Joint、Mission Working 和 External Authority Fact 可以并存；
+- Current Fact 是结合主体、租户、用途、辖域和时间计算的查询视图；
+- 真冲突前先排除实体、角色、时间、定义、辖域和作用域错配；
+- Dispute Case 作为智能治理案件承载多方举证、裁定、上诉与重开；
+- Unresolved 是合法知识状态；
+- Fact 撤回不等于物理删除，且必须触发依赖影响分析。
+
+完整候选见[Claim、争议、Fact 与裁定语义模型](../../04-domain-design/claim-fact-and-adjudication-model.md)。

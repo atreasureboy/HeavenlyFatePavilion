@@ -408,12 +408,30 @@ S2 资料与证据模型及 `SCN-0010` 对 F3、F4 执行第一轮验证，结�
 
 S2 未发现分类法元规则冲突。分类法继续保持 `Proposed`，等待 S3～S10 完整验证。
 
-## 十二、关联
+## 十二、S3 验证回写
+
+S3 对 F4“证据、陈述与接受对象”执行第一轮验证，结果支持：
+
+- Claim 是核心对象，Claim Candidate / Fact Candidate 是流程角色；
+- Verification Record 是 Process Record；
+- Verification Package 是 View / Package；
+- `Disputed Claim` 仍是 Claim 的状态/视图；
+- 多对象、多轮次的争议需要独立 Dispute Case，但它属于治理对象家族；
+- Fact 是带 Acceptance Context 的接受记录；
+- Current Fact 是查询视图，不是新的 Fact 类型；
+- Proposition 当前是 Claim 的规范化组成，是否升格继续开放；
+- Fact 的 `Challenged`、`Retracted` 等是生命周期状态，不形成新对象。
+
+S3 未发现分类法元规则冲突。分类法继续保持 `Proposed`，等待 S4～S10 完整验证。
+
+## 十三、关联
 
 - [v0002 迭代入口](../02-architecture-iterations/v0002-intelligence-semantics/README.md)
 - [情报语义深化计划](../04-domain-design/intelligence-semantics-deepening-plan.md)
 - [核心对象主干](../04-domain-design/core-object-spine.md)
 - [Source、Document、Snapshot 与 Evidence 模型](../04-domain-design/source-document-snapshot-evidence-model.md)
+- [Claim、争议、Fact 与裁定模型](../04-domain-design/claim-fact-and-adjudication-model.md)
 - [SCN-0010：来源变化与证据保全](../05-scenarios-and-flows/SCN-0010-source-mutation-and-evidence-preservation.md)
+- [SCN-0011：多权威域事实并存](../05-scenarios-and-flows/SCN-0011-multiple-authority-domain-facts.md)
 - [核心对象流转图](../03-current-architecture/text-diagrams/TXT-0006-core-object-spine.md)
 - [ADR-0008：有类型、可追溯的核心对象主干](../06-architecture-decisions/adrs/ADR-0008-typed-traceable-core-object-spine.md)

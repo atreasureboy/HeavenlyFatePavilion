@@ -48,7 +48,7 @@
 ```text
 S1 统一语言与对象分类【候选层完成】
 → S2 来源、资料、快照与证据【候选层完成】
-→ S3 主张、争议、事实与裁定
+→ S3 主张、争议、事实与裁定【候选层完成】
 → S4 实体、身份、别名与消歧
 → S5 关系、事件、状态、Diff 与 Change
 → S6 Signal、Assessment、Forecast、Risk、Recommendation
@@ -82,6 +82,8 @@ S1 统一语言与对象分类【候选层完成】
 - [统一语言与对象分类法](../../08-reference-models/unified-language-and-object-taxonomy.md)
 - [Source、Document、Snapshot 与 Evidence 语义模型](../../04-domain-design/source-document-snapshot-evidence-model.md)
 - [SCN-0010：来源变化与证据保全](../../05-scenarios-and-flows/SCN-0010-source-mutation-and-evidence-preservation.md)
+- [Claim、争议、Fact 与裁定语义模型](../../04-domain-design/claim-fact-and-adjudication-model.md)
+- [SCN-0011：多权威域事实并存](../../05-scenarios-and-flows/SCN-0011-multiple-authority-domain-facts.md)
 
 ## 七、当前进度
 
@@ -108,6 +110,19 @@ S2 已完成候选语义模型：
 - Content Diff、Extraction Diff 与 World Change 得到可执行的语义分界。
 
 S2 未改变 Skeleton v1.0。候选模型已通过来源静默修改、半截抓取、解析升级、许可撤销和多租户复用场景的第一轮验证。
+
+S3 已完成候选语义模型：
+
+- Claimant、Extractor、Verifier、Acceptor 四种主体不再混写；
+- Claim 保留原始表达，并通过规范化 Proposition 参与比较；
+- Verification Record 与 Verification Package 分离；
+- Fact 被定义为指定 Acceptance Context 内的接受记录，而不是全局真理；
+- Public、Tenant、Joint、Mission Working 和 External Authority Fact 可以并存；
+- 真冲突前必须先排除实体、时间、定义、角色、辖域和作用域错配；
+- Dispute Case 被提出为独立治理案件，而非新的世界事实；
+- 门下、大理寺、领域能力、平台强制、数据底座和人类裁定权得到区分。
+
+S3 未改变 Skeleton v1.0。候选模型已通过公共登记、官网展示和租户内部决议并存场景的第一轮验证。
 
 ## 八、与 Skeleton v1.0 的关系
 

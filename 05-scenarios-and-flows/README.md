@@ -68,3 +68,4 @@
 | 场景 | 所属专题 | 状态 |
 |---|---|---|
 | [SCN-0010 来源变化与证据保全](./SCN-0010-source-mutation-and-evidence-preservation.md) | v0002 / S2 资料与证据对象 | Proposed |
+| [SCN-0011 多权威域事实并存](./SCN-0011-multiple-authority-domain-facts.md) | v0002 / S3 主张与事实接受 | Proposed |
