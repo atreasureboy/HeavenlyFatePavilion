@@ -22,4 +22,5 @@
 - [Source、Document、Snapshot 与 Evidence 语义模型（Proposed）](./source-document-snapshot-evidence-model.md)
 - [Claim、争议、Fact 与裁定语义模型（Proposed）](./claim-fact-and-adjudication-model.md)
 - [Entity、身份、别名与消歧语义模型（Proposed）](./entity-identity-and-resolution-model.md)
+- [Relationship、Event、State、Diff 与 Change 语义模型（Proposed）](./world-state-event-and-change-model.md)
 - [核心对象主干](./core-object-spine.md)

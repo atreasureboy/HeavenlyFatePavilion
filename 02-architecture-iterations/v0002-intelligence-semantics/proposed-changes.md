@@ -101,3 +101,20 @@
 - 技术上能够识别不意味着有权建立或展示身份关联。
 
 完整候选见[Entity、身份、别名与消歧语义模型](../../04-domain-design/entity-identity-and-resolution-model.md)。
+
+## S5 补充候选：世界状态与四类变化
+
+- Relationship 是带角色、方向、时间和 Evidence 的持续联系；
+- Event 是有时间边界的发生项，可以建立、修改或终止 Relationship；
+- World Event、Execution Event、Domain Event 和 Alert 必须分型；
+- State 默认是按事实域、作用域、有效时间和认识时间计算的 View；
+- Diff 是声明左右版本和方法的比较记录；
+- Content Diff、Extraction Diff、Knowledge Revision、World Change 不得混写；
+- Change 作为一等对象连接前态、后态、Evidence、Event、监测和研判；
+- World Change 必须经 Claim / Verification / Fact Acceptance；
+- 首次观察不等于刚刚出现，来源消失不等于现实终止；
+- Change 的有效、检测和接受时间必须分开；
+- Event 先于 Change 不产生因果权威；
+- Entity Split、Fact Retract 和本体升级必须触发世界模型影响分析。
+
+完整候选见[Relationship、Event、State、Diff 与 Change 语义模型](../../04-domain-design/world-state-event-and-change-model.md)。

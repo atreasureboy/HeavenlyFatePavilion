@@ -50,7 +50,7 @@ S1 统一语言与对象分类【候选层完成】
 → S2 来源、资料、快照与证据【候选层完成】
 → S3 主张、争议、事实与裁定【候选层完成】
 → S4 实体、身份、别名与消歧【候选层完成】
-→ S5 关系、事件、状态、Diff 与 Change
+→ S5 关系、事件、状态、Diff 与 Change【候选层完成】
 → S6 Signal、Assessment、Forecast、Risk、Recommendation
 → S7 产品、告警、反馈与影响纠正
 → S8 双时态、版本、作用域与知识覆盖
@@ -86,6 +86,8 @@ S1 统一语言与对象分类【候选层完成】
 - [SCN-0011：多权威域事实并存](../../05-scenarios-and-flows/SCN-0011-multiple-authority-domain-facts.md)
 - [Entity、身份、别名与消歧语义模型](../../04-domain-design/entity-identity-and-resolution-model.md)
 - [SCN-0012：同名实体误合并与拆分纠正](../../05-scenarios-and-flows/SCN-0012-entity-merge-split-correction.md)
+- [Relationship、Event、State、Diff 与 Change 语义模型](../../04-domain-design/world-state-event-and-change-model.md)
+- [SCN-0013：四类变化分离](../../05-scenarios-and-flows/SCN-0013-four-kinds-of-change-separation.md)
 
 ## 七、当前进度
 
@@ -138,6 +140,20 @@ S4 已完成候选语义模型：
 - 公共 Entity 与 Tenant Overlay 分离，技术可识别不产生关联权限。
 
 S4 未改变 Skeleton v1.0。候选模型已通过同名同集团人物误合并、租户私有反证、拆分和产品纠正场景的第一轮验证。
+
+S5 已完成候选语义模型：
+
+- Relationship 表示区间内持续联系，Event 表示有时间边界的发生项；
+- Event 可以建立、修改或终止 Relationship，但二者分别保存；
+- Lifecycle / World / Execution / Desired State 严格区分；
+- World State 默认是带事实域和双时间上下文的 View；
+- Diff 是版本比较记录，不自动成为现实变化；
+- Content Diff、Extraction Diff、Knowledge Revision、World Change 四类变化分离；
+- Change 保持一等对象，具有前后态、时间、Evidence、重要性和消费者；
+- World Change 必须经过 Claim / Fact 接受链；
+- 时序相邻不自动形成因果关系。
+
+S5 未改变 Skeleton v1.0。候选模型已通过同一监测轮次中页面、解析、认识和现实四类变化并发场景的第一轮验证。
 
 ## 八、与 Skeleton v1.0 的关系
 

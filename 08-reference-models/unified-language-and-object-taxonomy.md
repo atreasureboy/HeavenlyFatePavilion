@@ -441,7 +441,22 @@ S4 对 F5 世界模型对象中的 Entity 执行第一轮验证，结果支持�
 
 S4 未发现分类法元规则冲突。Mention 是否正式加入核心对象主干等待 S5 验证。
 
-## 十四、关联
+## 十四、S5 验证回写
+
+S5 对 F5 世界模型对象执行第二轮验证，结果支持：
+
+- Relationship 和 Event 具有独立身份与生命周期；
+- State 默认是 Role / View，按需物化为派生 Snapshot；
+- Difference Record 是 Process / Derived Record；
+- Content Diff 和 Extraction Diff 不自动成为 Change；
+- World Change 和 Knowledge Revision 满足核心对象准入条件；
+- World Event、Execution Event、Domain Event 必须是不同类型；
+- Current Relationship、Current World State 是查询视图；
+- Causal Claim 仍属于 Claim / Assessment，不成为普通 Relationship。
+
+S5 同时继续支持 Mention 作为一等认识对象候选，因为 Relationship 与 Event 的参与者解析需要独立 Anchor、状态和纠正。
+
+## 十五、关联
 
 - [v0002 迭代入口](../02-architecture-iterations/v0002-intelligence-semantics/README.md)
 - [情报语义深化计划](../04-domain-design/intelligence-semantics-deepening-plan.md)
@@ -449,8 +464,10 @@ S4 未发现分类法元规则冲突。Mention 是否正式加入核心对象主
 - [Source、Document、Snapshot 与 Evidence 模型](../04-domain-design/source-document-snapshot-evidence-model.md)
 - [Claim、争议、Fact 与裁定模型](../04-domain-design/claim-fact-and-adjudication-model.md)
 - [Entity、身份、别名与消歧模型](../04-domain-design/entity-identity-and-resolution-model.md)
+- [世界状态、事件与变化模型](../04-domain-design/world-state-event-and-change-model.md)
 - [SCN-0010：来源变化与证据保全](../05-scenarios-and-flows/SCN-0010-source-mutation-and-evidence-preservation.md)
 - [SCN-0011：多权威域事实并存](../05-scenarios-and-flows/SCN-0011-multiple-authority-domain-facts.md)
 - [SCN-0012：同名实体误合并与拆分纠正](../05-scenarios-and-flows/SCN-0012-entity-merge-split-correction.md)
+- [SCN-0013：四类变化分离](../05-scenarios-and-flows/SCN-0013-four-kinds-of-change-separation.md)
 - [核心对象流转图](../03-current-architecture/text-diagrams/TXT-0006-core-object-spine.md)
 - [ADR-0008：有类型、可追溯的核心对象主干](../06-architecture-decisions/adrs/ADR-0008-typed-traceable-core-object-spine.md)
