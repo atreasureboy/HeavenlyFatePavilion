@@ -52,7 +52,7 @@ S1 统一语言与对象分类【候选层完成】
 → S4 实体、身份、别名与消歧【候选层完成】
 → S5 关系、事件、状态、Diff 与 Change【候选层完成】
 → S6 Signal、Assessment、Forecast、Risk、Recommendation【候选层完成】
-→ S7 产品、告警、反馈与影响纠正
+→ S7 产品、告警、反馈与影响纠正【候选层完成】
 → S8 双时态、版本、作用域与知识覆盖
 → S9 对象权威、生命周期、血缘与不变量
 → S10 场景压力与语义基线评审
@@ -90,6 +90,8 @@ S1 统一语言与对象分类【候选层完成】
 - [SCN-0013：四类变化分离](../../05-scenarios-and-flows/SCN-0013-four-kinds-of-change-separation.md)
 - [Signal、Assessment、Forecast、Scenario、Risk 与 Recommendation 语义模型](../../04-domain-design/assessment-forecast-risk-recommendation-model.md)
 - [SCN-0014：预测干预与风险重校准](../../05-scenarios-and-flows/SCN-0014-forecast-intervention-and-recalibration.md)
+- [Intelligence Product、Alert、Feedback 与影响纠正语义模型](../../04-domain-design/intelligence-product-alert-feedback-correction-model.md)
+- [SCN-0015：部分事实撤回、影响裁剪与接收者纠正](../../05-scenarios-and-flows/SCN-0015-partial-retraction-impact-and-recipient-correction.md)
 
 ## 七、当前进度
 
@@ -170,6 +172,21 @@ S6 已完成候选语义模型：
 - 认知独立性按风险启用，不按 Agent 数量表演。
 
 S6 未改变 Skeleton v1.0。候选模型已通过预警促成行动、行动改变暴露、最终结果无法朴素评分的干预场景。
+
+S7 已完成候选语义模型：
+
+- Intelligence Product、Product Edition、Product Release、Rendering、Distribution 和 Delivery 分离；
+- Product Edition 冻结信息截点、精确对象版本、生成版本与 Dependency Manifest；
+- 生成、审核、发布、分发、送达、消费、决定和行动不再压成单一状态；
+- Alert 与 Signal / Change / Risk 分离，并拆开 severity、confidence、urgency 和 priority；
+- Feedback 必须锚定目标与版本，不能直接成为 Evidence、Fact 或演进决定；
+- Provenance、Derivation Lineage、Semantic Dependency、Citation、Distribution 和 Causal Lineage 分型；
+- 影响传播采用固定版本、有类型依赖边和逐分支停止理由，不按跳数盲目级联；
+- Update、Correction、Supersession、Withdrawal、Retraction 和 Deletion 分离；
+- Impact Case 覆盖发现、分类、重算、产品修复、接收者通知和剩余风险；
+- 共享 Fact 可触发各租户私有纠正，但不能泄露租户依赖和产品。
+
+S7 未改变 Skeleton v1.0。候选模型已通过一项 Fact 在同一报告中分别充当关键前提、历史 Claim 和背景引用，并已分发到 PDF、仪表板和 API 下游的部分撤回场景。
 
 ## 八、与 Skeleton v1.0 的关系
 

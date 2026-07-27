@@ -213,7 +213,7 @@ State 暂作为 Entity、Relationship 或其他世界对象在指定时间的状
 | Risk | 对不利结果的可能性、影响、范围和时限判断 | Alert |
 | Recommendation | 基于事实和研判提出的建议选择 | Decision、Action |
 
-Scenario 暂作为条件、假设和可能世界的结构化研判容器，是否成为独立核心对象留给 S6。
+Scenario 已在 S6 被支持为条件化可能世界的一等对象候选，最终是否纳入核心对象主干留给 S10 终审。
 
 ### F7：交付、反馈与影响对象
 
@@ -223,11 +223,14 @@ Scenario 暂作为条件、假设和可能世界的结构化研判容器，是�
 
 | 对象 | 正式含义 | 明确不等于 |
 |---|---|---|
-| Intelligence Product | 面向特定受众、目的、时间和渠道组织的正式交付物 | 底层事实副本 |
+| Intelligence Product | 面向持续目的、受众和产品承诺建立的逻辑交付身份 | 某次发布文件 |
+| Product Edition（候选） | 在指定知识截点冻结内容和依赖的产品版本 | Product Release |
+| Product Release（候选） | 某 Edition 在指定受众、用途和条件下的发布授权记录 | Rendering、Delivery |
 | Alert | 由 Risk、Signal、Change 或规则触发的可投递通知 | Risk |
 | Feedback | 对指定目标、事实、研判、预测、风险或产品的反馈 | 无归属自由文本 |
+| Impact Case（候选） | 承载依赖发现、影响分类、重算、纠正、通知和关闭的治理案件 | 无边界级联任务 |
 
-Action 和 Effect 已有骨架位置，但在外部行动边界明确前继续作为候选对象。
+Action 继续作为外部行动对象候选；Effect 暂按 Effect Assessment / Causal Claim 建模，等待外部行动专题终审。
 
 ### F8：能力演进对象
 
@@ -471,7 +474,26 @@ S6 对 F6 研判与未来对象执行第一轮验证，结果支持：
 
 S6 未发现分类法元规则冲突。Scenario 是否正式纳入核心对象主干等待 S10 终审。
 
-## 十六、关联
+## 十六、S7 验证回写
+
+S7 对 F7 交付、反馈与影响对象执行第一轮验证，结果支持：
+
+- Intelligence Product 保持核心对象，表示长期目的、受众与产品承诺；
+- Product Edition 满足独立内容、版本、审核和纠正语义，成为核心对象候选；
+- Product Release 满足独立授权、受众、用途和撤回语义，成为核心对象候选；
+- Published / Corrected Product 是 Edition / Release 的状态或视图，不是新对象类型；
+- Rendering、Distribution Attempt、Delivery Record、Receipt 和 Consumption Signal 当前属于过程/交付记录候选；
+- Alert 保持核心对象，但 Trigger、Risk、渠道消息和 Alert Thread 不与其合并；
+- Feedback 保持核心对象，必须引用目标与版本，且不自动成为 Evidence、Fact 或 Evolution Evidence；
+- Impact Case 满足跨面、长生命周期、重开和纠正关闭语义，成为治理对象候选；
+- Change Notice、Correction Notice 和 Dependency Edge 当前作为有身份过程/关系记录候选；
+- Action 保持外部行动对象候选，Effect 暂归 Effect Assessment / Causal Claim 家族；
+- Update、Correction、Supersession、Withdrawal、Retraction 和 Deletion 是不同过程或生命周期语义；
+- Provenance、Derivation、Semantic Dependency、Citation、Governance、Distribution 和 Causal Lineage 必须分型。
+
+S7 未发现分类法元规则冲突。Product Edition、Product Release、Impact Case 与 Dependency Edge 的最终类别等待 S9 终审。
+
+## 十七、关联
 
 - [v0002 迭代入口](../02-architecture-iterations/v0002-intelligence-semantics/README.md)
 - [情报语义深化计划](../04-domain-design/intelligence-semantics-deepening-plan.md)
@@ -481,10 +503,12 @@ S6 未发现分类法元规则冲突。Scenario 是否正式纳入核心对象�
 - [Entity、身份、别名与消歧模型](../04-domain-design/entity-identity-and-resolution-model.md)
 - [世界状态、事件与变化模型](../04-domain-design/world-state-event-and-change-model.md)
 - [研判、预测、风险与建议模型](../04-domain-design/assessment-forecast-risk-recommendation-model.md)
+- [产品、告警、反馈与影响纠正模型](../04-domain-design/intelligence-product-alert-feedback-correction-model.md)
 - [SCN-0010：来源变化与证据保全](../05-scenarios-and-flows/SCN-0010-source-mutation-and-evidence-preservation.md)
 - [SCN-0011：多权威域事实并存](../05-scenarios-and-flows/SCN-0011-multiple-authority-domain-facts.md)
 - [SCN-0012：同名实体误合并与拆分纠正](../05-scenarios-and-flows/SCN-0012-entity-merge-split-correction.md)
 - [SCN-0013：四类变化分离](../05-scenarios-and-flows/SCN-0013-four-kinds-of-change-separation.md)
 - [SCN-0014：预测干预与风险重校准](../05-scenarios-and-flows/SCN-0014-forecast-intervention-and-recalibration.md)
+- [SCN-0015：部分事实撤回、影响裁剪与接收者纠正](../05-scenarios-and-flows/SCN-0015-partial-retraction-impact-and-recipient-correction.md)
 - [核心对象流转图](../03-current-architecture/text-diagrams/TXT-0006-core-object-spine.md)
 - [ADR-0008：有类型、可追溯的核心对象主干](../06-architecture-decisions/adrs/ADR-0008-typed-traceable-core-object-spine.md)

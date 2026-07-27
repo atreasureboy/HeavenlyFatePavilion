@@ -135,3 +135,23 @@
 - 预测生成器不得垄断解析、评分和历史样本。
 
 完整候选见[Signal、Assessment、Forecast、Scenario、Risk 与 Recommendation 语义模型](../../04-domain-design/assessment-forecast-risk-recommendation-model.md)。
+
+## S7 补充候选：产品冻结、反馈入口与语义影响纠正
+
+- Intelligence Product 表示长期产品身份，Product Edition 表示冻结内容版本，Product Release 表示带受众和用途限制的发布授权；
+- Rendering、Distribution Attempt、Delivery、Receipt、Consumption、Decision 和 Action 必须分别表达；
+- Product Edition 固定知识截点、输入对象精确版本、生成版本和内容/依赖 Manifest；
+- Dependency Edge 区分 premise、supports、contradicts、bounds、context、quoted_as_claim、derived_from 等语义；
+- Alert 是可跟踪时效性交付对象，不等于 Signal、Change、Risk 或渠道消息；
+- severity、confidence、urgency 和 priority 不得压缩成单一告警等级；
+- Feedback 必须引用目标与版本，并按事实纠错、研判异议、产品体验、结果反馈、偏好或演进缺口分流；
+- Feedback 中的陈述仍是 Claim，所附材料满足锚定和许可规则后才可形成 Evidence；
+- Provenance、Derivation Lineage、Semantic Dependency、Citation、Governance、Distribution 和 Causal Lineage 分离；
+- 上游 Challenge、Supersession、Retraction、Scope Restriction 或安全变化创建 Change Notice 和 Impact Case；
+- 影响传播使用固定版本、有类型的依赖边，逐分支形成 Unaffected、ReviewRequired、RecomputeRequired、Invalidated、CorrectionRequired 等分类；
+- 传播停止依据语义、替代证据、作用域和暴露义务，不使用固定跳数；
+- Update、Correction、Supersession、Withdrawal、Retraction 和 Deletion 必须分离；
+- Impact Case 关闭要求知识修复、产品修复、受控渠道停止旧版、接收者纠正和剩余风险均有状态；
+- 公共上游变化可以路由到多个租户私有 Impact Case，但不得暴露各租户依赖。
+
+完整候选见[Intelligence Product、Alert、Feedback 与影响纠正语义模型](../../04-domain-design/intelligence-product-alert-feedback-correction-model.md)。

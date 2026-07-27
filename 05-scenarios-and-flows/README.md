@@ -72,3 +72,4 @@
 | [SCN-0012 同名实体误合并与拆分纠正](./SCN-0012-entity-merge-split-correction.md) | v0002 / S4 实体身份与消歧 | Proposed |
 | [SCN-0013 四类变化分离](./SCN-0013-four-kinds-of-change-separation.md) | v0002 / S5 世界状态与变化 | Proposed |
 | [SCN-0014 预测干预与风险重校准](./SCN-0014-forecast-intervention-and-recalibration.md) | v0002 / S6 研判与预测 | Proposed |
+| [SCN-0015 部分事实撤回、影响裁剪与接收者纠正](./SCN-0015-partial-retraction-impact-and-recipient-correction.md) | v0002 / S7 产品、反馈与纠正 | Proposed |
