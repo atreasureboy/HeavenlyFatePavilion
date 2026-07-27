@@ -55,3 +55,17 @@
 - `Execution Event` 与现实世界 Event 必须使用不同类型。
 
 完整候选见[统一语言与对象分类法](../../08-reference-models/unified-language-and-object-taxonomy.md)。
+
+## S2 补充候选：资料保真与证据锚定
+
+- Source、Document、Snapshot、Evidence 是四种对象身份，不是同一对象的四个状态；
+- Source Principal、Source System、Source Endpoint 必须可分别表达；
+- Document 归并不能只依赖 URL、标题或内容哈希；
+- Snapshot 表示实际取得的不可变内容，必须声明捕获完整性；
+- Acquisition Record 证明怎样获取，Snapshot 表示获得了什么；
+- Evidence 必须锚定 Snapshot 或其他可审计材料根；
+- OCR、转录、翻译和解析形成派生链，不得改写原 Snapshot；
+- 内容变化、抽取变化、现实变化和知识修订不得合并；
+- Rights / Usage Envelope 必须随资料与证据传播，并在租户访问时重新判定。
+
+完整候选见[Source、Document、Snapshot 与 Evidence 语义模型](../../04-domain-design/source-document-snapshot-evidence-model.md)。

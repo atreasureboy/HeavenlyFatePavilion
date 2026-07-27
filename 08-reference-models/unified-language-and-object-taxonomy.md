@@ -393,10 +393,27 @@ S1 在候选层面完成：
 
 下一步进入 S2：Source、Document、Snapshot 与 Evidence。
 
-## 十一、关联
+## 十一、S2 验证回写
+
+S2 资料与证据模型及 `SCN-0010` 对 F3、F4 执行第一轮验证，结果支持：
+
+- Source、Document、Snapshot、Evidence 具有不同身份、权威和失败模式；
+- Acquisition Record 属于 Process Record，不应与 Snapshot 合并；
+- Snapshot 的 `Partial`、`Corrupted` 等属于生命周期/质量状态，不形成新对象；
+- Source Principal、System、Endpoint 当前作为可分角色，是否独立成对象继续开放；
+- Evidence Anchor 是 Evidence 的必要构成，而非另一种 Evidence 类型；
+- Direct / Derived Evidence 当前作为来源链角色，不因角色差异自动拆成两个对象类型；
+- Content Diff 和 Extraction Diff 是比较/处理产物，不自动取得 World Change 身份；
+- Rights / Usage Envelope 属于横切约束，不进入情报对象家族。
+
+S2 未发现分类法元规则冲突。分类法继续保持 `Proposed`，等待 S3～S10 完整验证。
+
+## 十二、关联
 
 - [v0002 迭代入口](../02-architecture-iterations/v0002-intelligence-semantics/README.md)
 - [情报语义深化计划](../04-domain-design/intelligence-semantics-deepening-plan.md)
 - [核心对象主干](../04-domain-design/core-object-spine.md)
+- [Source、Document、Snapshot 与 Evidence 模型](../04-domain-design/source-document-snapshot-evidence-model.md)
+- [SCN-0010：来源变化与证据保全](../05-scenarios-and-flows/SCN-0010-source-mutation-and-evidence-preservation.md)
 - [核心对象流转图](../03-current-architecture/text-diagrams/TXT-0006-core-object-spine.md)
 - [ADR-0008：有类型、可追溯的核心对象主干](../06-architecture-decisions/adrs/ADR-0008-typed-traceable-core-object-spine.md)

@@ -19,4 +19,5 @@
 
 - [情报语义与核心对象深化计划](./intelligence-semantics-deepening-plan.md)
 - [统一语言与对象分类法（Proposed）](../08-reference-models/unified-language-and-object-taxonomy.md)
+- [Source、Document、Snapshot 与 Evidence 语义模型（Proposed）](./source-document-snapshot-evidence-model.md)
 - [核心对象主干](./core-object-spine.md)

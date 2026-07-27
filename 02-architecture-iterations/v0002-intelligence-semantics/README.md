@@ -47,7 +47,7 @@
 
 ```text
 S1 统一语言与对象分类【候选层完成】
-→ S2 来源、资料、快照与证据
+→ S2 来源、资料、快照与证据【候选层完成】
 → S3 主张、争议、事实与裁定
 → S4 实体、身份、别名与消歧
 → S5 关系、事件、状态、Diff 与 Change
@@ -80,6 +80,8 @@ S1 统一语言与对象分类【候选层完成】
 - [迭代结果](./outcome.md)
 - [情报语义深化计划](../../04-domain-design/intelligence-semantics-deepening-plan.md)
 - [统一语言与对象分类法](../../08-reference-models/unified-language-and-object-taxonomy.md)
+- [Source、Document、Snapshot 与 Evidence 语义模型](../../04-domain-design/source-document-snapshot-evidence-model.md)
+- [SCN-0010：来源变化与证据保全](../../05-scenarios-and-flows/SCN-0010-source-mutation-and-evidence-preservation.md)
 
 ## 七、当前进度
 
@@ -93,6 +95,19 @@ S1 已完成候选分类：
 - 提出候选判断：`Disputed Claim` 是状态/视图，Diff 不自动等于 Change。
 
 这些结论保持 `Proposed`，将在 S2～S10 中接受逐类对象和异常场景验证。
+
+S2 已完成候选语义模型：
+
+- 分离 Source、Document、Snapshot、Evidence 四种身份；
+- Source 主体、系统、端点不再默认压成一个 URL；
+- Document 身份不由 URL、标题或内容哈希单独决定；
+- Snapshot 表示实际取得的不可变内容，并显式表达捕获完整性；
+- Acquisition Record 与 Snapshot 分离；
+- Evidence 必须具有 Anchor、上下文和派生变换链；
+- 共享物理资料不等于共享租户可见性、用途或判断；
+- Content Diff、Extraction Diff 与 World Change 得到可执行的语义分界。
+
+S2 未改变 Skeleton v1.0。候选模型已通过来源静默修改、半截抓取、解析升级、许可撤销和多租户复用场景的第一轮验证。
 
 ## 八、与 Skeleton v1.0 的关系
 
