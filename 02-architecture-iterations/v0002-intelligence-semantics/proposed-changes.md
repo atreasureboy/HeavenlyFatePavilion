@@ -24,13 +24,13 @@
 
 目的：避免看到网页变化就直接宣布现实发生了变化。
 
-## 候选三：采用双时态并保留认识时间
+## 候选三：采用二时态 Revision 与作用域认识历程
 
 - 有效时间：对象在现实世界何时成立；
 - 系统时间：天机阁何时记录或修改它；
-- 认识时间：某主体何时知道、接受或撤回该结论。
+- 认识时间：某个 Authority Domain 何时观察、可用、考虑、接受、挑战或撤回指定 Revision。
 
-是否将认识时间独立于系统时间，需要场景验证。
+S8 候选结论：有效时间与记录时间属于对象 Revision；认识时间独立建模为作用域化 Epistemic Record，而不是全系统唯一的第三时间戳。
 
 ## 候选四：事实采用显式接受语义
 
@@ -155,3 +155,25 @@
 - 公共上游变化可以路由到多个租户私有 Impact Case，但不得暴露各租户依赖。
 
 完整候选见[Intelligence Product、Alert、Feedback 与影响纠正语义模型](../../04-domain-design/intelligence-product-alert-feedback-correction-model.md)。
+
+## S8 补充候选：二时态版本、认识历程与知识覆盖
+
+- Valid Time 表达现实适用时间，Record / Transaction Time 表达天机阁保存版本的系统历史；
+- source authored/published/modified、observed、acquired、processed 和 received 时间不得冒充 Record Time；
+- Knowledge Time 必须绑定 Authority Domain，并通过 Epistemic Record 表达 observed、available、considered、accepted、challenged、withdrawn；
+- 核心模式采用 Bitemporal Object Revision + Scoped Epistemic Records，不采用全局三时态表；
+- 时间点、区间、精度、不确定性、时区和日历必须显式，禁止伪造精确时间；
+- Object Identity 与不可变 Revision 分离，跨作用域 Revision 形成有类型版本图而非全局版本链；
+- Ownership、Visibility、Semantic Authority、Purpose、Jurisdiction、Residency 和 Retention 是不同作用域维度；
+- Tenant Overlay 是带 Query Context 的 Knowledge Projection，不是公共知识的复制覆盖；
+- 知识合成先发现有权候选，再对齐命题、实体、时间和定义，最后按用途与权威选择策略形成 Selected View + Alternatives + Conflict；
+- Current Fact、Current State 和 Canonical Entity 都是查询 View；
+- “当前看过去”“还原当时所知”“事务历史回放”使用不同查询坐标；
+- Historical Replay 必须先经过 Current Authorization Gate，历史策略只决定投影语义，不能恢复权限；
+- Late Evidence 允许有效时间在过去、记录与认识时间在现在，不得回填系统历史；
+- Product 的 World Accuracy 与 Epistemic / Process Correctness 分开评估；
+- Revision / Epistemic 日志、风险检查点、Product Manifest 和版本化 Selection Policy 支撑按需重建；
+- 删除或许可失效导致的历史缺口必须标记 Exact、Semantically Equivalent、Partial 或 NonReconstructible；
+- 缓存键必须包含租户、用途、时间坐标、作用域、策略、Schema 和输入水位。
+
+完整候选见[时间、版本、作用域与知识覆盖语义模型](../../04-domain-design/temporal-version-scope-knowledge-overlay-model.md)。

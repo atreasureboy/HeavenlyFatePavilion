@@ -73,3 +73,4 @@
 | [SCN-0013 四类变化分离](./SCN-0013-four-kinds-of-change-separation.md) | v0002 / S5 世界状态与变化 | Proposed |
 | [SCN-0014 预测干预与风险重校准](./SCN-0014-forecast-intervention-and-recalibration.md) | v0002 / S6 研判与预测 | Proposed |
 | [SCN-0015 部分事实撤回、影响裁剪与接收者纠正](./SCN-0015-partial-retraction-impact-and-recipient-correction.md) | v0002 / S7 产品、反馈与纠正 | Proposed |
+| [SCN-0016 迟到资料、差异知识时间与历史重建](./SCN-0016-late-evidence-divergent-knowledge-time-and-reconstruction.md) | v0002 / S8 时间、版本与知识覆盖 | Proposed |

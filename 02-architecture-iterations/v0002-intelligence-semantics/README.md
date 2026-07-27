@@ -53,7 +53,7 @@ S1 统一语言与对象分类【候选层完成】
 → S5 关系、事件、状态、Diff 与 Change【候选层完成】
 → S6 Signal、Assessment、Forecast、Risk、Recommendation【候选层完成】
 → S7 产品、告警、反馈与影响纠正【候选层完成】
-→ S8 双时态、版本、作用域与知识覆盖
+→ S8 双时态、版本、作用域与知识覆盖【候选层完成】
 → S9 对象权威、生命周期、血缘与不变量
 → S10 场景压力与语义基线评审
 ```
@@ -92,6 +92,8 @@ S1 统一语言与对象分类【候选层完成】
 - [SCN-0014：预测干预与风险重校准](../../05-scenarios-and-flows/SCN-0014-forecast-intervention-and-recalibration.md)
 - [Intelligence Product、Alert、Feedback 与影响纠正语义模型](../../04-domain-design/intelligence-product-alert-feedback-correction-model.md)
 - [SCN-0015：部分事实撤回、影响裁剪与接收者纠正](../../05-scenarios-and-flows/SCN-0015-partial-retraction-impact-and-recipient-correction.md)
+- [时间、版本、作用域与知识覆盖语义模型](../../04-domain-design/temporal-version-scope-knowledge-overlay-model.md)
+- [SCN-0016：迟到资料、差异知识时间与历史重建](../../05-scenarios-and-flows/SCN-0016-late-evidence-divergent-knowledge-time-and-reconstruction.md)
 
 ## 七、当前进度
 
@@ -187,6 +189,23 @@ S7 已完成候选语义模型：
 - 共享 Fact 可触发各租户私有纠正，但不能泄露租户依赖和产品。
 
 S7 未改变 Skeleton v1.0。候选模型已通过一项 Fact 在同一报告中分别充当关键前提、历史 Claim 和背景引用，并已分发到 PDF、仪表板和 API 下游的部分撤回场景。
+
+S8 已完成候选语义模型：
+
+- 世界有效时间与系统记录时间形成对象 Revision 的二时态基础；
+- 认识时间不采用全局第三时间戳，而建模为 Authority Domain 对对象 Revision 的 Epistemic Record；
+- observed、available、considered、accepted、challenged 和 withdrawn 分离；
+- 来源时间、观察时间、获取时间、处理时间不再冒充系统记录时间；
+- Object Identity、不可变 Revision、生命周期事件和查询 View 分离；
+- 跨作用域 Revision 允许分支，不存在隐含全局总序或 last-write-wins；
+- Ownership、Visibility、Semantic Authority、Purpose、Jurisdiction 和 Retention 分开表达；
+- Tenant Overlay 通过候选发现、作用域过滤、时间截取和 Selection Policy 合成，不改写公共对象；
+- “现在看过去”“还原当时所知”“回放当时系统记录”成为三类不同查询；
+- 历史回放必须先经过当前授权门，旧策略不能恢复已撤销权限；
+- 迟到资料可以改变当前对过去的认识，但不能倒写历史认识；
+- Revision 日志、认识记录、风险检查点和 Product Manifest 共同支撑历史重建，不全量物化所有时点。
+
+S8 未改变 Skeleton v1.0。候选模型已通过内部任命 2 月生效、租户 A 早期获知、公共域 5 月才接受、租户 B 始终不可见，以及 4 月产品需要历史复现的迟到资料场景。
 
 ## 八、与 Skeleton v1.0 的关系
 

@@ -289,9 +289,19 @@ Platform Internal
 
 - 有效时间：现实世界何时成立；
 - 记录时间：天机阁何时保存该版本；
-- 认识时间：某个权威域何时知道、接受或撤回。
+- 认识时间：某个权威域何时观察、可用、考虑、接受、挑战或撤回指定版本。
 
-认识时间是否独立建模留给 S8 终审。
+S8 候选模型采用：
+
+```text
+Bitemporal Object Revision
+  = Valid Time + Record / Transaction Time
+
+Scoped Epistemic Record
+  = Authority Domain + Revision + Epistemic State + Interval
+```
+
+认识时间独立于记录时间，但不压成全系统唯一的第三时间轴。
 
 ### 6.4 版本与生命周期 Version / Lifecycle
 
@@ -493,7 +503,29 @@ S7 对 F7 交付、反馈与影响对象执行第一轮验证，结果支持：
 
 S7 未发现分类法元规则冲突。Product Edition、Product Release、Impact Case 与 Dependency Edge 的最终类别等待 S9 终审。
 
-## 十七、关联
+## 十七、S8 验证回写
+
+S8 对时间、版本、作用域和 View 执行横向验证，结果支持：
+
+- Object Identity 与不可变 Object Revision 分离；
+- Revision 使用 Valid Time 与 Record / Transaction Time；
+- Source-authored、published、observed、acquired 和 processed 时间属于来源/过程语义；
+- Knowledge Time 通过 Authority Domain 作用域化 Epistemic Record 表达；
+- Observed、Available、Considered、Accepted、Challenged、Withdrawn 不合并；
+- Authority Domain 成为正式语义概念，最终对象类别等待 S9；
+- Current Fact、Current State、Canonical Entity 和 Published Product 都是 Query Context 下的 View；
+- Tenant Overlay 是 Knowledge Projection，不是对象类型或复制覆盖；
+- Knowledge Query Context 是值对象，至少含主体、租户、用途、辖域、world/knowledge/record time、选择策略和 Schema；
+- Knowledge Snapshot 是派生检查点候选，不取得 Fact 权威；
+- Selection Policy 属于平台控制语义；
+- Late Evidence 创建当前记录的过去有效 Revision，不回填历史认识；
+- Historical Replay 必须经过 Current Authorization Gate；
+- 当前重解释与历史原始结果形成不同 Projection；
+- 缓存、索引和物化 View 都是可重建投影，不属于权威知识对象。
+
+S8 未发现分类法元规则冲突。Epistemic Record、Authority Domain、Knowledge Snapshot 和 Fact Acceptance 的最终类别等待 S9 终审。
+
+## 十八、关联
 
 - [v0002 迭代入口](../02-architecture-iterations/v0002-intelligence-semantics/README.md)
 - [情报语义深化计划](../04-domain-design/intelligence-semantics-deepening-plan.md)
@@ -504,11 +536,13 @@ S7 未发现分类法元规则冲突。Product Edition、Product Release、Impac
 - [世界状态、事件与变化模型](../04-domain-design/world-state-event-and-change-model.md)
 - [研判、预测、风险与建议模型](../04-domain-design/assessment-forecast-risk-recommendation-model.md)
 - [产品、告警、反馈与影响纠正模型](../04-domain-design/intelligence-product-alert-feedback-correction-model.md)
+- [时间、版本、作用域与知识覆盖模型](../04-domain-design/temporal-version-scope-knowledge-overlay-model.md)
 - [SCN-0010：来源变化与证据保全](../05-scenarios-and-flows/SCN-0010-source-mutation-and-evidence-preservation.md)
 - [SCN-0011：多权威域事实并存](../05-scenarios-and-flows/SCN-0011-multiple-authority-domain-facts.md)
 - [SCN-0012：同名实体误合并与拆分纠正](../05-scenarios-and-flows/SCN-0012-entity-merge-split-correction.md)
 - [SCN-0013：四类变化分离](../05-scenarios-and-flows/SCN-0013-four-kinds-of-change-separation.md)
 - [SCN-0014：预测干预与风险重校准](../05-scenarios-and-flows/SCN-0014-forecast-intervention-and-recalibration.md)
 - [SCN-0015：部分事实撤回、影响裁剪与接收者纠正](../05-scenarios-and-flows/SCN-0015-partial-retraction-impact-and-recipient-correction.md)
+- [SCN-0016：迟到资料、差异知识时间与历史重建](../05-scenarios-and-flows/SCN-0016-late-evidence-divergent-knowledge-time-and-reconstruction.md)
 - [核心对象流转图](../03-current-architecture/text-diagrams/TXT-0006-core-object-spine.md)
 - [ADR-0008：有类型、可追溯的核心对象主干](../06-architecture-decisions/adrs/ADR-0008-typed-traceable-core-object-spine.md)

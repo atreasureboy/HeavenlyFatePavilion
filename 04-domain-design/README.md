@@ -25,4 +25,5 @@
 - [Relationship、Event、State、Diff 与 Change 语义模型（Proposed）](./world-state-event-and-change-model.md)
 - [Signal、Assessment、Forecast、Scenario、Risk 与 Recommendation 语义模型（Proposed）](./assessment-forecast-risk-recommendation-model.md)
 - [Intelligence Product、Alert、Feedback 与影响纠正语义模型（Proposed）](./intelligence-product-alert-feedback-correction-model.md)
+- [时间、版本、作用域与知识覆盖语义模型（Proposed）](./temporal-version-scope-knowledge-overlay-model.md)
 - [核心对象主干](./core-object-spine.md)
