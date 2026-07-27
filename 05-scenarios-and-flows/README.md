@@ -71,3 +71,4 @@
 | [SCN-0011 多权威域事实并存](./SCN-0011-multiple-authority-domain-facts.md) | v0002 / S3 主张与事实接受 | Proposed |
 | [SCN-0012 同名实体误合并与拆分纠正](./SCN-0012-entity-merge-split-correction.md) | v0002 / S4 实体身份与消歧 | Proposed |
 | [SCN-0013 四类变化分离](./SCN-0013-four-kinds-of-change-separation.md) | v0002 / S5 世界状态与变化 | Proposed |
+| [SCN-0014 预测干预与风险重校准](./SCN-0014-forecast-intervention-and-recalibration.md) | v0002 / S6 研判与预测 | Proposed |

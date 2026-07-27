@@ -118,3 +118,20 @@
 - Entity Split、Fact Retract 和本体升级必须触发世界模型影响分析。
 
 完整候选见[Relationship、Event、State、Diff 与 Change 语义模型](../../04-domain-design/world-state-event-and-change-model.md)。
+
+## S6 补充候选：可校准研判与干预反馈
+
+- Signal、Assessment、Scenario、Forecast、Risk、Recommendation 必须类型分离；
+- Scenario 是条件化可能世界，可以无概率；
+- Forecast 必须具有目标、结果空间、信息截点、时间窗和解析规则；
+- Assessment 必须显式保存假设、反证、替代解释、未知和 Dissent；
+- 不确定性按数据、身份、认识、随机、模型、情景、测量、分歧等分面；
+- Intelligence Risk 与 Mission Risk Tier / Operational Risk 严格分离；
+- Recommendation 不产生 Decision、Authorization 或 Action；
+- Forecast 到期后进入独立解析、评分和 cohort 校准；
+- 建议触发的 Action / Effect 必须进入因果血缘；
+- 干预改变现实后，Forecast 标记 InterventionAffected，不能朴素判错；
+- 高影响研判按风险购买来源、模型、审核和人类独立性；
+- 预测生成器不得垄断解析、评分和历史样本。
+
+完整候选见[Signal、Assessment、Forecast、Scenario、Risk 与 Recommendation 语义模型](../../04-domain-design/assessment-forecast-risk-recommendation-model.md)。

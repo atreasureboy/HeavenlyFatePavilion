@@ -456,7 +456,22 @@ S5 对 F5 世界模型对象执行第二轮验证，结果支持：
 
 S5 同时继续支持 Mention 作为一等认识对象候选，因为 Relationship 与 Event 的参与者解析需要独立 Anchor、状态和纠正。
 
-## 十五、关联
+## 十五、S6 验证回写
+
+S6 对 F6 研判与未来对象执行第一轮验证，结果支持：
+
+- Signal、Assessment、Forecast、Risk、Recommendation 均保持核心对象；
+- Scenario 满足独立身份、版本、跨面消费和失效语义，成为核心对象候选；
+- Hypothesis 当前作为 Assessment 的有身份组成；
+- Dissent 是 Assessment / Forecast 的关系或视图，不是独立结论类型；
+- Forecast Resolution / Score 是过程记录或评测对象候选；
+- Intelligence Risk 与 Mission Risk Tier 是不同语义家族；
+- Recommendation 与 Decision / Action 继续严格分离；
+- InterventionAffected 是 Forecast Resolution 状态，不是新的 Forecast 类型。
+
+S6 未发现分类法元规则冲突。Scenario 是否正式纳入核心对象主干等待 S10 终审。
+
+## 十六、关联
 
 - [v0002 迭代入口](../02-architecture-iterations/v0002-intelligence-semantics/README.md)
 - [情报语义深化计划](../04-domain-design/intelligence-semantics-deepening-plan.md)
@@ -465,9 +480,11 @@ S5 同时继续支持 Mention 作为一等认识对象候选，因为 Relationsh
 - [Claim、争议、Fact 与裁定模型](../04-domain-design/claim-fact-and-adjudication-model.md)
 - [Entity、身份、别名与消歧模型](../04-domain-design/entity-identity-and-resolution-model.md)
 - [世界状态、事件与变化模型](../04-domain-design/world-state-event-and-change-model.md)
+- [研判、预测、风险与建议模型](../04-domain-design/assessment-forecast-risk-recommendation-model.md)
 - [SCN-0010：来源变化与证据保全](../05-scenarios-and-flows/SCN-0010-source-mutation-and-evidence-preservation.md)
 - [SCN-0011：多权威域事实并存](../05-scenarios-and-flows/SCN-0011-multiple-authority-domain-facts.md)
 - [SCN-0012：同名实体误合并与拆分纠正](../05-scenarios-and-flows/SCN-0012-entity-merge-split-correction.md)
 - [SCN-0013：四类变化分离](../05-scenarios-and-flows/SCN-0013-four-kinds-of-change-separation.md)
+- [SCN-0014：预测干预与风险重校准](../05-scenarios-and-flows/SCN-0014-forecast-intervention-and-recalibration.md)
 - [核心对象流转图](../03-current-architecture/text-diagrams/TXT-0006-core-object-spine.md)
 - [ADR-0008：有类型、可追溯的核心对象主干](../06-architecture-decisions/adrs/ADR-0008-typed-traceable-core-object-spine.md)

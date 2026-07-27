@@ -51,7 +51,7 @@ S1 统一语言与对象分类【候选层完成】
 → S3 主张、争议、事实与裁定【候选层完成】
 → S4 实体、身份、别名与消歧【候选层完成】
 → S5 关系、事件、状态、Diff 与 Change【候选层完成】
-→ S6 Signal、Assessment、Forecast、Risk、Recommendation
+→ S6 Signal、Assessment、Forecast、Risk、Recommendation【候选层完成】
 → S7 产品、告警、反馈与影响纠正
 → S8 双时态、版本、作用域与知识覆盖
 → S9 对象权威、生命周期、血缘与不变量
@@ -88,6 +88,8 @@ S1 统一语言与对象分类【候选层完成】
 - [SCN-0012：同名实体误合并与拆分纠正](../../05-scenarios-and-flows/SCN-0012-entity-merge-split-correction.md)
 - [Relationship、Event、State、Diff 与 Change 语义模型](../../04-domain-design/world-state-event-and-change-model.md)
 - [SCN-0013：四类变化分离](../../05-scenarios-and-flows/SCN-0013-four-kinds-of-change-separation.md)
+- [Signal、Assessment、Forecast、Scenario、Risk 与 Recommendation 语义模型](../../04-domain-design/assessment-forecast-risk-recommendation-model.md)
+- [SCN-0014：预测干预与风险重校准](../../05-scenarios-and-flows/SCN-0014-forecast-intervention-and-recalibration.md)
 
 ## 七、当前进度
 
@@ -154,6 +156,20 @@ S5 已完成候选语义模型：
 - 时序相邻不自动形成因果关系。
 
 S5 未改变 Skeleton v1.0。候选模型已通过同一监测轮次中页面、解析、认识和现实四类变化并发场景的第一轮验证。
+
+S6 已完成候选语义模型：
+
+- Signal、Assessment、Scenario、Forecast、Risk、Recommendation 六类对象分离；
+- Assessment 必须保留 Fact、假设、反证、替代解释、不确定性和 Dissent；
+- Scenario 被提出为条件化可能世界的一等研判对象；
+- Forecast 必须具有目标、结果空间、信息截点、时间窗、解析规则和评分；
+- 不确定性被拆为数据、身份、认识、随机、模型、情景、测量、分歧等维度；
+- Intelligence Risk 与 Mission Risk Tier / Operational Risk 分离；
+- Recommendation 到 Decision、Authorization、Action 之间保留权力断点；
+- 干预、自我实现、解析与校准进入因果血缘；
+- 认知独立性按风险启用，不按 Agent 数量表演。
+
+S6 未改变 Skeleton v1.0。候选模型已通过预警促成行动、行动改变暴露、最终结果无法朴素评分的干预场景。
 
 ## 八、与 Skeleton v1.0 的关系
 
