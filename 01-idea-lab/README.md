@@ -23,3 +23,4 @@
 - [Windows 作为天机阁智能运行体系的参考模型](./analogies/windows-as-agent-runtime-reference.md)
 - [Windows W1：用户态、内核态与系统调用边界](./analogies/windows-w01-user-kernel-and-system-call-boundary.md)
 - [Windows W2：Object Manager、Handle 与对象生命周期](./analogies/windows-w02-object-manager-handles-and-lifetime.md)
+- [Windows W3：Access Token、ACL、Privilege 与 Impersonation](./analogies/windows-w03-access-token-acl-privilege-and-impersonation.md)

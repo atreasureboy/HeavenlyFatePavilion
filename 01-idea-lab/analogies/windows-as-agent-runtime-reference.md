@@ -75,6 +75,8 @@ Job Object 可以把一组进程作为单元管理，设置资源限制、汇总
 
 迁移问题：Agent 的能力来自 Mandate / Token / Handle，还是来自 Prompt 中“你可以做什么”的文字？
 
+研究进度：第一轮完成，见 [W3：Access Token、ACL、Privilege 与 Impersonation](./windows-w03-access-token-acl-privilege-and-impersonation.md)。
+
 ### W4：进程、线程与执行上下文
 
 - Process 作为资源和地址空间容器；
