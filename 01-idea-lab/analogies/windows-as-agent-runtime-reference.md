@@ -97,6 +97,8 @@ Job Object 可以把一组进程作为单元管理，设置资源限制、汇总
 
 迁移问题：Mission / Run 是否应拥有类似 Job 的执行容器，统一约束 Token、模型费用、并发、子 Agent 树和终止传播？
 
+研究进度：第一轮完成，见 [W5：Job Object、资源治理与终止传播](./windows-w05-job-objects-resource-governance-and-termination.md)。
+
 ### W6：IPC 与同步
 
 - Pipe、RPC、ALPC、Shared Memory、Socket；

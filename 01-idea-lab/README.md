@@ -25,3 +25,4 @@
 - [Windows W2：Object Manager、Handle 与对象生命周期](./analogies/windows-w02-object-manager-handles-and-lifetime.md)
 - [Windows W3：Access Token、ACL、Privilege 与 Impersonation](./analogies/windows-w03-access-token-acl-privilege-and-impersonation.md)
 - [Windows W4：Process、Thread 与 Agent 执行上下文](./analogies/windows-w04-process-thread-and-agent-execution-context.md)
+- [Windows W5：Job Object、资源治理与终止传播](./analogies/windows-w05-job-objects-resource-governance-and-termination.md)
