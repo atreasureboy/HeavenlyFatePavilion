@@ -16,5 +16,6 @@
 
 ## 当前参考模型
 
-- [统一语言与对象分类法（Proposed）](./unified-language-and-object-taxonomy.md)
+- [统一语言与对象分类法（Accepted）](./unified-language-and-object-taxonomy.md)
+- [情报语义全局不变量 INV-0016～INV-0026](./intelligence-semantic-invariants.md)
 - [核心状态机与异常路由](./state-machines/README.md)

@@ -35,6 +35,9 @@
 ### L4：对象与语义
 
 - [核心对象主干](../04-domain-design/core-object-spine.md)
+- [统一语言与对象分类法](../08-reference-models/unified-language-and-object-taxonomy.md)
+- [情报语义全局不变量](../08-reference-models/intelligence-semantic-invariants.md)
+- [对象权威、生命周期与血缘模型](../04-domain-design/object-authority-lifecycle-lineage-invariant-model.md)
 
 ### L5：运行、流与契约
 
@@ -63,6 +66,7 @@
 - [骨架完整性审计](../07-analysis-and-validation/skeleton-completeness-assessment.md)
 - [Skeleton v0.3 闭合与一级稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
 - [Skeleton v1.0 正式就绪评审](../07-analysis-and-validation/skeleton-v1.0-readiness-review.md)
+- [v0002 情报语义基线就绪评审](../07-analysis-and-validation/v0002-intelligence-semantics-readiness-review.md)
 
 ## 三、当前成熟度
 
@@ -72,7 +76,7 @@ Skeleton v0.2：第二轮宏观闭合
 Skeleton v0.3：第三轮宏观闭合
 Skeleton v1.0：正式整体骨架基线
 
-当前下一步：按骨架分区逐步提高专题设计分辨率
+当前深化基线：情报语义与核心对象体系 v1 已采纳
 ```
 
 骨架扩展阶段已经结束。后续专题可以进入对象、协议、运行、安全、容量和组织内部设计，但不得静默改变 v1.0 的一级职责与权威语义。

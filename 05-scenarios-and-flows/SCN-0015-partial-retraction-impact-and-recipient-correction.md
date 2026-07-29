@@ -1,6 +1,6 @@
 # SCN-0015：部分事实撤回、影响裁剪与接收者纠正
 
-状态：Proposed
+状态：Accepted
 
 所属专题：`v0002-intelligence-semantics / S7`
 

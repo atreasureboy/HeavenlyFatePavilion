@@ -23,9 +23,9 @@ Disputed / Unresolved
   └── replace ─────────▶ Superseded
 ```
 
-`Verified` Claim 可以参与形成 Fact，但 Claim 自身仍保留来源主体和原始陈述语义。
+`Verified` Claim 可以连同规范化 Proposition 进入 Acceptance Decision，但 Claim 自身仍保留来源主体和原始陈述语义。只有具备对应 Authority Domain 接受权的主体才能形成 Fact Aggregate。
 
-## 二、Fact 生命周期
+## 二、Fact Aggregate 生命周期
 
 ```text
 Proposed
@@ -50,6 +50,8 @@ Disputed
   ├── new_evidence ────▶ UnderReview
   └── retain_dispute ──▶ Disputed
 ```
+
+Fact 状态是某 Authority Domain 对精确 Proposition Revision 的认识状态，不是命题自身的全局属性。
 
 ### 传播要求
 
@@ -96,7 +98,26 @@ Significant → Linked → Consumed
 
 `Consumed` 表示已被下游研判或产品处理，不表示 Change 消失。
 
-## 四、Assessment 生命周期
+## 四、Mention 与 Entity Resolution
+
+```text
+Mention
+Captured → CandidateLinked → ConfirmedLink
+                         ├── RejectedLink
+                         ├── Ambiguous
+                         └── Superseded
+
+Resolution Case
+Opened → Investigating → Decided
+                         ├── Merge
+                         ├── Split
+                         ├── RetainSeparate
+                         └── Unresolved
+```
+
+Merge / Split 必须形成 Governance Case、决定记录和影响传播，不能原地复用错误 Entity 身份。
+
+## 五、Assessment 生命周期
 
 ```text
 Draft
@@ -123,7 +144,13 @@ ReassessmentRequired
   └── invalidate ──────▶ Invalidated
 ```
 
-## 五、Forecast 生命周期
+## 六、Scenario 与 Forecast 生命周期
+
+```text
+Scenario
+Draft → Reviewed → Active
+Active → Superseded / Retired / Invalidated
+```
 
 ```text
 Draft → UnderReview → Active
@@ -143,7 +170,13 @@ Scored
 
 Forecast 必须在预测时间窗结束后进入评分，而不是只保留成功案例。
 
-## 六、认识论异常路径
+若 Forecast 触发了干预，Resolution 和 Score 必须记录 Intervention，区分预测失准与行动改变结果。
+
+## 七、统一转换规则
+
+生命周期状态、认识状态、审核状态、发布状态和运行状态是正交轴，不得压缩成一个万能 `status`。所有关键转换必须校验 Transition Envelope 和 expected revision。
+
+## 八、认识论异常路径
 
 ```text
 Claim 缺少 Evidence

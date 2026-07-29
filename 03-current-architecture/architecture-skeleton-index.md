@@ -98,7 +98,7 @@
 | L1 上下文 | 谁在系统内外、权力来自哪里 | [系统上下文](./system-context.md)、[生态与主权](./ecosystem-and-sovereignty.md) | [TXT-0005](./text-diagrams/TXT-0005-system-context.md)、[TXT-0013](./text-diagrams/TXT-0013-ecosystem-and-sovereignty.md) |
 | L2 职责 | 系统由哪些稳定一级责任组成 | [总体一级逻辑骨架](./overall-logical-skeleton.md)、[整体架构骨架](./overall-architecture-skeleton.md) | [TXT-0001](./text-diagrams/TXT-0001-overall-landscape.md)、[TXT-0003](./text-diagrams/TXT-0003-ten-plane-relationships.md) |
 | L3 组织 | 皇帝、三省六部和官署如何映射 | [组织—技术映射](./organization-mapping/README.md) | [TXT-0004](./text-diagrams/TXT-0004-emperor-and-court.md)、[TXT-0009](./text-diagrams/TXT-0009-organization-technology-mapping.md) |
-| L4 语义 | 数据如何成为事实、趋势和产品 | [核心对象主干](../04-domain-design/core-object-spine.md) | [TXT-0006](./text-diagrams/TXT-0006-core-object-spine.md) |
+| L4 语义 | 数据如何成为事实、趋势和产品 | [核心对象主干](../04-domain-design/core-object-spine.md)、[统一分类法](../08-reference-models/unified-language-and-object-taxonomy.md)、[语义不变量](../08-reference-models/intelligence-semantic-invariants.md) | [TXT-0006](./text-diagrams/TXT-0006-core-object-spine.md) |
 | L5 运行 | 系统怎样协作、流转、失败和恢复 | [运行形态](./operating-modes.md)、[七流](./global-flows.md)、[契约](./plane-contracts.md)、[状态机](../08-reference-models/state-machines/README.md) | [TXT-0014](./text-diagrams/TXT-0014-operating-modes.md)、[TXT-0015](./text-diagrams/TXT-0015-global-flow-separation.md) |
 | L6 坐标治理 | 在什么范围和约束下运行 | [时空规模](./spatiotemporal-and-scale-skeleton.md)、[横切治理](./cross-cutting/README.md) | [TXT-0016](./text-diagrams/TXT-0016-spatiotemporal-and-scale.md)、[TXT-0011](./text-diagrams/TXT-0011-cross-cutting-governance.md) |
 | L7 生存边界 | 失控时保什么、什么组合必须禁止 | [生存性](./nonfunctional-and-survivability-skeleton.md)、[负空间](./negative-space-and-future-replacement.md) | [TXT-0017](./text-diagrams/TXT-0017-nonfunctional-and-survivability.md)、[TXT-0018](./text-diagrams/TXT-0018-negative-space-and-future-replacement.md) |
@@ -218,13 +218,14 @@ Mandate / Mission → Plan → Run → Task / Agent / Tool
 1. [TXT-0024 Skeleton v1.0 基线封版图](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
 2. [总体一级逻辑骨架](./overall-logical-skeleton.md)
 3. [核心对象主干](../04-domain-design/core-object-spine.md)
+4. [v0002 情报语义基线就绪评审](../07-analysis-and-validation/v0002-intelligence-semantics-readiness-review.md)
 
 ### 7.2 三十分钟架构理解
 
 1. L1 外部上下文与主权；
 2. L2 十面职责；
 3. L3 三省六部映射；
-4. L4 对象主干；
+4. L4 对象主干、统一分类与语义不变量；
 5. L5 运行形态与七流；
 6. L6 横切治理；
 7. L7 生存与负空间；

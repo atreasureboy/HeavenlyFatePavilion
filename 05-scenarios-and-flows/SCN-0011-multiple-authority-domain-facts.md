@@ -1,6 +1,6 @@
 # SCN-0011：多权威域事实并存
 
-状态：Proposed
+状态：Accepted
 
 提出日期：2026-07-27
 
@@ -189,7 +189,7 @@ F3 进入 Challenged / Retracted 或限定有效时间；定位依赖产品并�
 - Public / Tenant / External Authority Fact 可以并存；
 - 不同事实域的合成是查询视图，不是对象覆盖。
 
-本场景将在 S4 实体身份、S8 时间与作用域后复核，当前保持 `Proposed`。
+本场景已在 S4、S8 和 S10 完成复核并采纳。
 
 ## 十一、关联
 

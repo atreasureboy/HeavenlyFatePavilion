@@ -1,6 +1,6 @@
 # SCN-0017：越权事实晋升、血缘断裂与自审发布阻断
 
-状态：Proposed
+状态：Accepted
 
 所属专题：`v0002-intelligence-semantics / S9`
 

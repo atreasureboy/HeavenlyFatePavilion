@@ -1,6 +1,6 @@
 # Signal、Assessment、Forecast、Scenario、Risk 与 Recommendation 语义模型
 
-状态：Proposed
+状态：Accepted
 
 提出日期：2026-07-27
 

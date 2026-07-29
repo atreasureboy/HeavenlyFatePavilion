@@ -24,3 +24,4 @@
 - [Skeleton v0.3 闭合与一级稳定性复核](./skeleton-v0.3-closure-and-stability-review.md)
 - [Skeleton v1.0 正式就绪评审](./skeleton-v1.0-readiness-review.md)
 - [第一批端到端场景覆盖矩阵](../05-scenarios-and-flows/scenario-coverage-matrix.md)
+- [v0002 情报语义基线就绪评审](./v0002-intelligence-semantics-readiness-review.md)

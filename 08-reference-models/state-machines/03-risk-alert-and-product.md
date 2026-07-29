@@ -74,32 +74,49 @@ Escalated
 
 `Suppressed`、`Merged` 和 `Expired` 不等于风险解除；它们只描述 Alert 的交付生命周期。
 
-## 三、Intelligence Product 生命周期
+## 三、Intelligence Product、Edition 与 Release
+
+`Intelligence Product` 是长期产品身份；内容审核与不可变版本属于 `Product Edition`，发布行为属于 `Product Release`。
 
 ```text
+Intelligence Product
+Created → Active → Retired
+
+Product Edition
 Draft
   │ submit_review
   ▼
 UnderReview
-  ├── approve ─────────▶ Approved
+  ├── approve ─────────▶ Approved ──freeze──▶ Frozen
   ├── return ──────────▶ Draft
   └── reject ──────────▶ Rejected
 
-Approved
-  │ publish
-  ▼
-Published
+Frozen
   ├── evidence_changed ▶ CorrectionRequired
   ├── replace ─────────▶ Superseded
-  ├── withdraw ────────▶ Withdrawn
-  └── archive ─────────▶ Archived
+  └── withdraw ────────▶ Withdrawn
 
 CorrectionRequired
-  ├── correct ─────────▶ Superseded ──by──▶ Corrected Product
+  ├── correct ─────────▶ Superseded ──by──▶ New Product Edition
   └── withdraw ────────▶ Withdrawn
+
+Product Release
+Created
+  │ authorize
+  ▼
+Authorized
+  │ publish
+  ▼
+Published → Rendering → Distributed → Delivered / DeliveryFailed
+   │
+   └── revoke ─────────▶ Revoked
+
+DeliveryFailed → RetryScheduled → Distributed
 ```
 
-发布后的更正必须明确：
+`Published`、`Distributed`、`Delivered`、`Consumed` 和外部 `Action` 不是同一状态轴。
+
+Edition 冻结或 Release 发布后的更正必须明确：
 
 - 哪些结论变化；
 - 变化原因；

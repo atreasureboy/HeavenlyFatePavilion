@@ -18,6 +18,10 @@
 - 定时到期也是显式事件；
 - 人类接管不绕过状态机，而是成为有权转换主体；
 - 状态机定义业务状态，技术进程状态另行映射。
+- 生命周期、认识、审核、发布和运行是正交状态轴，不得压入单个万能状态；
+- 关键转换使用 Transition Envelope，并以 expected revision 防止旧版本并发覆盖；
+- 状态转换权来自 Authority Domain 和有效 Mandate，不来自 Agent 自述能力；
+- 数据底座保管转换记录，但不因此获得语义接受或发布权。
 
 ## 三、状态类别
 
@@ -53,3 +57,5 @@ Superseded / Archived / Expired
 5. [异常分类与跨面路由](./05-exception-taxonomy-and-routing.md)
 
 总览文字图：[TXT-0010：核心状态机与异常路由](../../03-current-architecture/text-diagrams/TXT-0010-state-machines-and-exceptions.md)
+
+共同语义约束：[情报语义全局不变量](../intelligence-semantic-invariants.md)

@@ -1,6 +1,6 @@
 # Intelligence Product、Alert、Feedback 与影响纠正语义模型
 
-状态：Proposed
+状态：Accepted
 
 形成日期：2026-07-27
 
@@ -896,7 +896,7 @@ Alert.Queued / Delivered / DeliveryFailed
 → 可由 Alert 状态与 Delivery Record 投影
 ```
 
-候选模型中的 `Candidate`、`Qualified`、`Approved`、`Dispatched`、`Monitoring`、`Retracted` 以及 Edition / Release 分离，需要在 S9/S10 评审通过后再修改正式状态机和当前架构图。此前所有新增状态只属于 Proposed 模型。
+模型中的 `Candidate`、`Qualified`、`Approved`、`Dispatched`、`Monitoring`、`Retracted` 以及 Edition / Release 分离已通过 S9/S10 评审；正式状态机和当前架构图已同步。具体子状态仍可在产品专题细化。
 
 ### 18.1 只保存最终报告文本
 

@@ -34,22 +34,25 @@
                                            ▼
 ┌──────────────────────────── 数据认知 ────────────────────────────┐
 │                                                                  │
-│  [Source] ──获取──▶ [Document] ──捕获──▶ [Snapshot]               │
+│  [Source] ──获取──▶ [Document] ──捕获──▶ [Snapshot Revision]      │
 │                                              │                   │
 │                                              ▼                   │
 │  [Evidence] ◀──定位提取── [Snapshot]                              │
 │      │                                                           │
-│      └──支持 / 反驳──▶ [Claim] ──验证──▶ [Verification Record]   │
-│                                           │                      │
-│                                           ▼                      │
-│                                        [Fact]                    │
+│      └──支持 / 反驳──▶ [Claim] ──规范化──▶ [Proposition]          │
+│                              │                 │                 │
+│                              └──验证包──▶ [Acceptance Decision]  │
+│                                                │                 │
+│                                     Authority Domain             │
+│                                                ▼                 │
+│                                         [Fact Aggregate]         │
 │                                           │                      │
 │               ┌───────────────────────────┼──────────────────┐   │
 │               ▼                           ▼                  ▼   │
-│           [Entity]                 [Relationship]        [Event] │
+│ [Mention]→[Entity]          [Relationship]             [Event]   │
 │               └───────────────────────────┬──────────────────┘   │
 │                                           ▼                      │
-│                                        [Change]                  │
+│                     typed Diff ──接受──▶ [Change]                │
 └──────────────────────────────────────────┬───────────────────────┘
                                            ▼
 ┌──────────────────────────── 情报研判 ────────────────────────────┐
@@ -59,9 +62,9 @@
 │                                                ▼                 │
 │                                          [Assessment]            │
 │                                           当前态势判断            │
-│                                           │          │           │
-│                                           ▼          ▼           │
-│                                      [Forecast]    [Risk]         │
+│                                ┌──────────┼──────────┐           │
+│                                ▼          ▼          ▼           │
+│                           [Scenario]  [Forecast]    [Risk]        │
 │                                       未来判断      风险判断       │
 │                                           └────┬─────┘           │
 │                                                ▼                 │
@@ -71,8 +74,10 @@
 ┌──────────────────────────── 情报产品 ────────────────────────────┐
 │                                                                  │
 │ Fact / Assessment / Forecast / Risk                              │
-│                    ──组织与审核──▶ [Intelligence Product]         │
+│                    ──组织与审核──▶ [Product Edition]              │
 │                                         │                        │
+│                         ──授权发布──▶ [Product Release]           │
+│                         ──分发送达──▶ Distribution / Delivery     │
 │                         Risk / Change ──触发──▶ [Alert]           │
 └──────────────────────────────────────────┬───────────────────────┘
                                            ▼
@@ -146,10 +151,10 @@ Snapshot
 Evidence
    │ 支持或反驳
    ▼
-Claim
-   │ 验证、反证、裁定
+Claim + Proposition
+   │ 验证、反证、作用域化接受
    ▼
-Fact / Disputed Claim
+Fact Aggregate / Disputed View
    │ 综合与解释
    ▼
 Assessment
@@ -161,7 +166,7 @@ Forecast
 Risk
    │ 面向受众组织
    ▼
-Intelligence Product
+Product Edition → Release → Delivery
 ```
 
 不得跨越中间语义：
@@ -187,8 +192,10 @@ Assessment ──supports──▶ Forecast
 保留输入对象
 + 创建新对象
 + 建立关系
-+ 记录主体、方法、版本、时间和作用域
++ 记录主体、方法、Revision、时间、作用域和 Authority Domain
 ```
+
+关键转换还必须经过包含 `expected revision + mandate + actor + reason + idempotency + causation` 的 Transition Envelope。
 
 ## 五、纠正与争议
 
@@ -216,5 +223,8 @@ Assessment ──supports──▶ Forecast
 ## 七、对应正文
 
 - [核心对象主干](../../04-domain-design/core-object-spine.md)
+- [统一语言与对象分类法](../../08-reference-models/unified-language-and-object-taxonomy.md)
+- [情报语义全局不变量](../../08-reference-models/intelligence-semantic-invariants.md)
 - [系统上下文与边界](../system-context.md)
 - [ADR-0008：采用有类型、可追溯的核心对象主干](../../06-architecture-decisions/adrs/ADR-0008-typed-traceable-core-object-spine.md)
+- [ADR-0016：采纳作用域化、版本化的情报语义基线](../../06-architecture-decisions/adrs/ADR-0016-adopt-scoped-versioned-intelligence-semantics-baseline.md)

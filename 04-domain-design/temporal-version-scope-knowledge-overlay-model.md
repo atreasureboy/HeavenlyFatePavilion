@@ -1,6 +1,6 @@
 # 时间、版本、作用域与知识覆盖语义模型
 
-状态：Proposed
+状态：Accepted
 
 形成日期：2026-07-27
 
@@ -1002,7 +1002,7 @@ S9 将判断 Epistemic Record 是否进入永久核心对象目录，或作为 F
 - Product Edition 知识截点；
 - 数据底座的版本、血缘与审计职责。
 
-它不改变十个一级面，也不在 S9/S10 评审前修改 Accepted 文字架构图。新增的 Epistemic Record、Knowledge Snapshot 和查询坐标均保持 `Proposed`。
+它不改变十个一级面。S9/S10 评审通过后，Epistemic Record、Knowledge Snapshot 和查询坐标已进入 Accepted 基线，并同步到正式文字架构图。
 
 ## 二十四、关联
 

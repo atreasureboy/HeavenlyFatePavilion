@@ -1,6 +1,6 @@
 # SCN-0016：迟到资料、差异知识时间与历史重建
 
-状态：Proposed
+状态：Accepted
 
 所属专题：`v0002-intelligence-semantics / S8`
 

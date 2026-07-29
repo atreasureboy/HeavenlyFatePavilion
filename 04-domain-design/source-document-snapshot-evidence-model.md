@@ -1,6 +1,6 @@
 # Source、Document、Snapshot 与 Evidence 语义模型
 
-状态：Proposed
+状态：Accepted
 
 提出日期：2026-07-27
 
@@ -27,7 +27,7 @@ Source
 - Agent 与确定性 Tool 分别可以做什么；
 - 为什么“抓到了网页”不能直接变成“拥有证据”。
 
-本文保持 `Proposed`，将在后续 Claim / Fact、时间、作用域和纠正专题中继续验证。
+本文已在后续 Claim / Fact、时间、作用域、纠正和 S10 组合场景中完成验证。
 
 ## 二、四对象关系
 

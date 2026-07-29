@@ -67,11 +67,12 @@
 
 | 场景 | 所属专题 | 状态 |
 |---|---|---|
-| [SCN-0010 来源变化与证据保全](./SCN-0010-source-mutation-and-evidence-preservation.md) | v0002 / S2 资料与证据对象 | Proposed |
-| [SCN-0011 多权威域事实并存](./SCN-0011-multiple-authority-domain-facts.md) | v0002 / S3 主张与事实接受 | Proposed |
-| [SCN-0012 同名实体误合并与拆分纠正](./SCN-0012-entity-merge-split-correction.md) | v0002 / S4 实体身份与消歧 | Proposed |
-| [SCN-0013 四类变化分离](./SCN-0013-four-kinds-of-change-separation.md) | v0002 / S5 世界状态与变化 | Proposed |
-| [SCN-0014 预测干预与风险重校准](./SCN-0014-forecast-intervention-and-recalibration.md) | v0002 / S6 研判与预测 | Proposed |
-| [SCN-0015 部分事实撤回、影响裁剪与接收者纠正](./SCN-0015-partial-retraction-impact-and-recipient-correction.md) | v0002 / S7 产品、反馈与纠正 | Proposed |
-| [SCN-0016 迟到资料、差异知识时间与历史重建](./SCN-0016-late-evidence-divergent-knowledge-time-and-reconstruction.md) | v0002 / S8 时间、版本与知识覆盖 | Proposed |
-| [SCN-0017 越权事实晋升、血缘断裂与自审发布阻断](./SCN-0017-unauthorized-fact-promotion-lineage-gap-and-self-publication.md) | v0002 / S9 权威、生命周期与血缘 | Proposed |
+| [SCN-0010 来源变化与证据保全](./SCN-0010-source-mutation-and-evidence-preservation.md) | v0002 / S2 资料与证据对象 | Accepted |
+| [SCN-0011 多权威域事实并存](./SCN-0011-multiple-authority-domain-facts.md) | v0002 / S3 主张与事实接受 | Accepted |
+| [SCN-0012 同名实体误合并与拆分纠正](./SCN-0012-entity-merge-split-correction.md) | v0002 / S4 实体身份与消歧 | Accepted |
+| [SCN-0013 四类变化分离](./SCN-0013-four-kinds-of-change-separation.md) | v0002 / S5 世界状态与变化 | Accepted |
+| [SCN-0014 预测干预与风险重校准](./SCN-0014-forecast-intervention-and-recalibration.md) | v0002 / S6 研判与预测 | Accepted |
+| [SCN-0015 部分事实撤回、影响裁剪与接收者纠正](./SCN-0015-partial-retraction-impact-and-recipient-correction.md) | v0002 / S7 产品、反馈与纠正 | Accepted |
+| [SCN-0016 迟到资料、差异知识时间与历史重建](./SCN-0016-late-evidence-divergent-knowledge-time-and-reconstruction.md) | v0002 / S8 时间、版本与知识覆盖 | Accepted |
+| [SCN-0017 越权事实晋升、血缘断裂与自审发布阻断](./SCN-0017-unauthorized-fact-promotion-lineage-gap-and-self-publication.md) | v0002 / S9 权威、生命周期与血缘 | Accepted |
+| [SCN-0018 情报语义基线组合压力场景](./SCN-0018-semantic-baseline-composite-stress.md) | v0002 / S10 采纳门 | Accepted |

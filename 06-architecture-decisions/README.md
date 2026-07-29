@@ -25,3 +25,4 @@ ADR 一经接受不直接改写；需要改变决定时，创建新的 ADR 并�
 - [ADR-0013：横切治理采用强制上下文传播与确定性执行点](./adrs/ADR-0013-mandatory-cross-cutting-context-and-enforcement.md)
 - [ADR-0014：内部智能主体只拥有派生且分域的权力](./adrs/ADR-0014-derived-domain-scoped-authority.md)
 - [ADR-0015：持久授权与使命同临时执行实例分离](./adrs/ADR-0015-separate-durable-mandates-from-execution.md)
+- [ADR-0016：采纳作用域化、版本化的情报语义基线](./adrs/ADR-0016-adopt-scoped-versioned-intelligence-semantics-baseline.md)

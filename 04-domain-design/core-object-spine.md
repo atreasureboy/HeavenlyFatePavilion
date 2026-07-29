@@ -2,7 +2,7 @@
 
 状态：Accepted
 
-生效日期：2026-07-24
+生效日期：2026-07-29
 
 ## 一、目的
 
@@ -45,9 +45,93 @@ Intent
 - Product 只是对象的交付视图，不吞并底层对象；
 - Feedback 可以修正目标、事实、研判、产品或系统能力。
 
-## 三、六组核心对象
+## 三、正式对象分类与八个家族
 
-### 3.1 意图与治理对象
+对象不再只按一条线性流水线分类。正式分类为：
+
+```text
+Core Object
+First-class Supporting Record
+Typed Relation / Value
+View
+Deferred
+```
+
+八个核心对象家族为：
+
+| 家族 | 代表对象 |
+|---|---|
+| 资料与证据 | Source、Document、Snapshot、Evidence |
+| 主张与事实 | Claim、Proposition、Fact |
+| 实体与世界模型 | Mention、Entity、Relationship、Event、Change |
+| 研判 | Signal、Assessment、Scenario、Forecast、Risk、Recommendation |
+| 治理与执行 | Intent、Mission、Plan、Decision、Run、Task、Governance Case |
+| 产品与告警 | Intelligence Product、Product Edition、Alert |
+| 交互与反馈 | Feedback、Correction Request |
+| 能力演进 | Evolution Evidence、Experiment、Capability Change Candidate |
+
+Product Release、Epistemic Record、Semantic Edge Record、Acquisition Record、Verification Record、Acceptance Decision、Forecast Resolution / Score 等具有独立身份、生命周期和审计价值，但属于一等支撑记录，不与业务核心对象混写。
+
+旧文档中的 `Disputed Claim` 是 Claim 的状态或查询视图；`World State` 是在 Authority Domain、作用域和时间截点下合成的 View；Diff 是比较记录，不自动等于 Change。
+
+### 3.1 正式认识论主链
+
+```text
+Source
+→ Document
+→ immutable Snapshot
+→ anchored Evidence
+→ Claim + normalized Proposition
+→ Verification Package
+→ scoped Acceptance Decision
+→ Fact Aggregate
+→ Assessment / Scenario / Forecast / Risk
+→ Product Edition
+→ Product Release / Distribution / Delivery
+```
+
+Fact Aggregate 由 Proposition Revision、Acceptance Context、Acceptance Decision 和 Epistemic Record 历史构成。它只表示某 Authority Domain 在指定条件下接受某命题，不宣称无作用域的全局真理。
+
+### 3.2 世界认知主链
+
+```text
+Snapshot / Evidence
+→ Mention / Source-local Record
+→ Entity Resolution Decision
+→ Entity
+→ Relationship / Event
+→ World State View
+→ typed Diff
+→ accepted Change
+```
+
+Content Diff、Extraction Diff、Knowledge Revision 与 World Change 必须分离。世界变化必须经过 Evidence—Claim—Fact 接受链。
+
+### 3.3 权威、版本与转换
+
+对象身份、不可变 Revision、生命周期事件、Authority Domain 的 Epistemic Record 和查询 View 相互分离。关键状态转换必须经过 Transition Envelope，至少携带 expected revision、授权依据、主体、原因、幂等键和因果关联。
+
+数据底座拥有 ID、Revision、Transition、血缘和审计的保管强制权，但不拥有 Fact 接受、Assessment 采纳或 Product 发布的语义决定权。
+
+### 3.4 纠正与影响
+
+Challenge、Correction、Supersession、Withdrawal、Retraction 和 Deletion 是不同语义。任何纠正都保留旧 Revision，通过固定版本、有类型的依赖边建立 Impact Case，并在授权作用域内重评下游对象。
+
+### 3.5 多租户知识组合
+
+```text
+Public Baseline
++ Tenant Overlay
++ Mission Workspace
+-- current authorization / purpose / jurisdiction filters
+→ scoped knowledge view
+```
+
+任何覆盖都不改写公共对象，不使用 last-write-wins；历史回放也必须经过当前授权门。
+
+## 四、原六组对象详解（兼容说明）
+
+### 4.1 意图与治理对象
 
 #### Intent
 
@@ -101,7 +185,7 @@ Plan 是治理对象，不是实际执行状态。每个 Plan 必须关联版本
 
 Decision 必须记录决定者、依据、作用对象、决定类型、时间和后续效果，不能只存在于聊天文本。
 
-### 3.2 执行对象
+### 4.2 执行对象
 
 #### Run
 
@@ -140,7 +224,7 @@ Task 可以由 Agent、Tool、Worker、人类或外部服务执行，但执行�
 
 Artifact 不能因为由高级模型产生就自动成为 Evidence、Fact 或 Assessment。
 
-### 3.3 资料与认识论对象
+### 4.3 资料与认识论对象
 
 #### Source
 
@@ -217,7 +301,7 @@ Fact 不是永恒真理。它可以被争议、纠正、失效或新版本替代
 
 争议不是错误状态。系统必须能保留多个相互冲突的 Claim，而不是强迫生成虚假唯一事实。
 
-### 3.4 世界状态对象
+### 4.4 世界状态对象
 
 #### Entity
 
@@ -241,7 +325,7 @@ Change 必须引用前态、后态、检测方法、时间和重要性，不等�
 
 世界状态对象由数据认知面形成语义，由数据底座面持久保存和供应。
 
-### 3.5 研判对象
+### 4.5 研判对象
 
 #### Signal
 
@@ -283,7 +367,7 @@ Risk 可以引用 Assessment 和 Forecast，但不与二者合并。
 
 Recommendation 不等于 Decision，更不等于已经授权的 Action。
 
-### 3.6 交付、反馈与演进对象
+### 4.6 交付、反馈与演进对象
 
 #### Intelligence Product
 
@@ -315,7 +399,7 @@ Evolution Evidence 可以触发能力演进候选，但不能直接修改生产�
 
 候选必须经过实验、评测、治理决定和平台发布，才成为新的期望状态。
 
-## 四、十面对象所有权
+## 五、十面对象所有权
 
 | 一级面 | 拥有的核心语义或状态 | 主要读取 |
 |---|---|---|
@@ -332,9 +416,9 @@ Evolution Evidence 可以触发能力演进候选，但不能直接修改生产�
 
 “形成语义”和“持久状态所有权”可以属于不同面。例如数据认知面决定一个 Change 的语义，数据底座面保存它的权威版本。
 
-## 五、对象转化规则
+## 六、对象转化规则
 
-### 5.1 转化必须显式
+### 6.1 转化必须显式
 
 ```text
 Snapshot ──提取定位──▶ Evidence
@@ -348,7 +432,7 @@ Fact / Assessment / Forecast / Risk ──组织──▶ Intelligence Product
 
 箭头代表创建新的有类型对象及其血缘，不代表把原对象原地改名。
 
-### 5.2 每次转化至少记录
+### 6.2 每次转化至少记录
 
 - 输入对象 ID 和版本；
 - 输出对象 ID 和类型；
@@ -361,7 +445,7 @@ Fact / Assessment / Forecast / Risk ──组织──▶ Intelligence Product
 - 置信度或质量结果；
 - trace_id 和 causation_id。
 
-### 5.3 纠正与争议
+### 6.3 纠正与争议
 
 纠正采用新版本、反驳关系、撤回或失效记录，不直接抹除历史。
 
@@ -372,7 +456,7 @@ Fact / Assessment / Forecast / Risk ──组织──▶ Intelligence Product
 └── retracted_by ───▶ Retraction Decision
 ```
 
-## 六、核心对象最小生命周期骨架
+## 七、核心对象最小生命周期骨架
 
 ```text
 Mission:
@@ -406,7 +490,7 @@ Proposed → Experimenting → Evaluated → Approved / Rejected
 
 这些只是骨架状态，详细转移条件将在状态机专题定义。
 
-## 七、公共与租户作用域
+## 八、公共与租户作用域
 
 每个持久对象必须显式声明作用域：
 
@@ -420,7 +504,7 @@ Platform Internal
 
 对象作用域不由存储位置隐式推断。公共 Evidence 可以被多个租户引用；租户私有 Assessment、Risk 和 Product 默认不因引用公共 Fact 而变为公共。
 
-## 八、对象不变量
+## 九、对象不变量
 
 - Intent 不等于 Mission；
 - Plan 不等于 Run；
@@ -442,7 +526,7 @@ Platform Internal
 - 事实、研判和预测必须具有明确的时间语义；
 - 对象类型不能因展示方便而在产品层被模糊。
 
-## 九、明确不在本阶段确定
+## 十、明确不在本阶段确定
 
 - 每个对象的完整字段 Schema；
 - ID 编码格式；
@@ -453,7 +537,7 @@ Platform Internal
 - 外部 Action 对象和补偿模型；
 - 跨租户联合调查的详细作用域协议。
 
-## 十、关联文档
+## 十一、关联文档
 
 - [TXT-0006：核心对象流转图](../03-current-architecture/text-diagrams/TXT-0006-core-object-spine.md)
 - [系统上下文与边界](../03-current-architecture/system-context.md)
