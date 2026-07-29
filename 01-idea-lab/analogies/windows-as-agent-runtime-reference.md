@@ -54,6 +54,8 @@ Job Object 可以把一组进程作为单元管理，设置资源限制、汇总
 
 迁移问题：哪些能力属于 Agent 可建议的“用户态”，哪些必须由确定性运行内核强制？
 
+研究进度：第一轮完成，见 [W1：用户态、内核态与系统调用边界](./windows-w01-user-kernel-and-system-call-boundary.md)。
+
 ### W2：对象管理器、对象类型与命名空间
 
 - Object、Object Type、Object Header；
