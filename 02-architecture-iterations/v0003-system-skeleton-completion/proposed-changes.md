@@ -13,3 +13,11 @@
 7. 在整体骨架完成前，限制字段、算法、选型和部署细化。
 
 以上除阶段边界外均为候选，需后续逐项验证。
+
+## G1 覆盖审计新增候选
+
+1. 正式区分 `Capability ≠ Logical System ≠ Deployable Component`；
+2. 使用独立责任、权威状态、生命周期、伸缩或故障边界判断是否值得形成逻辑系统；
+3. 采用 G1-A 系统族、G1-B 权威、G1-C 连接、G1-D 生存四轮横向扫描；
+4. 在十面达到同等系统分辨率前，暂停 Windows 连续单面下钻；
+5. 将 Role / Office、Agent Instance、Logical System 和 Deployable Service 保持分离。
