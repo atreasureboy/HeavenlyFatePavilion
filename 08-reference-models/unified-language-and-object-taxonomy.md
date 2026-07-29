@@ -525,7 +525,47 @@ S8 对时间、版本、作用域和 View 执行横向验证，结果支持：
 
 S8 未发现分类法元规则冲突。Epistemic Record、Authority Domain、Knowledge Snapshot 和 Fact Acceptance 的最终类别等待 S9 终审。
 
-## 十八、关联
+## 十八、S9 收敛回写
+
+S9 对 S1—S8 全部候选执行对象准入和权威审查，采用五级分类：
+
+```text
+C = Core Semantic Object
+S = First-class Supporting Record
+R = Typed Relation / Value Object
+V = Role / Projection / View
+D = Deferred Domain Object
+```
+
+主要裁定：
+
+- Mention、Scenario、Governance Case 和 Product Edition 进入核心对象采纳候选；
+- Dispute Case、Entity Resolution Case、Impact Case 是 Governance Case 子型；
+- Proposition 是一等语义支撑记录，不是 Fact；
+- Fact 保持带 Acceptance Context、Decision 和 Epistemic History 的核心聚合；
+- Product Release 是一等治理记录，不复制 Product Edition 内容；
+- Epistemic Record、Semantic Edge Record、Transition Record、Forecast Resolution / Score、Evaluation 和 Delivery Records 是一等支撑记录；
+- State、Current Fact、Canonical Entity、Tenant Overlay、Published Product 和 Alert Thread 保持 View；
+- Identity Link、Evidence Relation、Dissent 和 Dependency Edge 统一由有类型 Semantic Edge Record 表达；
+- Hypothesis 保持 Assessment 组成；
+- Effect 采用 Effect Assessment；Action 继续 Deferred；
+- Source Principal / System / Endpoint 是可分别表达的角色，按独立身份和生命周期决定是否形成 Source 节点；
+- Event Mention 默认是 Mention 集合与角色组合；
+- Relationship 只要作为跨 Entity 的有时间语义联系，就采用一等对象；
+- Change 保持上位核心对象并要求明确 semantic class；
+- Authority Domain 是治理/控制支撑对象，不属于情报结论主干。
+
+S9 同时验证：
+
+- 对象分类不能替代权威分类；
+- 状态、Revision、认识、可用性、质量和交付必须正交；
+- 关键状态转换需要统一 Envelope；
+- Semantic Edge 必须固定 Revision 和类型；
+- 血缘完整性必须成为按用途的发布门。
+
+这些裁定仍为 `Proposed`，等待 S10 压力评审和 Accepted 晋级决定。
+
+## 十九、关联
 
 - [v0002 迭代入口](../02-architecture-iterations/v0002-intelligence-semantics/README.md)
 - [情报语义深化计划](../04-domain-design/intelligence-semantics-deepening-plan.md)
@@ -537,6 +577,7 @@ S8 未发现分类法元规则冲突。Epistemic Record、Authority Domain、Kno
 - [研判、预测、风险与建议模型](../04-domain-design/assessment-forecast-risk-recommendation-model.md)
 - [产品、告警、反馈与影响纠正模型](../04-domain-design/intelligence-product-alert-feedback-correction-model.md)
 - [时间、版本、作用域与知识覆盖模型](../04-domain-design/temporal-version-scope-knowledge-overlay-model.md)
+- [对象权威、生命周期、血缘与不变量统一模型](../04-domain-design/object-authority-lifecycle-lineage-invariant-model.md)
 - [SCN-0010：来源变化与证据保全](../05-scenarios-and-flows/SCN-0010-source-mutation-and-evidence-preservation.md)
 - [SCN-0011：多权威域事实并存](../05-scenarios-and-flows/SCN-0011-multiple-authority-domain-facts.md)
 - [SCN-0012：同名实体误合并与拆分纠正](../05-scenarios-and-flows/SCN-0012-entity-merge-split-correction.md)
@@ -544,5 +585,6 @@ S8 未发现分类法元规则冲突。Epistemic Record、Authority Domain、Kno
 - [SCN-0014：预测干预与风险重校准](../05-scenarios-and-flows/SCN-0014-forecast-intervention-and-recalibration.md)
 - [SCN-0015：部分事实撤回、影响裁剪与接收者纠正](../05-scenarios-and-flows/SCN-0015-partial-retraction-impact-and-recipient-correction.md)
 - [SCN-0016：迟到资料、差异知识时间与历史重建](../05-scenarios-and-flows/SCN-0016-late-evidence-divergent-knowledge-time-and-reconstruction.md)
+- [SCN-0017：越权事实晋升、血缘断裂与自审发布阻断](../05-scenarios-and-flows/SCN-0017-unauthorized-fact-promotion-lineage-gap-and-self-publication.md)
 - [核心对象流转图](../03-current-architecture/text-diagrams/TXT-0006-core-object-spine.md)
 - [ADR-0008：有类型、可追溯的核心对象主干](../06-architecture-decisions/adrs/ADR-0008-typed-traceable-core-object-spine.md)

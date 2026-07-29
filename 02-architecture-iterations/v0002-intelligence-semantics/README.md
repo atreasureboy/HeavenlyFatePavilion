@@ -54,7 +54,7 @@ S1 统一语言与对象分类【候选层完成】
 → S6 Signal、Assessment、Forecast、Risk、Recommendation【候选层完成】
 → S7 产品、告警、反馈与影响纠正【候选层完成】
 → S8 双时态、版本、作用域与知识覆盖【候选层完成】
-→ S9 对象权威、生命周期、血缘与不变量
+→ S9 对象权威、生命周期、血缘与不变量【候选层完成】
 → S10 场景压力与语义基线评审
 ```
 
@@ -94,6 +94,8 @@ S1 统一语言与对象分类【候选层完成】
 - [SCN-0015：部分事实撤回、影响裁剪与接收者纠正](../../05-scenarios-and-flows/SCN-0015-partial-retraction-impact-and-recipient-correction.md)
 - [时间、版本、作用域与知识覆盖语义模型](../../04-domain-design/temporal-version-scope-knowledge-overlay-model.md)
 - [SCN-0016：迟到资料、差异知识时间与历史重建](../../05-scenarios-and-flows/SCN-0016-late-evidence-divergent-knowledge-time-and-reconstruction.md)
+- [对象权威、生命周期、血缘与不变量统一模型](../../04-domain-design/object-authority-lifecycle-lineage-invariant-model.md)
+- [SCN-0017：越权事实晋升、血缘断裂与自审发布阻断](../../05-scenarios-and-flows/SCN-0017-unauthorized-fact-promotion-lineage-gap-and-self-publication.md)
 
 ## 七、当前进度
 
@@ -206,6 +208,24 @@ S8 已完成候选语义模型：
 - Revision 日志、认识记录、风险检查点和 Product Manifest 共同支撑历史重建，不全量物化所有时点。
 
 S8 未改变 Skeleton v1.0。候选模型已通过内部任命 2 月生效、租户 A 早期获知、公共域 5 月才接受、租户 B 始终不可见，以及 4 月产品需要历史复现的迟到资料场景。
+
+S9 已完成候选收敛模型：
+
+- 使用 Core Object、First-class Supporting Record、Typed Relation / Value、View、Deferred 五级分类；
+- Mention、Scenario、Governance Case 和 Product Edition 进入核心对象采纳候选；
+- Product Release、Epistemic Record、Semantic Edge Record、Forecast Resolution / Score 等被裁定为一等支撑记录；
+- Fact 保持带 Authority Domain 的核心聚合，不成为脱离接受上下文的全局命题；
+- Governance Case 统一 Dispute、Entity Resolution、Impact 等案件生命周期，同时保留子型制度；
+- 语义形成、验证审核、接受决定、发布授权、保管强制和执行副作用权分离；
+- 数据底座拥有 ID、Revision、Transition、血缘和审计保管权，但不取得 Fact、Assessment 或 Product 的语义决定权；
+- 生命周期拆为 Revision、认识、治理、可用性、质量和执行/交付等正交状态轴；
+- 统一 Transition Envelope 支持提交前授权复判、乐观并发、幂等、原子提交和外部 Saga；
+- Semantic Edge Record 注册来源、推导、论证、接受、身份、依赖、治理、版本、分发、因果和演进十一类边；
+- 建立 L0—L5 血缘完整性等级和按对象/用途的最低发布门；
+- 形成 28 条 S9 候选跨对象不变量，等待 S10 与既有 INV 合并；
+- 高影响独立性按 Mandate、证据责任和共同失效根判断，不按 Agent 实例数量判断。
+
+S9 未改变 Skeleton v1.0。候选模型已通过抽取 Agent 越级晋升 Fact、自填审核、跨租户广播、血缘断裂、授权撤销竞态和数据库管理员语义撤回等组合场景。
 
 ## 八、与 Skeleton v1.0 的关系
 

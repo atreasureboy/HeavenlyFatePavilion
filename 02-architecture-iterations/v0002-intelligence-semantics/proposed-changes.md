@@ -177,3 +177,28 @@ S8 候选结论：有效时间与记录时间属于对象 Revision；认识时�
 - 缓存键必须包含租户、用途、时间坐标、作用域、策略、Schema 和输入水位。
 
 完整候选见[时间、版本、作用域与知识覆盖语义模型](../../04-domain-design/temporal-version-scope-knowledge-overlay-model.md)。
+
+## S9 补充候选：对象收敛、分权转换与有类型血缘
+
+- 使用 `C / S / R / V / D` 五级分类，区分核心对象、一等支撑记录、关系/值、视图和延期对象；
+- 核心候选主干增加 Mention、Scenario、Governance Case、Product Edition；
+- Governance Case 通过有类型子类统一 Dispute、Entity Resolution、Impact 和例外案件；
+- Proposition 是一等语义支撑记录，但本身不表示真；
+- Fact 保持 Proposition + Acceptance Context + Decision + Epistemic History 的核心聚合；
+- Product Edition 是核心内容子对象，Product Release 是一等发布治理记录；
+- Epistemic Record、Semantic Edge Record、Transition Record、Forecast Resolution / Score、Delivery Records 等作为一等支撑记录；
+- State、Current Fact、Tenant Overlay、Canonical Entity、Published Product 等保持 View；
+- Hypothesis 保持 Assessment 组成，Effect 使用 Effect Assessment，Action 延期至外部行动专题；
+- Propose、Interpret、Verify、Accept、Publish、Correct、Custody / Enforce / Execute 权力分别建模；
+- Authority Mandate 显式限制主体、Authority Domain、操作、对象、Scope、Purpose、Jurisdiction、Risk、时间和委托深度；
+- 数据底座保管和强制合法 Transition，不因数据库写权限取得语义权；
+- 对象使用 Revision、Epistemic、Governance、Availability、Quality、Execution / Delivery 正交状态轴；
+- Transition Envelope 在提交前重判 Mandate、Revision、状态、不变量和策略，并使用幂等、乐观锁、原子 outbox 与外部 Saga；
+- Semantic Edge Record 固定端点 Revision、类型、Scope、依据和状态；
+- Provenance、Derivation、Argument、Acceptance、Identity/World、Dependency、Governance、Version、Delivery、Causal、Evolution 边不得合并为 related_to；
+- 建立 L0—L5 Lineage Completeness Profile，并按 Fact、Assessment、Forecast、Product Release、Action 和 Capability Release 设置最低门槛；
+- 缺失血缘产生隔离、补链、降级或撤回，不能被解释为“没有依赖”；
+- 高影响自审限制依据权威、数据和共同失效根，不依据 Agent 数量；
+- 28 条 S9 临时候选不变量留待 S10 与 Accepted INV 合并编号。
+
+完整候选见[对象权威、生命周期、血缘与不变量统一模型](../../04-domain-design/object-authority-lifecycle-lineage-invariant-model.md)。

@@ -26,4 +26,5 @@
 - [Signal、Assessment、Forecast、Scenario、Risk 与 Recommendation 语义模型（Proposed）](./assessment-forecast-risk-recommendation-model.md)
 - [Intelligence Product、Alert、Feedback 与影响纠正语义模型（Proposed）](./intelligence-product-alert-feedback-correction-model.md)
 - [时间、版本、作用域与知识覆盖语义模型（Proposed）](./temporal-version-scope-knowledge-overlay-model.md)
+- [对象权威、生命周期、血缘与不变量统一模型（Proposed）](./object-authority-lifecycle-lineage-invariant-model.md)
 - [核心对象主干](./core-object-spine.md)
