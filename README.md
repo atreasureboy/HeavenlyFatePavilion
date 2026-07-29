@@ -71,7 +71,7 @@ Windows / 现代操作系统
 项目的核心不只是多 Agent 协作，而是研究以下问题如何构成一套自洽、可信、可审计并可演进的复杂系统：
 
 - 海量异构信息的采集、加工和版本管理；
-- Document、Evidence、Claim、Fact、Inference 与 Intelligence Product 的严格分层；
+- Document、Snapshot、Evidence、Claim、Proposition、作用域化 Fact、研判与 Product Edition 的严格分层；
 - 实体消歧、事件演化、关系构建和证据追溯；
 - 公共情报底座与租户私有覆盖层；
 - 三省六部式的规划权、执行权与审核权分离；
@@ -119,7 +119,8 @@ Agent Memory ≠ Intelligence Database
 
 - [⭐ Skeleton v1.0 基线声明](./03-current-architecture/skeleton-v1.0-baseline.md)
 - [⭐ Skeleton v1.0 基线封版图](./03-current-architecture/text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
-- [⭐ 权威架构骨架索引：九层阅读树](./03-current-architecture/architecture-skeleton-index.md)
+- [⭐ 权威架构骨架索引：十层阅读树](./03-current-architecture/architecture-skeleton-index.md)
+- [⭐ 外层骨架终局总图](./03-current-architecture/text-diagrams/TXT-0025-outer-skeleton-final-map.md)
 - [当前生效架构入口](./03-current-architecture/README.md)
 - [文字架构图集](./03-current-architecture/text-diagrams/README.md)
 
@@ -136,6 +137,7 @@ Agent Memory ≠ Intelligence Database
 
 - [已完成专题：情报语义与核心对象体系](./02-architecture-iterations/v0002-intelligence-semantics/README.md)
 - [情报语义基线就绪评审](./07-analysis-and-validation/v0002-intelligence-semantics-readiness-review.md)
+- [外层架构骨架终局完成审计](./07-analysis-and-validation/outer-skeleton-final-completion-audit.md)
 - [情报语义全局不变量](./08-reference-models/intelligence-semantic-invariants.md)
 - [当前专题深化计划](./04-domain-design/intelligence-semantics-deepening-plan.md)
 - [历史阶段：整体骨架扩展与完善](./02-architecture-iterations/v0001-concept-baseline/phase-01-skeleton-expansion-plan.md)

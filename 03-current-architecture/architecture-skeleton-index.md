@@ -2,7 +2,7 @@
 
 状态：Accepted
 
-整理日期：2026-07-24
+整理日期：2026-07-29
 
 当前骨架成熟度：`Skeleton v1.0` 正式基线
 
@@ -55,10 +55,10 @@
 │   └── 公共官署：入口、知识、审计、裁定、安全和产品
 │
 ├── L4 情报语义与对象主干
-│   ├── Source / Document / Evidence / Claim / Fact
-│   ├── Entity / Relationship / Event / Change
-│   ├── Assessment / Forecast / Risk / Product
-│   └── 版本、血缘、纠正与演进证据
+│   ├── Source / Document / Snapshot / Evidence / Claim / Proposition
+│   ├── scoped Fact Aggregate / Mention / Entity / Relationship / Event / Change
+│   ├── Assessment / Scenario / Forecast / Risk / Recommendation
+│   └── Product Edition / Release、版本、认识记录、血缘与纠正
 │
 ├── L5 全局运行与协作
 │   ├── 十种运行形态
@@ -90,7 +90,9 @@
     └── v1.0 正式就绪评审与基线冻结
 ```
 
-## 三、九层权威来源
+## 三、十层权威来源
+
+编号从 `L0` 到 `L9`，因此是十个层级。早期材料中的“九层”是计数错误，不表示删去任何一层。
 
 | 层 | 核心问题 | 权威正文 | 首选文字图 |
 |---|---|---|---|
@@ -103,7 +105,7 @@
 | L6 坐标治理 | 在什么范围和约束下运行 | [时空规模](./spatiotemporal-and-scale-skeleton.md)、[横切治理](./cross-cutting/README.md) | [TXT-0016](./text-diagrams/TXT-0016-spatiotemporal-and-scale.md)、[TXT-0011](./text-diagrams/TXT-0011-cross-cutting-governance.md) |
 | L7 生存边界 | 失控时保什么、什么组合必须禁止 | [生存性](./nonfunctional-and-survivability-skeleton.md)、[负空间](./negative-space-and-future-replacement.md) | [TXT-0017](./text-diagrams/TXT-0017-nonfunctional-and-survivability.md)、[TXT-0018](./text-diagrams/TXT-0018-negative-space-and-future-replacement.md) |
 | L8 演进 | 整个架构怎样改变而不自我授权 | [全域演进](./evolution-across-entire-architecture.md) | [TXT-0022](./text-diagrams/TXT-0022-evolution-across-entire-architecture.md) |
-| L9 验证 | 为什么相信骨架已经正式闭合 | [完整性审计](../07-analysis-and-validation/skeleton-completeness-assessment.md)、[v0.3 稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)、[v1.0 正式评审](../07-analysis-and-validation/skeleton-v1.0-readiness-review.md) | [TXT-0019](./text-diagrams/TXT-0019-skeleton-v0.2-closure.md)、[TXT-0020](./text-diagrams/TXT-0020-skeleton-v0.3-macro-stress.md)、[TXT-0024](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md) |
+| L9 验证 | 为什么相信骨架已经正式闭合 | [完整性审计](../07-analysis-and-validation/skeleton-completeness-assessment.md)、[v1.0 正式评审](../07-analysis-and-validation/skeleton-v1.0-readiness-review.md)、[外层骨架终局审计](../07-analysis-and-validation/outer-skeleton-final-completion-audit.md) | [TXT-0024](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)、[TXT-0025](./text-diagrams/TXT-0025-outer-skeleton-final-map.md) |
 
 ## 四、不要混淆的三种结构
 
@@ -153,9 +155,11 @@
 ### 5.3 对象线
 
 ```text
-Document → Evidence → Claim → Fact
-→ Entity / Event / Change
-→ Assessment / Forecast / Risk → Product
+Source → Document → Snapshot → Evidence
+→ Claim + Proposition → scoped Acceptance → Fact Aggregate
+→ Mention / Entity / Relationship / Event / Change
+→ Assessment / Scenario / Forecast / Risk
+→ Product Edition → Release / Distribution / Delivery
 ```
 
 ### 5.4 运行线
@@ -274,7 +278,7 @@ Skeleton v1.0 正式就绪评审与基线冻结
 
 ## 十、维护规则
 
-1. 新宏观结构先判断属于九层中的哪一层；
+1. 新宏观结构先判断属于十层中的哪一层；
 2. 只有稳定职责所有者才考虑新增一级面；
 3. 新正文必须从本索引或所在分区 README 可达；
 4. 新文字图继续使用 `TXT-NNNN`，但按问题分组阅读；
@@ -291,3 +295,5 @@ Skeleton v1.0 正式就绪评审与基线冻结
 - [Skeleton v0.3 闭合与一级稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
 - [Skeleton v1.0 基线声明](./skeleton-v1.0-baseline.md)
 - [Skeleton v1.0 正式就绪评审](../07-analysis-and-validation/skeleton-v1.0-readiness-review.md)
+- [外层架构骨架终局完成审计](../07-analysis-and-validation/outer-skeleton-final-completion-audit.md)
+- [TXT-0025：外层骨架终局总图](./text-diagrams/TXT-0025-outer-skeleton-final-map.md)

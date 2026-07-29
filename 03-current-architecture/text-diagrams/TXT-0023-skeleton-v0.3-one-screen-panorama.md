@@ -58,9 +58,10 @@
        ▲                 实际结果/失败/时代变化 ◀─────┘
        │
        │ 情报主干：
-       │ Source → Document → Evidence → Claim → Fact/Disputed
-       │ → Entity/Relation/Event/Change → Assessment/Forecast/Risk
-       │ → Product/Alert → Feedback/Correction/Evolution
+       │ Source → Document → Snapshot → Evidence
+       │ → Claim + Proposition → scoped Fact Aggregate / Disputed View
+       │ → Mention/Entity/Relation/Event/Change → Assessment/Scenario/Forecast/Risk
+       │ → Product Edition/Release/Alert → Feedback/Correction/Evolution
        │
 ┌──────────────────────── 全局坐标与约束 ───────────────────────────────┐
 │ 组织映射：皇帝 / 三省 / 六部 / 公共官署                              │
@@ -91,7 +92,7 @@
 8. 运行结果回到演进体系；演进覆盖全域，但不拥有全域采用权
 ```
 
-## 四、这张图刻意不画什么
+## 四、有意省略：这张图刻意不画什么
 
 - 二级能力树和官署内部结构；
 - 对象字段、状态转移和契约消息；
@@ -121,7 +122,8 @@
 ```text
 Human Authority ≠ Agent Intelligence
 Plan ≠ Execution ≠ Review
-Document ≠ Evidence ≠ Claim ≠ Fact ≠ Inference
+Document ≠ Snapshot ≠ Evidence ≠ Claim ≠ Proposition
+Fact Aggregate ≠ Assessment ≠ Forecast ≠ Recommendation
 Recommendation ≠ Decision ≠ Command ≠ Effect
 Agent Context ≠ Durable Knowledge
 Shared Platform ≠ Tenant Sovereignty

@@ -8,12 +8,13 @@
 
 ```text
 认知血缘链
-Source → Document → Snapshot → Evidence → Claim → Fact
-→ Entity / Relationship / Event / Change
+Source → Document → Snapshot → Evidence
+→ Claim + Proposition → scoped Acceptance Decision → Fact Aggregate
+→ Mention / Entity / Relationship / Event / Change
 
 研判与产品链
-Fact / Disputed Claim → Assessment → Forecast → Risk
-→ Recommendation → Intelligence Product / Alert
+Fact Aggregate / Disputed View → Assessment → Scenario / Forecast → Risk
+→ Recommendation → Product Edition → Release / Alert / Delivery
 ```
 
 每个派生对象都保存输入引用、处理/模型/规则版本、生成主体、时间、作用域和质量结果。下游不能只保存最终文本。
@@ -77,7 +78,7 @@ Fact / Disputed Claim → Assessment → Forecast → Risk
 
 ## 六、不变量
 
-- Document、Evidence、Claim、Fact、Assessment 和 Recommendation 不得互相冒充。
+- Document、Snapshot、Evidence、Claim、Proposition、Fact Aggregate、Assessment、Forecast、Risk、Recommendation 和 Product Edition 不得互相冒充。
 - 没有 Evidence 的 Claim 不能提升为 Verified Fact。
 - 事实状态由验证决定，不由租户偏好、模型自信或产品措辞决定。
 - 任何研判必须区分输入事实、假设、推理和不确定性。

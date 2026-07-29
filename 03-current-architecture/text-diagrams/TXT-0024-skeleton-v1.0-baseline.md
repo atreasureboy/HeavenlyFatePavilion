@@ -60,8 +60,10 @@
 
 全程语义主干：
 
-Document ≠ Evidence ≠ Claim ≠ Fact
-Fact ≠ Inference ≠ Recommendation
+Document ≠ Snapshot ≠ Evidence ≠ Claim ≠ Proposition
+Proposition + scoped Acceptance Decision → Fact Aggregate
+Fact Aggregate ≠ Assessment ≠ Forecast ≠ Risk ≠ Recommendation
+Product ≠ Edition ≠ Release ≠ Delivery ≠ Action
 Agent Memory ≠ Intelligence Database
 
 后续专题深化：
@@ -106,3 +108,5 @@ Schema、协议、数据库、部署、算法、参数和供应商
 - [Skeleton v1.0 正式就绪评审](../../07-analysis-and-validation/skeleton-v1.0-readiness-review.md)
 - [权威架构骨架索引](../architecture-skeleton-index.md)
 - [总体一级逻辑骨架](../overall-logical-skeleton.md)
+- [ADR-0016：情报语义基线](../../06-architecture-decisions/adrs/ADR-0016-adopt-scoped-versioned-intelligence-semantics-baseline.md)
+- [TXT-0025：外层骨架终局总图](./TXT-0025-outer-skeleton-final-map.md)

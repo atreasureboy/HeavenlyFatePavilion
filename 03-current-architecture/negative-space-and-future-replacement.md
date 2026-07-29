@@ -169,7 +169,7 @@ Agent 上下文    ≠ 长期知识        ≠ 审计记录
 - 人类目标、授权、停止和最终责任来源；
 - 规划、执行、审核三类权力的可区分性；
 - 租户、辖域、数据、事实、产品和行动主权边界；
-- Document、Evidence、Claim、Fact、Inference、Decision 与 Effect 的语义层次；
+- Document、Snapshot、Evidence、Claim、Proposition、作用域化 Fact Aggregate、Assessment、Forecast、Recommendation、Decision 与 Effect 的语义层次；
 - 权威对象所有权、契约、版本、血缘和审计；
 - 期望状态与实际运行状态的分离；
 - 长期知识对临时 Agent 上下文的独立性；

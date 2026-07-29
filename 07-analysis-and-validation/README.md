@@ -25,3 +25,4 @@
 - [Skeleton v1.0 正式就绪评审](./skeleton-v1.0-readiness-review.md)
 - [第一批端到端场景覆盖矩阵](../05-scenarios-and-flows/scenario-coverage-matrix.md)
 - [v0002 情报语义基线就绪评审](./v0002-intelligence-semantics-readiness-review.md)
+- [天机阁外层架构骨架终局完成审计](./outer-skeleton-final-completion-audit.md)

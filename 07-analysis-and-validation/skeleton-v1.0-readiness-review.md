@@ -109,9 +109,12 @@
 情报线：
 掌数 → 联结 → 察变 → 推势 → 卜算 → 警险 → 产品
 
-对象线：
-Document → Evidence → Claim → Fact
-→ Entity / Event / Change → Assessment / Forecast / Risk → Product
+对象线（经 v0002 复核后的正式表达）：
+Source → Document → Snapshot → Evidence
+→ Claim + Proposition → scoped Acceptance → Fact Aggregate
+→ Mention / Entity / Relationship / Event / Change
+→ Assessment / Scenario / Forecast / Risk
+→ Product Edition → Release / Distribution / Delivery
 
 运行线：
 Mandate / Mission → Plan → Run → Task / Agent / Tool
@@ -209,15 +212,26 @@ Skeleton v1.0 基线成立
 按骨架分区逐步提高专题分辨率
 ```
 
-专题深化不得重新从零发明顶层结构。任何细节必须能够回挂到九层阅读树、十面所有权、六条主线及相应横切约束。
+专题深化不得重新从零发明顶层结构。任何细节必须能够回挂到十层阅读树（L0～L9）、十面所有权、六条主线及相应横切约束。
 
-## 十一、最终裁定
+## 十一、语义专题完成后的复核附记
+
+2026-07-29，v0002 情报语义专题完成后再次反投影：
+
+- Mention、Scenario、Governance Case、Product Edition 等新增核心对象均能归入既有十面；
+- Authority Domain、Epistemic Record、Transition Envelope 和 typed lineage 属于 L4～L6 深化；
+- SCN-0010～SCN-0018 未要求新增一级面、全局流或横切维度；
+- 原文“九层”经计数校正为 `L0～L9` 十层，不改变任何架构内容。
+
+因此 v0002 增强了 Skeleton v1.0 的语义证明，没有重新打开一级骨架。最终证据见[外层架构骨架终局完成审计](./outer-skeleton-final-completion-audit.md)。
+
+## 十二、最终裁定
 
 > 天机阁整体架构骨架在当前认知范围和面试架构目标下已经正式完善，可以停止无边界扩骨架，进入专题深化阶段。
 
 这里的“正式完善”表示骨架已经具备稳定边界、职责、关系、权威、异常、演进和验证位置；不表示所有内部设计已经完成，也不表示未来永远不可调整。
 
-## 十二、关联
+## 十三、关联
 
 - [权威架构骨架索引](../03-current-architecture/architecture-skeleton-index.md)
 - [总体一级逻辑骨架](../03-current-architecture/overall-logical-skeleton.md)

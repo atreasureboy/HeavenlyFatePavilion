@@ -9,11 +9,12 @@
 ## 一、推荐入口
 
 1. [Skeleton v1.0 基线声明](./skeleton-v1.0-baseline.md)
-2. [权威架构骨架索引：九层阅读树](./architecture-skeleton-index.md)
-3. [Skeleton v1.0 基线封版图](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
-4. [总体一级逻辑骨架](./overall-logical-skeleton.md)
-5. [整体架构骨架](./overall-architecture-skeleton.md)
-6. [文字架构图集](./text-diagrams/README.md)
+2. [权威架构骨架索引：十层阅读树](./architecture-skeleton-index.md)
+3. [外层骨架终局总图](./text-diagrams/TXT-0025-outer-skeleton-final-map.md)
+4. [Skeleton v1.0 基线封版图](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
+5. [总体一级逻辑骨架](./overall-logical-skeleton.md)
+6. [整体架构骨架](./overall-architecture-skeleton.md)
+7. [文字架构图集](./text-diagrams/README.md)
 
 ## 二、按架构层阅读
 
@@ -67,6 +68,7 @@
 - [Skeleton v0.3 闭合与一级稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
 - [Skeleton v1.0 正式就绪评审](../07-analysis-and-validation/skeleton-v1.0-readiness-review.md)
 - [v0002 情报语义基线就绪评审](../07-analysis-and-validation/v0002-intelligence-semantics-readiness-review.md)
+- [外层架构骨架终局完成审计](../07-analysis-and-validation/outer-skeleton-final-completion-audit.md)
 
 ## 三、当前成熟度
 

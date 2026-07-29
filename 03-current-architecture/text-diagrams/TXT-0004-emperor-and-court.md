@@ -6,6 +6,8 @@
 
 皇帝为何是红后、EVA、贾维斯式智能中枢，三省和六部如何围绕皇帝工作，以及哪些部分是 Agent、哪些部分应尽量工具化。
 
+箭头表示目标、治理、执行或反馈关系，不表示历史官制层级可以直接变成技术调用链。
+
 ## 一、主体与组织关系
 
 ```text
@@ -87,7 +89,14 @@
 每个领域的全部知识、绕过运行系统直接执行一切的能力
 ```
 
-## 四、对应正文
+## 四、有意省略
+
+- 三省冲突裁决的完整案件状态；
+- 六部和公共官署内部能力树；
+- Agent 实例化、模型路由和 Tool 协议；
+- 租户、权限、预算与部署细节。
+
+## 五、对应正文
 
 - [皇帝类比](../../01-idea-lab/analogies/emperor-as-ambient-intelligence-core.md)
 - [Agent / Tool 职责分配基础骨架](../../02-architecture-iterations/v0001-concept-baseline/agent-tool-allocation-baseline.md)

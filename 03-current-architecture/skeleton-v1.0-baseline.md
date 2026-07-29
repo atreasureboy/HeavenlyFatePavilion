@@ -2,7 +2,7 @@
 
 状态：Accepted
 
-生效日期：2026-07-24
+生效日期：2026-07-29
 
 ## 一、基线声明
 
@@ -44,8 +44,10 @@ L9 验证与版本闭合
 能力可以开放，权力必须受限
 统一体验不等于统一权力
 规划、执行、审核不得静默合一
-Document ≠ Evidence ≠ Claim ≠ Fact
-Fact ≠ Inference ≠ Recommendation
+Document ≠ Snapshot ≠ Evidence ≠ Claim ≠ Proposition
+Proposition + scoped Acceptance Decision → Fact Aggregate
+Fact Aggregate ≠ Assessment ≠ Forecast ≠ Risk ≠ Recommendation
+Product ≠ Edition ≠ Release ≠ Delivery ≠ Action
 Agent Memory ≠ Intelligence Database
 期望状态 ≠ 即时执行状态
 提出变更 ≠ 采用变更 ≠ 发布变更 ≠ 实际生效
@@ -84,7 +86,7 @@ Agent Memory ≠ Intelligence Database
 骨架阶段到此结束。后续工作进入“专题深化”，但仍坚持从整体到局部：
 
 1. 先选择一个架构专题；
-2. 将专题挂回九层骨架和十面所有权；
+2. 将专题挂回十层骨架和十面所有权；
 3. 补对象、协议、状态、异常和质量属性；
 4. 用跨面场景验证；
 5. 将新发现反向检查是否触及基线。
@@ -95,3 +97,5 @@ Agent Memory ≠ Intelligence Database
 - [Skeleton v0.3 闭合与一级稳定性复核](../07-analysis-and-validation/skeleton-v0.3-closure-and-stability-review.md)
 - [总体一级逻辑骨架](./overall-logical-skeleton.md)
 - [Skeleton v1.0 基线封版图](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
+- [外层架构骨架终局完成审计](../07-analysis-and-validation/outer-skeleton-final-completion-audit.md)
+- [TXT-0025：外层骨架终局总图](./text-diagrams/TXT-0025-outer-skeleton-final-map.md)

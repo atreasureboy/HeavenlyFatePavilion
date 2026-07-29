@@ -149,7 +149,7 @@ Tenant B 私有层 ──显式授权──┘    ├── C 范围能力令牌
 - 不规定 API、消息队列、数据库、模型或物理部署；
 - 不在一张图中穷举九个场景的全部异常。
 
-## 九、权威场景
+## 九、权威来源与场景
 
 - [场景集与验证模板](../../05-scenarios-and-flows/README.md)
 - [第一批端到端场景覆盖矩阵](../../05-scenarios-and-flows/scenario-coverage-matrix.md)
