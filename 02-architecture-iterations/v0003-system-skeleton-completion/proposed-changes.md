@@ -21,3 +21,16 @@
 3. 采用 G1-A 系统族、G1-B 权威、G1-C 连接、G1-D 生存四轮横向扫描；
 4. 在十面达到同等系统分辨率前，暂停 Windows 连续单面下钻；
 5. 将 Role / Office、Agent Instance、Logical System 和 Deployable Service 保持分离。
+
+## G1-A 候选总树
+
+G1-A 已形成覆盖十面的二级逻辑系统候选总树。当前候选数为 70，只表示第一轮结构覆盖，不构成数量目标。
+
+候选系统必须通过 G1-B 权威测试：
+
+- 有清晰的 Primary Responsibility；
+- 有可区分的 Authoritative State；
+- 决定、强制或保管权不与相邻系统冲突；
+- 有明确 Non-responsibility；
+- 若权威、生命周期和失败边界相同则合并；
+- 若包含相互制衡权力或独立生命周期则拆分。

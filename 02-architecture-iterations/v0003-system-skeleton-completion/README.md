@@ -41,15 +41,18 @@ Windows、三省六部和其他成熟体系用于扫描缺失结构，不直接�
 - [开放问题](./open-questions.md)
 - [迭代结果](./outcome.md)
 - [G1：十面系统骨架覆盖审计](./g1-ten-plane-system-skeleton-coverage-audit.md)
+- [G1-A：十面二级逻辑系统候选总树](./g1a-ten-plane-logical-system-master-tree.md)
 - [当前阶段边界](../../03-current-architecture/skeleton-completion-scope.md)
 
 ## 五、当前进度
 
 ```text
 G0 外层定位骨架：完成并封板
-G1 一级面内部系统骨架：完成覆盖审计，待系统族轮
+G1 一级面内部系统骨架：G1-A 候选总树完成，待 G1-B 权威轮
 G2 关键机制骨架：Windows 运行体系扫描进行中
 G3 全局连接与压力闭合：待 G1 / G2 达到同等分辨率后进行
 ```
 
 W1—W6 已积累智能执行与运行面的候选结构，但仍是 `Seed`，尚未汇总采纳。覆盖审计发现十面均已拥有能力分类和一级契约，但尚无任何一面完成 G1 系统族、权威、连接、失败恢复和横切投影六项闭合。
+
+G1-A 已形成覆盖十面的 70 个二级逻辑系统候选。它们尚未成为当前架构；下一轮将以权威状态、决定权、非责任和生命周期检查合并或拆分。
