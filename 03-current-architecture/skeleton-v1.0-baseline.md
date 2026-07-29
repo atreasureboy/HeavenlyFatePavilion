@@ -83,13 +83,15 @@ Agent Memory ≠ Intelligence Database
 
 ## 六、阶段出口
 
-骨架阶段到此结束。后续工作进入“专题深化”，但仍坚持从整体到局部：
+Skeleton v1.0 标志 G0 外层定位骨架完成，不标志整体架构骨架阶段结束。项目继续完成 G1 一级面内部系统骨架、G2 关键机制骨架和 G3 全局连接闭合：
 
-1. 先选择一个架构专题；
-2. 将专题挂回十层骨架和十面所有权；
-3. 补对象、协议、状态、异常和质量属性；
-4. 用跨面场景验证；
-5. 将新发现反向检查是否触及基线。
+1. 先横向补齐十面的同级系统结构；
+2. 再为关键系统补对象、协议、状态、异常和质量属性主干；
+3. 用跨面场景验证系统级连接；
+4. 将新发现反向检查是否触及 G0 基线；
+5. 整体骨架完成后，才转入字段、算法、选型、参数和部署等详细设计。
+
+阶段分辨率与完成门槛见[整体架构骨架完善范围与阶段边界](./skeleton-completion-scope.md)。
 
 ## 七、依据
 
@@ -99,3 +101,4 @@ Agent Memory ≠ Intelligence Database
 - [Skeleton v1.0 基线封版图](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
 - [外层架构骨架终局完成审计](../07-analysis-and-validation/outer-skeleton-final-completion-audit.md)
 - [TXT-0025：外层骨架终局总图](./text-diagrams/TXT-0025-outer-skeleton-final-map.md)
+- [整体架构骨架完善范围与阶段边界](./skeleton-completion-scope.md)

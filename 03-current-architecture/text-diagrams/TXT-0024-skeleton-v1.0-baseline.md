@@ -66,15 +66,14 @@ Fact Aggregate ≠ Assessment ≠ Forecast ≠ Risk ≠ Recommendation
 Product ≠ Edition ≠ Release ≠ Delivery ≠ Action
 Agent Memory ≠ Intelligence Database
 
-后续专题深化：
+后续整体骨架完善：
 
 基线位置
-→ 二级能力 …
-→ 对象与 Schema …
-→ 契约与状态 …
-→ 运行与部署 …
-→ 安全、容量、成本与场景 …
-→ 反向验证基线
+→ G1 十面二级系统骨架 …
+→ G2 对象族 / 协议族 / 状态族 / 关键机制主干 …
+→ G3 跨面正常 / 异常 / 恢复连接 …
+→ 反向验证 G0 基线 …
+→ 骨架完成后才进入 Schema / 算法 / 选型 / 部署细节
 ```
 
 ## 四、基线冻结与可变范围
@@ -100,7 +99,7 @@ Schema、协议、数据库、部署、算法、参数和供应商
 - 详细角色权限；
 - 专题设计优先级。
 
-这些内容属于 v1.0 之后的设计分辨率提升，不是骨架缺口。
+这些内容中的稳定系统结构、机制主干和跨面连接仍属于 G1—G3 骨架完善；字段、算法、选型、参数和部署才属于骨架完成后的详细设计。
 
 ## 六、权威来源
 
@@ -110,3 +109,4 @@ Schema、协议、数据库、部署、算法、参数和供应商
 - [总体一级逻辑骨架](../overall-logical-skeleton.md)
 - [ADR-0016：情报语义基线](../../06-architecture-decisions/adrs/ADR-0016-adopt-scoped-versioned-intelligence-semantics-baseline.md)
 - [TXT-0025：外层骨架终局总图](./TXT-0025-outer-skeleton-final-map.md)
+- [整体架构骨架完善范围与阶段边界](../skeleton-completion-scope.md)

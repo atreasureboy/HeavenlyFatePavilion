@@ -118,6 +118,7 @@ Agent Memory ≠ Intelligence Database
 ### 先看骨架
 
 - [⭐ Skeleton v1.0 基线声明](./03-current-architecture/skeleton-v1.0-baseline.md)
+- [⭐ 当前阶段：整体架构骨架完善范围](./03-current-architecture/skeleton-completion-scope.md)
 - [⭐ Skeleton v1.0 基线封版图](./03-current-architecture/text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
 - [⭐ 权威架构骨架索引：十层阅读树](./03-current-architecture/architecture-skeleton-index.md)
 - [⭐ 外层骨架终局总图](./03-current-architecture/text-diagrams/TXT-0025-outer-skeleton-final-map.md)
@@ -136,6 +137,7 @@ Agent Memory ≠ Intelligence Database
 ### 最后看演进过程
 
 - [已完成专题：情报语义与核心对象体系](./02-architecture-iterations/v0002-intelligence-semantics/README.md)
+- [当前迭代：整体系统骨架完善](./02-architecture-iterations/v0003-system-skeleton-completion/README.md)
 - [情报语义基线就绪评审](./07-analysis-and-validation/v0002-intelligence-semantics-readiness-review.md)
 - [外层架构骨架终局完成审计](./07-analysis-and-validation/outer-skeleton-final-completion-audit.md)
 - [情报语义全局不变量](./08-reference-models/intelligence-semantic-invariants.md)

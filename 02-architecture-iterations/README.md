@@ -18,8 +18,9 @@
 
 ## 当前迭代
 
-- [v0002：情报语义与核心对象体系](./v0002-intelligence-semantics/README.md)
+- [v0003：整体系统骨架完善](./v0003-system-skeleton-completion/README.md)
 
 ## 已形成基线
 
 - [v0001：概念基线与 Skeleton v1.0](./v0001-concept-baseline/README.md)
+- [v0002：情报语义与核心对象体系](./v0002-intelligence-semantics/README.md)

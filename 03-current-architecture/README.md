@@ -9,12 +9,13 @@
 ## 一、推荐入口
 
 1. [Skeleton v1.0 基线声明](./skeleton-v1.0-baseline.md)
-2. [权威架构骨架索引：十层阅读树](./architecture-skeleton-index.md)
-3. [外层骨架终局总图](./text-diagrams/TXT-0025-outer-skeleton-final-map.md)
-4. [Skeleton v1.0 基线封版图](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
-5. [总体一级逻辑骨架](./overall-logical-skeleton.md)
-6. [整体架构骨架](./overall-architecture-skeleton.md)
-7. [文字架构图集](./text-diagrams/README.md)
+2. [整体架构骨架完善范围与阶段边界](./skeleton-completion-scope.md)
+3. [权威架构骨架索引：十层阅读树](./architecture-skeleton-index.md)
+4. [外层骨架终局总图](./text-diagrams/TXT-0025-outer-skeleton-final-map.md)
+5. [Skeleton v1.0 基线封版图](./text-diagrams/TXT-0024-skeleton-v1.0-baseline.md)
+6. [总体一级逻辑骨架](./overall-logical-skeleton.md)
+7. [整体架构骨架](./overall-architecture-skeleton.md)
+8. [文字架构图集](./text-diagrams/README.md)
 
 ## 二、按架构层阅读
 
@@ -81,4 +82,4 @@ Skeleton v1.0：正式整体骨架基线
 当前深化基线：情报语义与核心对象体系 v1 已采纳
 ```
 
-骨架扩展阶段已经结束。后续专题可以进入对象、协议、运行、安全、容量和组织内部设计，但不得静默改变 v1.0 的一级职责与权威语义。
+G0 外层骨架已经封板；整体架构骨架仍在 G1—G3 完善阶段。当前可以补齐二级系统、关键机制主干与跨面连接，但暂不进入字段、算法、选型、参数和部署细节，也不得静默改变 v1.0 的一级职责与权威语义。
