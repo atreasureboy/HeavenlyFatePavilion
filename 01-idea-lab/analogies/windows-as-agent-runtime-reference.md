@@ -64,6 +64,8 @@ Job Object 可以把一组进程作为单元管理，设置资源限制、汇总
 
 迁移问题：Tool、Data、Policy、Mission、Run、Task、Agent Instance 和 Channel 是否都应成为可寻址受控对象？
 
+研究进度：第一轮完成，见 [W2：Object Manager、Handle 与对象生命周期](./windows-w02-object-manager-handles-and-lifetime.md)。
+
 ### W3：安全模型
 
 - Security Principal、Access Token；
