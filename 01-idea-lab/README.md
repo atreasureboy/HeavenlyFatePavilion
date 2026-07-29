@@ -20,3 +20,4 @@
 ## 当前重点类比
 
 - [皇帝作为红后、EVA、贾维斯式智能中枢](./analogies/emperor-as-ambient-intelligence-core.md)
+- [Windows 作为天机阁智能运行体系的参考模型](./analogies/windows-as-agent-runtime-reference.md)
