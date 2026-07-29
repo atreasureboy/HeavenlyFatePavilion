@@ -86,6 +86,8 @@ Job Object 可以把一组进程作为单元管理，设置资源限制、汇总
 
 迁移问题：Agent Role、Agent Instance、Reasoning Turn、Worker 和 Task 应如何分离？
 
+研究进度：第一轮完成，见 [W4：Process、Thread 与 Agent 执行上下文](./windows-w04-process-thread-and-agent-execution-context.md)。
+
 ### W5：Job Object 与资源治理
 
 - 进程组和嵌套 Job；

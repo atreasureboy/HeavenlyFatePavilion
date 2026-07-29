@@ -24,3 +24,4 @@
 - [Windows W1：用户态、内核态与系统调用边界](./analogies/windows-w01-user-kernel-and-system-call-boundary.md)
 - [Windows W2：Object Manager、Handle 与对象生命周期](./analogies/windows-w02-object-manager-handles-and-lifetime.md)
 - [Windows W3：Access Token、ACL、Privilege 与 Impersonation](./analogies/windows-w03-access-token-acl-privilege-and-impersonation.md)
+- [Windows W4：Process、Thread 与 Agent 执行上下文](./analogies/windows-w04-process-thread-and-agent-execution-context.md)
