@@ -108,6 +108,8 @@ Job Object 可以把一组进程作为单元管理，设置资源限制、汇总
 
 迁移问题：Agent 间交流应通过版本化消息与对象引用，还是任意共享长上下文？
 
+研究进度：第一轮完成，见 [W6：IPC、消息契约与同步机制](./windows-w06-ipc-messaging-and-synchronization.md)。
+
 ### W7：I/O、驱动与外部能力
 
 - I/O Manager、Device Object、Driver Stack；
