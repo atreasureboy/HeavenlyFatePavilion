@@ -123,3 +123,24 @@ G1-B/G2 需要验证以下候选机制：
 7. 幂等键应来自稳定任务身份与现场代次/指纹，避免中央在相同现场重复召见多个谋士；但现场变化后必须允许形成新调查轮次。
 
 这一输入进一步说明：治理体系的完整性不取决于“皇帝更聪明”，而取决于信息权、陈述权、调查委托权、核验权、裁决权、执行权与验收权是否分别有正式协议、确定性闸门和可恢复状态。当前保持为 v0003 候选输入，等待 G1-B 权威轮决定是否提升为治理协议参考模型或 ADR。
+
+## 实现反馈输入：被授予行政能力的中央同时承担履职义务
+
+来源：2026-08-12 CodeTMux OVO 与八个 Center 串联审计。
+
+CodeTMux 已经能够让中央 Agent 控制 tmux、监督长期 Goal、读取世界状态并裁决证据，但 Project、Git、Task、Knowledge、Files、Models 等 Center 仍主要是彼此独立的 UI 投影。由此出现一种新的权力空洞：中央“有能力回答”用户，却没有统一义务把明确意图落实到对应领域真值、验证结果并传播给其它 Center。例如用户明确描述一个项目时，系统可能只把它留在对话 Memory；用户要求接入 Git 时，Git 领域服务虽已存在，中央 Tool 面却不可达。
+
+G1-B/G2 需要验证以下候选机制：
+
+1. 权力与责任必须成对建模。中央获得某领域的行政 Capability 后，当有权用户给出明确且可执行的领域意图时，中央同时获得“执行或明确拒绝/升级”的履职义务，不能只生成自然语言建议；
+2. `Intent → Command → Effect → Read-back Verification → Domain Event → Projection` 应成为行政闭环。工具返回 `ok`、命令退出码为零或模型声称完成，都不能单独代替事后条件成立；
+3. Center 是领域真值的投影和操作入口，不应成为中央直接修改的页面状态。中央调用 Project Registry、Git Service、Task Service、Knowledge Service 等领域能力，领域事件再更新 Home、Project、Git、Task、Knowledge 与 World State；
+4. 长期 Project 与一次 ProjectRun 必须分离。Project 保存用户目标、背景、路径、主机、Repository、Workspace、Terminal、Task、无人值守策略及来源；ProjectRun 只表达某次执行；
+5. 用户明确陈述与 Agent 推断必须保留来源、置信度和证据等级。中央可以把推断登记为候选或 inferred 字段，但不能覆盖 `user_authored` 项目背景；
+6. 跨 Center 关联使用稳定领域标识和引用，不以路径字符串、页面缓存或 Memory 文本作为唯一连接。Git Repository、Task、Knowledge Note、Goal、Terminal 和 Workspace 应引用同一个 Project Identity；
+7. 行政动作需要独立 Fulfillment/Responsibility Ledger，至少记录 intent、责任主体、授权、命令、事后条件、结果、失败/补偿、领域事件和最终回执，支持中断恢复与“是否真的落实”审计；
+8. 不是每句话都自动写入各 Center。系统需要区分回答型意图、建议型意图、明确 Command、需要确认的高影响动作和持续 Mandate，避免“积极履职”退化为模型擅自建档或执行；
+9. Renderer IPC、OVO Tool 与 MCP 不应分别复制三套业务逻辑。它们应共享同一领域 Service/Command Handler，只在身份、授权和呈现层不同；
+10. Home Center 应消费跨领域事件形成态势投影，而不是成为新的中央数据库；世界状态同样是来源可追踪的读取投影，不夺取各领域写权。
+
+这一输入把“能力可以开放，权力必须受限”补充为另一半：**已经接受的权力必须可履行、可验证、可追责**。否则系统会出现安全上没有越权、产品上却长期失职的“只会回答、不落实”中央。当前作为 v0003 候选输入，待权威轮判断是否形成行政 Command 契约、Project 领域对象和跨面履职账本 ADR。
