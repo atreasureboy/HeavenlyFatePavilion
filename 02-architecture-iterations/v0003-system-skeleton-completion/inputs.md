@@ -452,3 +452,19 @@ OVO Sovereign Kernel
 9. **容量扩展晚于控制闭合。** 一节点多 Runtime 和新增 Provider 应在 Cancel、Turn 幂等、Reconciliation 与 Capability Ceiling 完成后推进，否则并发只会放大重复执行和失控恢复。
 
 这组候选把“皇帝可召回臣子”落实为工程条件：**中央不仅拥有发令权，还必须拥有可区分的取消权、可验证的恢复权和拒绝陈旧能力的权力。**
+
+### 九次边界深化：取消请求、取消事实与 Runtime 收回必须分离
+
+来源：2026-08-14 CodeTMux 完成地方主脑 `cancel-turn` 的首轮工程闭合，并分别验证 Claude Code 与 Codex 的真实生命周期差异。
+
+`cancel-turn` 不能退化为一个没有业务身份的“杀进程”按钮。中央发出的取消必须绑定当前 `turnId`，否则断连、UI 迟到操作或重复消息可能误杀已经开始的新轮次；同样，传输 ACK 只能证明地方节点接受了取消请求，不能证明目标进程已经退出。首轮落地形成以下进一步约束：
+
+1. `cancel-turn` 必须携带并核对当前 `runtimeInstanceId + turnId`；Runtime 或轮次已经变化时 fail closed，禁止把旧取消应用到重启后的 Runtime 或新轮次；
+2. `cancel-turn` 只终止当前认知轮，保留逻辑 Runtime、可信 Session 和后续有界队列；`stop-runtime` 才终止整个 Runtime，`revoke-mandate` 还需进一步撤销授权与自动恢复资格；
+3. Provider Adapter 可采用不同取消机制。Codex 的一轮一进程模型直接终止当前 `exec`，Claude 的持久进程模型在没有稳定公开的流式取消帧时回收当前进程并以明确 Session 恢复；中央语义保持一致，但不得伪造相同底层机制；
+4. 超时与人工取消复用同一取消入口，避免形成另一条绕开状态机的 `SIGKILL` 路径；强制进程树回收只作为优雅中断失败后的兜底；
+5. 取消具有两阶段事实：`cancel_requested` 表示命令受理，`turn_cancelled` 事件与 Runtime 的 `lastCancellation` 快照表示节点已观察到进程退出；事件是否已进入持久 Ledger 仍需单独确认。断连时缺失后一事实必须进入未知与核对，不能由中央自行宣布成功；
+6. 取消期间迟到的 Provider `result` 不得把该轮标记为正常完成，也不得触发向正在退出的进程派发下一条队列输入；只有恢复后的 Runtime Ready 才能继续派发；
+7. Session 尚未形成或无法可信恢复时，Adapter 必须拒绝“取消后继续”的承诺，或明确把下一轮视为新 Session 并重新注入授权边界。
+
+因此取消权的工程含义是：**皇帝可以召回当前差事，但召回圣旨、臣子真正停手以及撤销整个任命是三个可观察、不可混淆的事实。**
