@@ -484,3 +484,21 @@ OVO Sovereign Kernel
 7. 用户界面和 MCP 发起新轮时由中央生成稳定 `turnId`，网络层重试必须复用它；用户修改任务正文意味着创建新轮，而不是修改既有轮次历史。
 
 因此幂等边界的准确表达是：**驿站可以重复送同一封圣旨，但臣子只能领取一次；圣旨编号相同而正文不同则是冲突，不是更新。**
+
+### 十一次边界深化：期望状态、历史奏报与当前存活必须三分
+
+来源：2026-08-14 CodeTMux 完成地方主脑 Runtime Reconciliation 的中央 Registry 第一阶段。
+
+中央重启后仍记得“朕希望这个 Runtime 继续运行”，不等于该进程此刻仍存活；Event Ledger 中最后一条 `working` 也只证明过去发生过一次观察。若把三者合并，系统会在历史事件上继续派发新旨令，或者把已经更换的地方主脑误认成旧任。因此形成以下约束：
+
+1. Runtime Registry 持久保存中央期望状态，包括 Host、Provider、cwd、`runtimeInstanceId`、可信 Session、最后 Turn 与 `running/stopped` 期望；它不保存模型密钥、完整 Prompt 或连接 Token；
+2. Relay Snapshot、Inventory、连接代次和 Runtime 事件构成观察状态。观察可以更新期望记录中的 Session 与最后 Turn，但不能反向创造“中央希望它运行”的授权；
+3. 中央进程重启时，磁盘恢复出的所有历史连接状态必须先降为断联。只有新连接代次上的新鲜 Snapshot 与期望 Runtime 身份一致，才能协调为 `running`；
+4. `recoverable` 表示中央仍期望运行、现场没有匹配的活跃 Runtime，但存在可信 Session 且 Provider 未明确不可用；它允许显式恢复，不允许自动重发历史 Turn；
+5. `lost` 表示缺少可信 Session、Provider 明确不可用或无法证明可恢复；系统应请求调查、重新启动或人工决定，不能使用“最后会话”猜测；
+6. `conflicted` 表示现场活跃 Runtime 与中央期望身份不一致，或中央期望停止而现场仍运行。冲突期间禁止发送新轮，必须由 OVO或仙人选择接管、停止或重新登记；
+7. `stopped` 表示中央没有运行期望，或停止期望与现场一致；`running` 只表示当前连接上的匹配 Runtime 处于 starting/ready/working/cancelling 等可管理状态；
+8. Center 必须同时展示 Provider 原始状态和协调结论。可恢复记录可预填 Provider、项目目录和可信 Session，但“按 Session 恢复”仍是一项新的显式主权动作；
+9. 第一阶段观察证据来自受认证 Relay 的 Runtime Snapshot 与 Inventory。未来可增加 Provider 原生进程、Session 文件和项目目录探针提升证据等级，但不能因此绕过 Runtime 身份核对。
+
+因此协调器的核心不变量是：**中央可以持久记住自己的意志，但必须重新观察世界，才能宣称臣子仍在履职。**
