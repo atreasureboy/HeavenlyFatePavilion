@@ -521,3 +521,22 @@ OVO Sovereign Kernel
 10. Capability Ceiling 是连接级边界，不替代 Runtime Reconciliation。节点有 `runtime.start.claude` 只证明可以请求启动，不证明某 Runtime 已启动、仍存活或已完成任务。
 
 因此连接能力治理的工程表达是：**地方可以因现实变化主动交还权力，却不能在任期内自行扩权；中央可以容忍短暂失联，但不会把永久错误伪装成永无止境的重试。**
+
+### 十三次边界深化：输入连续性未知时必须封口而非猜测
+
+来源：2026-08-14 CodeTMux 完成地方 Runtime 单调输入序号与 Queue Seal 的首轮工程闭合。
+
+Turn 幂等可以证明“同一轮不会重复创建”，却不能证明相邻两轮之间没有漏旨。若中央发送第 12、13、14 轮，而地方只观察到 12 和 14，仅依靠 `turnId` 会把 14 当作合法新任务继续执行；同样，队列溢出后简单等待腾出槽位会掩盖中央与地方对已受理输入集合的分歧。长期 Runtime 必须把输入连续性本身建模为可观察状态。
+
+1. 每个逻辑 Runtime 从 1 开始维护单调 `inputSeq`；中央为新 Turn 分配下一序号，网络重试同一 Turn 必须复用原 `turnId + inputSeq + inputHash`；
+2. 相同 Turn、相同正文和相同序号是合法重放，返回既有 Receipt；相同 Turn 更换序号、相同序号指向另一 Turn 或收到非预期下一序号均属于连续性冲突；
+3. 序号缺口、未知迟到输入和 Provider 队列溢出必须把 Runtime Input Stream 转为 `sealed`。Seal 是事实安全状态，不是普通错误提示；
+4. Seal 后禁止 `send/start-new-turn`，但必须保留 `status/report/cancel/stop`，使中央仍可调查现场、召回当前轮或收回整个 Runtime；
+5. 输入流解封是显式主权动作 `reconcile-input`。中央必须结合 Runtime Snapshot、Turn Receipt、Event Ledger 与当前 Provider 状态，声明可信的 `nextInputSeq` 和核对理由；节点不能因队列重新有空位自动解封；
+6. 被 Provider 在入队前拒绝的序号仍应进入最小 Turn Receipt 并标明失败，避免重用同一序号时无法区分“第一次根本未到”与“第一次已部分受理”；
+7. Snapshot、Runtime Registry、Center 和 MCP 必须投影 `lastInputSeq / nextInputSeq / sealed / reason`。中央重启后只能以新鲜节点 Snapshot 恢复序号基线，不能从最后一条聊天消息猜测；
+8. 输入序号与输出事件序号职责不同：`inputSeq` 证明圣旨领取顺序，事件 `seq` 证明奏报传输顺序；二者都不能替代业务 Turn 身份或项目验收 Evidence；
+9. Seal 不等于 Runtime 崩溃。协调状态应阻止继续派发并提示核对，同时允许现有 Turn 完成、取消或由仙人直接接管；
+10. 该机制先闭合单 Runtime，再扩展一 Relay 多 Runtime。每个 Runtime 拥有独立序列与 Seal 状态，禁止使用 Host 全局序号造成无关项目相互阻塞。
+
+因此输入队列的正确性边界是：**不知道是否漏旨时宁可停下来核对，也不能因为臣子仍在线、队列又有空位，就假装圣旨序列仍然连续。**
