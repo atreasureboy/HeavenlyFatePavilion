@@ -305,3 +305,20 @@ CodeTMux 桌面中央默认面向 Windows 交付，不意味着 Development Rela
 6. Center 不以“本地/远程”拆成两套页面；同一节点列表仅显示 `transport=local|ssh-reverse` 与不同 Adapter 能力。
 
 这一修正使“封疆大吏”成为真正的节点级通信抽象：本地不是特权旁路，远程也不是另一套系统。
+
+### 实现审计补充：传令、回执、运行实例与主机位置必须形成四重隔离
+
+来源：2026-08-14 CodeTMux Development Relay / Agent Beacon 正确性审计与回归修复。
+
+Relay 与 Runtime Beacon 的首轮实现证明，类型化协议和中央主权本身仍不足以避免“正确的命令被错误执行”。如果接收端在验证前替报文生成标识和到期时间、同一 Pane 的多条投递异步穿插、幂等重试返回旧请求的关联标识，或者退场 Runtime 的迟到事件仍能修改新任状态，那么系统在权限图上仍然属于中央，实际行为却已经串台。以下约束应成为后续 Host Control Protocol 与 Runtime Protocol 的候选硬不变量：
+
+1. **构造与解析必须分离。** `buildCommand` 只供中央创建新命令并填充默认值；`parseIncomingCommand` 必须逐字段验证线上原文，禁止补 `commandId`、`dedupeKey`、`createdAt`、`expiresAt`，禁止改写 `protocol/type/host/target`。验证器不得替发送方补考卷；缺字段、错协议和过期命令一律 fail closed；
+2. **同一投递目标必须 FIFO。** tmux buffer 的 `load → paste → Enter → delete` 是一个不可穿插的逻辑事务。同一 `host + adapter + targetId` 的 Command 必须严格串行，不同目标才可并行；队列是投递正确性边界，不只是性能实现；
+3. **ACK 关联与幂等事实必须分离。** 重试请求可使用新的 `commandId` 与相同 `dedupeKey`。Relay 不重复执行，但 ACK 必须回显当前请求的 `commandId`，并以 `originalCommandId` 表达首次执行者；中央同时校验认证 Host、当前 Command 和 Dedupe Key，避免“地方已投递、中央永远超时”；
+4. **Runtime 事件必须带实例与轮次栅栏。** 每个进程具有不可复用的 `runtimeInstanceId`，每次授权/索奏具有单调 `generation` 与独立 `turnId`。中央只允许与当前 Goal 的活动三元组匹配的事件修改 `streamRun`；旧实例或旧轮次的迟到 result/done/error 只能归档为 stale；
+5. **退场登记按 Runtime 实例索引。** 同一 Goal 可能在旧实例尚未退出时已经启用新实例，甚至再次换任。`retiringRuntimes` 不能按 Goal 单值覆盖，必须按 `runtimeInstanceId` 分别保留宽限期、强制回收计时器和句柄；
+6. **运行位置是授权事实，不是 cwd 猜测。** 明确提供但不存在的 cwd 必须报错，禁止回退到中央进程目录。远程 Project 未具备远端 Beacon 时不得在中央本机 spawn 同名 Coding Agent；应继续使用远程 tmux/Relay 通道，或明确等待该主机 Runtime 能力上线；
+7. **Provider 参数不能替代权限模型。** 类似 `allowedTools` 的“免确认工具”列表不等价于“只允许这些工具”，跳过权限提示也不构成沙箱。Runtime 的 Host/Project/Goal/Path 边界必须由中央部署位置、Credential Scope、Kernel Gate 与事后证据共同保证；
+8. **当前过渡拓扑必须如实表达。** 在远端 Host Beacon 尚未真正挂到 Relay 之下时，中央本地 Beacon 与远端 Relay 仍是并列通道，不能在代码或 UI 中宣称已经实现 `一台 Host Relay → 多个远端 Runtime Beacon`。过渡期的正确策略是远程走 tmux/Relay、本地可走 headless Beacon，直至 Host 侧 Runtime 协议完成。
+
+这些约束把“玉玺归中央”进一步落实为四个可验证条件：**命令内容不被接收端修复、同一目标不乱序、回执不串请求、旧任不干预新任、臣子不出生在错误主机。**
