@@ -468,3 +468,19 @@ OVO Sovereign Kernel
 7. Session 尚未形成或无法可信恢复时，Adapter 必须拒绝“取消后继续”的承诺，或明确把下一轮视为新 Session 并重新注入授权边界。
 
 因此取消权的工程含义是：**皇帝可以召回当前差事，但召回圣旨、臣子真正停手以及撤销整个任命是三个可观察、不可混淆的事实。**
+
+### 十次边界深化：传输重试不能重复创造业务轮次
+
+来源：2026-08-14 CodeTMux 完成地方主脑在线 Runtime 的 Turn 级幂等闭合。
+
+网络请求成功、失败和超时属于通信事实，Agent 是否已经接受、正在执行或完成某一轮属于业务事实。两者共用一个 ID 会让中央在 ACK 丢失后陷入两种危险选择：不重试则可能丢旨，换 ID 重试则可能让同一任务执行两次。因此进一步形成以下约束：
+
+1. `requestId` 只关联一次中央到地方的协议调用；`hostId + runtimeInstanceId + turnId` 才标识一次不可重复创建的业务轮次；
+2. 同一 Runtime 收到相同 `turnId` 与相同输入 Hash 时，不得再次调用 Provider，而应返回原 Turn Receipt；Receipt 至少区分 `accepted / running / cancelling / completed / cancelled / failed / runtime-stopped`；
+3. 相同 `turnId` 携带不同正文不是合法重试，而是身份冲突。节点必须 fail closed 并要求中央生成新 Turn，不能以后到正文覆盖先到正文；
+4. `cancel-turn` 同样具有幂等语义：已取消轮次的重复取消返回原终态，不得再次中断已经开始的新轮次；
+5. Turn Ledger 必须有界，且不能保存完整 Prompt 作为去重材料；只保存稳定 Hash、身份、状态和时间等最小审计字段，降低地方长期运行的内存与隐私负担；
+6. 在线 Turn Ledger 只能证明当前逻辑 Runtime 生命周期内的去重。Daemon 或中央重启后，历史事件仍不能自动重建“正在运行”；持久期望状态、现场探针与 Session 协调必须由下一阶段 Runtime Reconciliation 闭合；
+7. 用户界面和 MCP 发起新轮时由中央生成稳定 `turnId`，网络层重试必须复用它；用户修改任务正文意味着创建新轮，而不是修改既有轮次历史。
+
+因此幂等边界的准确表达是：**驿站可以重复送同一封圣旨，但臣子只能领取一次；圣旨编号相同而正文不同则是冲突，不是更新。**
