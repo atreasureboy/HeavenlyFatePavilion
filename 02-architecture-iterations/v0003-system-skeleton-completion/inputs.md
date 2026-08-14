@@ -413,3 +413,22 @@ OVO Sovereign Kernel
 10. UI 应展示连接代次、最近连接时间和恢复事件标记，使仙人能区分“当前实时上报”“断联后补报”与“中央重启恢复的历史”。
 
 因此地方节点可靠性的准确表达是：**连接采用至多一个当前代次，事件采用可去重的至少一次交付，事实接受与事实认同继续分离。**
+
+### 七次边界深化：Provider 可替换的是认知 Harness，不是中央身份与权力
+
+来源：2026-08-14 CodeTMux 将地方主脑从 Claude 专用实现收敛为 Runtime Adapter，并按 OpenAI 官方非交互协议真实接入 Codex。
+
+“未来可以换 Codex/OpenCode”若只停留在 Provider 字段或 UI 下拉框，仍然是假抽象。不同成熟 Coding Runtime 的生命周期并不相同：Claude Code 可以保持一个持久 stream-json 进程，Codex 的非交互模式则是一轮一个 `codex exec --json` 进程、用明确 Session 执行 `resume`。中央不能为了接口整齐强迫所有 Runtime 模仿同一种进程模型，也不能把 Provider 命令散落在 Center、MCP 和 Relay 协议中。
+
+候选约束如下：
+
+1. **统一的是主权侧生命周期语义。** 中央只依赖 `start / send / status / stop`、Runtime/Session/Turn 身份和结构化 Event；持久进程、单轮进程、会话恢复与事件解析由各 Provider Adapter 自己实现；
+2. **Provider 原生循环应完整保留。** 搜索仓库、制定局部计划、编辑、测试、失败修正和上下文压缩继续由 Claude Code/Codex 的原生 Harness 负责。OVO 不重写这些循环，只提供 Mandate、边界、调度、召回和最终 Evidence 裁决；
+3. **Provider 选择是主权动作。** Inventory 只发布“本机有什么”，不自动启动任何模型。OVO 结合 Project、主机能力、成本和任务性质选择 Provider，Runtime Adapter 只执行该选择；
+4. **恢复禁止猜测。** 每次恢复必须带可信 Session 身份；Codex 使用明确的 `exec resume <session>`，Claude 使用明确 Session 恢复。禁止跨 Project 使用模糊“最后会话”；
+5. **权限模式必须显式映射。** Codex 的只读、项目可写和完整权限是 Adapter 参数，不得用“允许某些 Tool”冒充沙箱；默认只授予完成 Mandate 所需的最小模式，扩大权限需要中央明确表达；
+6. **认证留在目标 Host。** 默认复用主机 CLI 已有登录并剥离中央继承的 API 环境变量。Provider Adapter 不保存、转发或记录模型密钥；
+7. **协议真实接通优先于 Provider 数量。** 只有获得稳定、可验证的非交互输入、结构化输出、Session 恢复和取消协议后，才能宣布某 Provider 已接入。仅能探测到可执行文件时只能列为 Inventory 能力，不能在 Center 中伪装为可用主脑；
+8. **升级红利不改变权力边界。** 上游 Runtime 的规划、子 Agent 或长周期循环能力增强后可被 OVO 自动利用，但其输出始终是奏折；中央身份、跨项目调度、资源所有权、验收和用户最终控制权不随 Provider 升级下放。
+
+因此可替换 Runtime 的准确含义是：**OVO 保持稳定的主权身份和治理协议，把局部认知 Harness 当作可升级的外部执行器；替换大脑能力，不替换皇帝。**
