@@ -252,3 +252,33 @@ OVO Sovereign Kernel
 8. Center 必须让用户一眼看出每个 Pane 当前由谁控制、为什么拥有控制权、Lease 何时到期、最近一次中央覆盖和是否存在待交还状态，避免双通道在 UI 上变成不可解释的竞态。
 
 因此地方官既不是“地方皇帝”，也不是“只读探子”；它是中央可随时越过、暂停和收回权限的地方开发统筹者。皇权的含义不是所有命令必须亲自发送，而是**中央拥有选择直达或委任、覆盖地方决定以及最终收回控制权的唯一权力**。
+
+### 三次边界修正：地方官是无模型的确定性传令节点，不是本地统筹 Agent
+
+来源：2026-08-14 用户明确地方官没有 API Key、没有独立认知，只负责传达。
+
+“地方委任”不能解释成把项目规划权交给另一个本地模型。地方官自身不运行高级模型、不持有 Claude/Codex/OpenCode API Key、不选择下一步，也不生成开发指令。所有指令内容、目标 Agent 和目标 Pane 都由 OVO 决定；地方官只在该网络路径更方便或更可靠时，确定性地把中央已经形成的指令送入指定 tmux Pane，并返回投递回执。上一节关于地方官“选择 Provider、组织本机迭代、作为地方开发统筹者”的候选语义由本节替代。
+
+两条渠道的区别只在传输路径，不在决策主体：
+
+```text
+中央直达：OVO 决策 → 中央 SSH/tmux 连接 → tmux Pane
+
+地方传令：OVO 决策 → 结构化 Command Envelope → 地方官
+                                              → 本机 tmux Pane
+
+两条路径的指令作者始终是 OVO；Claude/Codex 使用其自身已有登录或额度。
+```
+
+候选协议约束如下：
+
+1. 地方官可以持有设备身份、控制通道凭证和最小 tmux 投递能力，但不得持有模型 API Key，也不得以自己的身份调用模型；
+2. Command Envelope 至少包含 `commandId / hostId / paneId / controlEpoch / payload / submitMode / expiresAt / dedupeKey`。地方官只校验范围、代次、到期和幂等，然后原样投递，不解释或改写自然语言内容；
+3. 对单行指令可使用 tmux literal key 注入；对多行、大段 Prompt 或包含特殊字符的内容，应通过 stdin 写入命名 tmux buffer，再使用 bracketed paste 投递，最后单独发送 Enter，禁止把内容拼接进 Shell 命令造成转义或执行歧义；
+4. `delivered` 只表示字节已写入目标 Pane，不表示 Coding Agent 已接受、开始或完成任务。Agent 的结构化事件、Hook/MCP 报告或后续终端现场分别产生 `accepted / running / completed / failed`；
+5. 地方官可以把 Agent 回报、协议事件与有界终端尾部送回中央，但不能根据这些内容自行形成下一条开发指令；下一轮仍由 OVO 决策后选择直达或再次传令；
+6. 中央根据连接健康、延迟、Pane 所有权和故障状态选择路径。地方通道不可用时可以退回中央 SSH/tmux 直达；中央直达不可用但地方长连接健康时可以通过地方官传令；
+7. 双路径共用同一 `commandId / controlEpoch / dedupeKey` 语义。中央从地方传令切到直达重试时，必须先查询投递状态或使用相同幂等键，避免同一句命令在 Claude TUI 中提交两次；
+8. 地方官更准确的技术定位是 `Development Relay Daemon / Agent Communication Relay`。叙事名称仍可保留“封疆大吏”，但不应因“官员”二字推导出其拥有独立智能或地方裁量权。
+
+因此最终边界是：**OVO 独占思考和指令生成，tmux/Coding Agent 接受指令，地方官只提供可选的可靠传令与回报路径。**
