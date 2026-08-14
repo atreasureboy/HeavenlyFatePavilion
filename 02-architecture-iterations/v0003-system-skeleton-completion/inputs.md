@@ -355,3 +355,40 @@ Development Relay（常驻确定性内核，始终存在）
 10. **成本开关必须真实。** Brain 未启用时不产生模型 Token；启用后其会话成本、静默时间和退出原因应可观察，避免“可选”能力变成不可见常驻消耗。
 
 因此“三次边界修正”中“地方官永远不运行高级模型”的结论被本节进一步收窄：**Relay Core 永远无模型；地方节点整体可以在中央显式授权下临时挂载成熟 Coding Agent 作为地方主脑。** 这保留了默认确定性与中央主权，同时允许利用数据局部性和上游 Coding Agent 的完整演进能力。
+
+### 五次边界深化：地方官是可发布能力、可挂载 Runtime 的主机控制面
+
+来源：2026-08-14 用户要求增强地方官、强化其与 Claude Code 的联系，并以 OpenClaw Node Host / Gateway / Agent Runtime 源码作为对照样本。对照版本为 OpenClaw `ad400d810b3bdbbf7d7048f27c926d82b1f40f1c`；本节只吸收节点可靠性机制，不引入其多渠道助手产品边界。
+
+地方官不能只回答“在线/离线”，也不能把“能运行 Claude”误写成固定人格。更稳定的抽象是同一主机上的两层控制面：常驻的确定性 Host Control Plane 负责盘点、观察、传令、生命周期和事件路由；可选的 Local Cognition Plane 挂载 Claude Code、Codex、OpenCode 等成熟 Runtime。前者发布能力，后者消费被中央授予的能力，两者都不因此获得主权。
+
+```text
+OVO Sovereign Kernel
+        │
+        ├── 中央直达 ─────────────────────────→ tmux / Runtime
+        │
+        └── Development Steward
+                ├── Host Control Plane
+                │     inventory / capability manifest
+                │     bounded command queue / ACK / timeout
+                │     tmux observation / runtime lifecycle
+                │
+                └── Optional Runtime Adapter
+                      Claude Code / Codex / OpenCode
+                      native agent loop + host-local context
+```
+
+新增候选约束如下：
+
+1. **能力发布不等于权力授予。** 地方官可声明平台、资源、tmux、Git、Node 和可用 Coding Runtime 的版本与健康状态；OVO 根据清单选择路径。某项能力出现在 Manifest 中，不代表节点已获准调用它；每次动作仍需中央 Command、目标范围和到期时间；
+2. **主机动作采用固定协议面。** 常态只暴露 `inspect / refresh / tmux-list / tmux-capture` 等确定性观察，以及经过既有 Sovereign Kernel 的 tmux 投递。不得因为节点更“重”就顺手开放任意 Shell 后门；文件、Git 和主机行政写操作仍走其正式领域服务与审计链；
+3. **Runtime 调用具有独立关联身份。** 一个 Claude 进程拥有 `runtimeInstanceId/sessionId`，每次输入拥有独立 `turnId`，流式进度以后续 `seq` 排序。同一 Runtime 的输入严格 FIFO，不同 Runtime 才可并行；重试、迟到结果和重连事件不得串轮；
+4. **高频事件在地方聚合。** 工具调用、进度与思考事件可以完整进入有界本地记录，但对中央/UI 的状态通知必须合并、限频并可按引用回查，禁止每个流式片段触发整页重建；
+5. **每轮都有双重时限。** Idle Timeout 处理“长时间无任何进展事件”，Hard Timeout 限制单轮最长占用；停止、超时和中央召回必须终止完整进程树、清空未执行队列并上报退出原因，而不是只杀父进程或留下孤儿工具进程；
+6. **默认认证不搬运密钥。** `host-login` 模式显式移除从中央继承的模型 API 环境变量，使用目标主机已有 CLI 登录态；只有仙人明确要求时才允许 `inherit-api`，并且仍不得把凭证写入 Relay 配置、Prompt、事件或 Memory；
+7. **恢复必须指向明确会话。** 只有掌握可信 `sessionId` 时才能恢复既有 Claude 会话；不得用模糊的“最后一次会话”跨 Project 猜测恢复。工作目录、Host 与会话身份不匹配时 fail closed；
+8. **中央直达始终保留。** 地方官增强后也只是 OVO 可选择的低延迟执行与情报通道。人工接管、紧急纠偏、地方官失联或中央选择精确下令时，OVO 仍可绕过它直达 tmux；
+9. **成熟 Runtime 的循环属于工具，不属于皇权。** Claude Code 可以在被授权 Project 内自行检索、规划、编辑、测试和压缩上下文，但其结果仍是奏折。跨项目调度、全局 Goal、资源分配、最终验收和是否继续由 OVO 决定；
+10. **借鉴边界必须可追踪。** 可借鉴 Node/Gateway 的 typed request-response-event、能力清单、连接代次、调用取消、有界串行队列、进度心跳、输出上限和进程树回收；不照搬多聊天渠道、通用个人助手、多租户治理，也不以外部 Agent Runtime 替代现有 Sovereign Kernel。
+
+这一深化使“封疆大吏可以更重”获得精确工程含义：**重在本机能力盘点、协议可靠性、Runtime 托管和信息局部性，不重在复制另一个中央。**
