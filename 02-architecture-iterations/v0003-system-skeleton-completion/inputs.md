@@ -282,3 +282,26 @@ OVO Sovereign Kernel
 8. 地方官更准确的技术定位是 `Development Relay Daemon / Agent Communication Relay`。叙事名称仍可保留“封疆大吏”，但不应因“官员”二字推导出其拥有独立智能或地方裁量权。
 
 因此最终边界是：**OVO 独占思考和指令生成，tmux/Coding Agent 接受指令，地方官只提供可选的可靠传令与回报路径。**
+
+### 部署修正：本机与云主机是同一种节点，差异只在连接建立方式
+
+来源：2026-08-14 用户明确 CodeTMux 产品默认运行在 Windows，但协议与测试不绑定 Windows。
+
+CodeTMux 桌面中央默认面向 Windows 交付，不意味着 Development Relay 协议只能由 Windows 中央验证，也不意味着本机绕过地方官模型。中央所在主机同样登记为一个 Host，并拥有本机 Relay；云主机与本机在 Command Envelope、身份、回执、幂等、事件和 Center 投影上完全同构。
+
+```text
+本机：OVO Central ── loopback/local IPC ── Local Relay ── Delivery Adapter
+
+远程：OVO Central ── SSH 引导 + 反向通道 ── Remote Relay ── Delivery Adapter
+```
+
+候选约束：
+
+1. Relay Core 使用跨平台 Node 实现并支持 Windows/Linux；平台差异封装在投递与安装适配器，不分裂协议和领域对象；
+2. Linux 首个投递适配器是 tmux；Windows 本机可接入 CodeTMux 已有 TerminalManager/node-pty。独立 Windows 远程节点若需要管理外部控制台，应另建受托 ConPTY Adapter，不能声称可向任意 Windows Terminal 注入；
+3. 本机 Relay 通过回环 TCP、Named Pipe 或进程内协议端点接入，不需要 SSH；远程 Relay 才使用 SSH 完成投放、唤醒和反向端口建立；
+4. 自动化测试可以在 Linux 开发环境同时启动测试中央与 Linux Relay，经回环通道向真实或隔离 tmux Pane 投递并验证回执、去重、重连和状态查询，不必把协议正确性推迟到 Windows 人工实测；
+5. Windows 实机验收只负责证明 Windows 打包、启动、TerminalManager Adapter 和生命周期集成，不再承担整个 Relay 协议的首次真实性验证；
+6. Center 不以“本地/远程”拆成两套页面；同一节点列表仅显示 `transport=local|ssh-reverse` 与不同 Adapter 能力。
+
+这一修正使“封疆大吏”成为真正的节点级通信抽象：本地不是特权旁路，远程也不是另一套系统。
