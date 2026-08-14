@@ -502,3 +502,22 @@ OVO Sovereign Kernel
 9. 第一阶段观察证据来自受认证 Relay 的 Runtime Snapshot 与 Inventory。未来可增加 Provider 原生进程、Session 文件和项目目录探针提升证据等级，但不能因此绕过 Runtime 身份核对。
 
 因此协调器的核心不变量是：**中央可以持久记住自己的意志，但必须重新观察世界，才能宣称臣子仍在履职。**
+
+### 十二次边界深化：连接能力是冻结上限下的可撤回事实
+
+来源：2026-08-14 CodeTMux 完成地方节点 Capability Ceiling 与 reconnect-paused 的首轮工程闭合。
+
+地方节点报告“装有 Claude、Codex 或 tmux”只是一次能力观察，不能允许它在长连接期间自行把新能力加入中央授权面；同样，认证和协议永久错误若继续按网络抖动指数退避，会制造无意义连接风暴并掩盖真正需要修正的配置。连接建立必须同时形成一个可验证的能力上限和清晰的失败终态。
+
+1. 节点必须先完成首轮 Inventory，再在认证握手中提交版本化 Capability Envelope；`ceiling`、排序后的 Hash 与连接代次共同构成本代能力上限；
+2. 后续 Heartbeat 只允许提交 `current ⊆ ceiling`。CLI 退出、登录失效、容量耗尽或本地依赖消失可以撤回能力，但不能在同代连接中增加 Provider、tmux 或观察权限；
+3. 新安装工具或恢复依赖只产生“下一连接代次可申请的新能力”，不会热增当前权力。节点必须重新认证、建立新代次并由中央重新接受能力上限；
+4. 能力发布与动作授权继续分离。即便能力位于 Ceiling 和 Current 中，每次写操作仍需要中央 Command、目标范围、到期、控制代次与 Sovereign Capability；Manifest 不能替代圣旨；
+5. 中央在发送前检查 Current Capability，节点在执行前再次检查，形成双端 fail-closed。状态、取消、停止和报告能力应尽量独立于新建 Runtime 能力，使节点失去扩展能力后仍可被观察和收回；
+6. Heartbeat 试图修改 Ceiling、Hash 或加入上限外能力属于协议扩权事件。中央拒绝该代次并记录 `capability-escalation`，不能悄悄忽略后继续使用部分连接；
+7. TCP 断开、短时拒绝和网络不可达属于 transient，可有限指数退避；Token 错误、协议不兼容、版本过旧、能力契约损坏和明确需要人工处理的状态进入 `reconnect-paused`；
+8. 永久拒绝必须由中央返回类型化原因，节点落入可观察暂停状态并停止计时器。只有配置、凭据、版本或操作者显式恢复后才能创建下一连接代次；
+9. Center 必须同时呈现当前能力数、能力上限身份、暂停原因和修复入口。普通 Offline 与“中央明确拒绝且等待操作”不能使用相同视觉和状态语义；
+10. Capability Ceiling 是连接级边界，不替代 Runtime Reconciliation。节点有 `runtime.start.claude` 只证明可以请求启动，不证明某 Runtime 已启动、仍存活或已完成任务。
+
+因此连接能力治理的工程表达是：**地方可以因现实变化主动交还权力，却不能在任期内自行扩权；中央可以容忍短暂失联，但不会把永久错误伪装成永无止境的重试。**
